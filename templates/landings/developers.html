@@ -1,0 +1,177 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}
+    Developers: Banking API documentation
+{% endblock %}
+
+{% block seo_description %}
+    All resources and tools you need for building and launching your business with Crassula.
+{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Developers"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-lg-center align-items-stretch position-relative overflow-hidden pt-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row align-items-center flex-lg-nowrap flex-lg-row flex-column justify-content-lg-start justify-content-between h-100">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 584px;">
+                        <h1 class="display-5 pb-lg-2 text-light">Crassula For <span
+                                class="text-primary">Developers</span></h1>
+                        <p class="fs-lg mb-0 text-light opacity-70">All resources and tools you need for building and
+                            launching your business with Crassula. Documentation is valid for demo accounts, each White
+                            Label has its own version of the documentation.</p>
+                    </div>
+                </div>
+
+                <!-- Layer -->
+                <div class="mt-lg-4 mt-5">
+                    <img src="{% static 'images/developers/hero/01.png' %}" alt="Hero img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container mt-md-2 my-lg-5 my-3 py-5">
+        <h2 class="h1 text-center">Crassula Banking API documentation</h2>
+        <p class="mb-5 mx-auto text-center fs-lg" style="max-width: 746px;">Crassula Banking API documentation allows
+            building your own additional services, interfaces, mobile apps connected to your version of the Core
+            Banking.</p>
+
+        <!-- Features grid -->
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 gy-5 text-center">
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-account"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Accounts</h4>
+                <p class="mb-0 px-lg-4">Create, manage multi-currency accounts, generate virtual IBANs, manage
+                    balances</p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-transfer"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Payments &amp; Transfers</h4>
+                <p class="mb-0 px-lg-4">Account top-up, SEPA, SWIFT, internal transfers, drafts, history, statements,
+                    confirmations</p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-card"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Card issuing</h4>
+                <p class="mb-0 px-lg-4">Virtual and plastic cards, security settings, limits, blocking &amp;
+                    freezing</p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-coin"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Fees</h4>
+                <p class="mb-0 px-lg-4">Price lists, percentage and fixed fees, subscriptions and recurring fees</p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-dollar"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Currency exchange</h4>
+                <p class="mb-0 px-lg-4">Get FX rates, place orders, manage mark-ups</p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <div class="icon-box bg-secondary mb-3">
+                    <i class="cri-milestone"></i>
+                </div>
+                <h4 class="h5 mb-2 pb-1">Verification &amp; onboarding</h4>
+                <p class="mb-0 px-lg-4">Application forms, Private &amp; Business client verification, limits.</p>
+            </div>
+        </div>
+        <div class="mt-5 text-center">
+            <a href="https://docs.crassula.io/client" target="_blank" rel="nofollow" class="btn btn-lg btn-accent rounded-pill">
+                <i class="bx bx-code me-2 lead"></i>
+                API documentation
+            </a>
+        </div>
+    </section>
+
+    <!-- API -->
+    <section class="container mb-lg-5 mb-3 pb-5">
+        <div class="card border-0 bg-dark text-light py-md-5 py-4">
+            <div class="card-body col-10 mx-auto py-4 px-0">
+                <div class="row justify-content-between gy-5 py-2">
+                    <div class="col-md-5">
+                        <div class="card border-0 bg-transparent h-100">
+                            <div class="card-body p-0">
+                                <h3 class="text-light">Checkout</h3>
+                                <p class="mb-4 pb-3 text-light opacity-70 fs-lg">Easy and secure integration that takes
+                                    only a few minutes to integrate. Get sandbox, demo cards, and short
+                                    documentation.</p>
+                            </div>
+                            <div class="card-footer border-0 p-0 m-0">
+                                <a href="https://docs.crassula.io/" target="_blank" rel="nofollow" class="btn btn-lg btn-outline-success rounded-pill">
+                                    <i class="bx bx-credit-card-front me-2 lead"></i>
+                                    Checkout documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-md-block d-none">
+                        <hr class="hr-light hr-vertical mx-auto">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card border-0 bg-transparent h-100">
+                            <div class="card-body p-0">
+                                <h3 class="text-light">REST API</h3>
+                                <p class="mb-4 pb-3 text-light opacity-70 fs-lg">Empower your merchants to build payment
+                                    processing the way they see it. REST API allows building adaptable and scalable
+                                    integrations.</p>
+                            </div>
+                            <div class="card-footer border-0 p-0 m-0">
+                                <a href="https://docs.crassula.io/api/" target="_blank" rel="nofollow" class="btn btn-lg btn-outline-warning rounded-pill">
+                                    <i class="bx bx-list-ul me-2 lead"></i>
+                                    REST API documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

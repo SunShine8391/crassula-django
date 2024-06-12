@@ -1,0 +1,293 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an example of a white label card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Target is probably one of the most common retailers that offers a private label credit card. Its customers can obtain an in-store card and receive 5% off on purchases, shipping perks, and even extra days of a refund for unwanted purchases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should my business have one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do you want to make the shopping experience more accessible for consumers and drive repeat purchases? Look no further than a store-branded credit card."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I get a private label card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crassula has built a technical infrastructure that brings payment service providers, alternative payment methods, and third-party business solutions together. You can send us your request and have your card issued in less than two weeks."
+      }
+    }
+  ]
+}
+</script>
+
+
+{% endblock %}
+
+{% block seo_title %}Private Label Credit Card Explained{% endblock %}
+{% block seo_description %}If you are a retailer or business owner thinking about how to bring some novelty and
+    innovation to your company or store, private label cards might be the thing you are searching for.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Private Label Credit Card Explained</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">If you are a retailer or business owner
+                            thinking about how to bring some novelty and innovation to your company or store, private
+                            label cards might be the thing you are searching for</p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What Is a Private Label Credit Card?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>How Does a White Label Credit Card Work?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Benefits of Private Label Credit Cards</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Access innovative capabilities of credit cards with
+                                    Crassula</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div id="anchor-0" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">Banks are not the only ones to offer credit cards. Large companies such
+                        as supermarket chains or airlines often issue their own credit cards. And if you are a retailer
+                        or business owner thinking about how to bring some novelty and innovation to your company or
+                        store, private label cards might be the thing you are searching for.</p>
+                    <p class="mb-4 pb-2 fs-lg">Still do not know much about it and where to have it issued? It’s ok.
+                        This guide got you covered.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What Is a Private Label Credit Card? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What Is a Private Label Credit Card?</h2>
+                    <p class="mb-4 pb-2 fs-lg">A private label credit card is a type of credit card that is branded for
+                        a specific retailer or brand.</p>
+                    <p class="mb-4 pb-2 fs-lg">With this card, you can easily pay for your purchases in the network of
+                        the brand that issued it to you. Usually, managing private label cards involves a lot of
+                        operational costs and compliance.</p>
+                    <p class="mb-4 pb-2 fs-lg">Thus, retailers or brands assign a third party to issue the cards and
+                        collect the payments from cardholders. It’s like a win-win for distributors and brands, as the
+                        first ones get their share from consumers’ transactions, and the latter increase sales at the
+                        store.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- WHow Does a White Label Credit Card Work? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4 pb-2">How Does a White Label Credit Card Work?</h2>
+                    <p class="mb-4 pb-2 fs-lg">The private label credit card program strikes a partnership with a
+                        third-party financial institution that implements payment collection and card issuance. These
+                        credit cards are more viable and secure, as the banking institution still operates them.</p>
+                    <p class="mb-4 pb-2 fs-lg">This helps eliminate any shady practices by the company offering the
+                        credit card. So, you are all covered, and, in return, the third-party business gets its percent
+                        by charging interest.</p>
+                    <p class="mb-4 pb-2 fs-lg">Additionally, each issuing establishment has its own card model and its
+                        own terms and conditions of using private label credit cards. However, one thing is common for
+                        all. Private label credit cards do not have a credit card network logo such as Visa or
+                        Mastercard and can generally be accepted only by the issuing brand.</p>
+                    <p class="mb-4 pb-2 fs-lg">Basically, the main idea of such private-label cards is to allow a
+                        company to maintain its brand image through credit cards, which is acceptable within its chain
+                        or network store. Brands can design and name the cards the way they see it without necessarily
+                        being a financial institution.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Benefits of Private Label Credit Cards -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4 pb-2">Benefits of Private Label Credit Cards</h2>
+                    <p class="mb-4 pb-2 fs-lg">At first glance, it may seem that a white label credit card used at one
+                        retailer is not very beneficial. If you think there are no cons, you are mistaken. Let’s take a
+                        look at the main benefits of a private label credit card for both individuals and
+                        businesses:</p>
+                    <h3 class="h4 pb-2">Loyalty Points</h3>
+                    <p class="mb-4 pb-2 fs-lg">Loyalty points encourage clients to make an establishment where the
+                        shopping is made frequent. Every one of us is an opportunist. If you know there’s a chance to
+                        get a bonus, special perks, and privileges by spending money. You are more likely to keep
+                        shopping with the private branded card.</p>
+                    <h3 class="h4 pb-2">Brand Recognition</h3>
+                    <p class="mb-4 pb-2 fs-lg">Many private label credit cards offer customized designs. You can
+                        consolidate your brand awareness and increase customer retention. Looking at the fancy card will
+                        be enough to bring customer loyalty to an entirely new level.</p>
+                    <h3 class="h4 pb-2">More profits</h3>
+                    <p class="mb-4 pb-2 fs-lg">A private label card will always incentivize customers to choose one
+                        store over the others and shop from there. If your customers have credit cards, they will be
+                        more lenient when it comes to spending money, renewing the card, and making purchases.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Benefits of Private Label Credit Cards -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4 pb-2">Access innovative capabilities of credit cards with Crassula</h2>
+                    <p class="mb-4 pb-2 fs-lg">Our platform is capable of fulfilling the needs of any online
+                        business. </p>
+                    <p class="mb-4 pb-2 fs-lg">A single integration with us means access to a scalable technical
+                        infrastructure that we enhance and maintain for you. If you have unique business needs our
+                        solution doesn’t cover yet, we would be excited to accept the challenge and solve your case.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- FAQ -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is an example of a white label card?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Target is probably one of the most common retailers that offers a
+                                        private label credit card. Its customers can obtain an in-store card and receive
+                                        5% off on purchases, shipping perks, and even extra days of a refund for
+                                        unwanted purchases.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Should my business have one?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Do you want to make the shopping experience more accessible for
+                                        consumers and drive repeat purchases? Look no further than a store-branded
+                                        credit card.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How can I get a private label card?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula has built a technical infrastructure that brings payment
+                                        service providers, alternative payment methods, and third-party business
+                                        solutions together. You can send us your request and have your card issued in
+                                        less than two weeks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

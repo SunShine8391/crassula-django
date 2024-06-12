@@ -1,0 +1,110 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label FinTech Support Software{% endblock %}
+{% block seo_description %}Your success is our success, that's why we always proactively work with your
+    daily requests and arrange a dedicated manager or team to help your business growth.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FinTech Support Software"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Support</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Here when you need us. Get a dedicated Customer
+                            Manager, benefit from industry experience and rely on Service Level Agreements (SLAs). Get
+                            peace of mind about the product and focus on the growth and development of your business.
+                            Tackling issues up front is of utmost importance for Crassula. We&apos;re always at your
+                            disposal when you most need help.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.05">
+                            <img src="{% static 'images/features/support/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="0.15">
+                            <img src="{% static 'images/features/support/hero/02.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="-0.17">
+                            <img src="{% static 'images/features/support/hero/03.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content -->
+    <section class="container my-lg-5 my-md-4 my-3 py-5">
+        <div class="d-flex flex-column my-xxl-4 my-xl-3 py-xxl-2">
+
+            <!-- Items grid -->
+            <div class="order-lg-1 order-2 row row-cols-lg-3 row-cols-1 gy-md-5 gy-4 gx-xl-5 mb-lg-5 pb-xxl-2">
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Customer Manager</h3>
+                    <p class="mb-0 fs-xl">Your success is our success, that's why we always proactively work with your
+                        daily requests and arrange a dedicated manager or team to help your business grow.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Industry Experience</h3>
+                    <p class="mb-0 fs-xl">With constant improvements, regular participation in top industry events and
+                        working with the latest features, we stay up-to-date to understand your business needs.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Service Level Agreements</h3>
+                    <p class="mb-0 fs-xl">Guaranteed performance levels allow you to get peace of mind about the product
+                        and focus on growt and development of your business.</p>
+                </div>
+            </div>
+
+            <!-- Illustration -->
+            <div class="order-lg-2 order-1 rounded bg-secondary mb-lg-0 mb-md-5 mb-4 pb-md-0 pb-2">
+                <img src="{% static 'images/features/support/illustration.png' %}" alt="Illustration" class="d-md-block d-none">
+                <img src="{% static 'images/features/support/illustration-m.png' %}" alt="Illustration" class="d-md-none d-block">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

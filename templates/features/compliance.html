@@ -1,0 +1,167 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label Compliance Software{% endblock %}
+{% block seo_description %}With Crassula automatic KYC/KYB checks, client profiles, documents storage and
+    much more, you can always be confident in your private and business clients.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "White Label Compliance Software"
+      }]
+    }
+    </script>
+{% endblock %}
+
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Compliance &amp; Security</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Be confident in the security of your business.
+                            External audits and certifications, documentation, and legal commitments help support the
+                            compliance of your business. Crassula holds PCI DSS level 1 with yearly audits and regular
+                            penetration tests, quarterly internal scans, and system updates.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.05">
+                            <img src="{% static 'images/features/compliance/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="0.15">
+                            <img src="{% static 'images/features/compliance/hero/02.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="-0.17">
+                            <img src="{% static 'images/features/compliance/hero/03.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features list -->
+    <section class="container py-lg-5 py-4">
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-lg-4 mb-3">KYC/KYB Onboarding</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-lg">With Crassula automatic KYC/KYB checks, client profiles,
+                        documents storage and much more, you can always be confident in your private and business
+                        clients</p>
+                    <h2 class="h1 mt-xl-5 mt-4 pt-lg-2 mb-lg-4 mb-3">Verification and Limits</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-lg">No matter what level of cautiousness is suitable for your
+                        business, Crassula will help you in setting relevant client or business verifications and
+                        flexibly limit customer operations.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/compliance/01.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/compliance/02.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Transaction and Customer Monitoring</h2>
+                    <p class="mt-2 mb-0 pt-md-1 fs-lg">Fight financial fraud and stay up to date with day-to-day
+                        compliance. Crassula's system facilitates the management of individual user-profiles and the
+                        screening for the potential risks associated with money laundering, fraud, tax evasion, and
+                        other financial crime.</p>
+                    <p class="mt-2 mb-0 pt-md-1 fs-lg">Keep information about your applicants up-to-date with changes to
+                        sanction lists and watchlists across the globe. Get reliable data from trustworthy sources,
+                        reducing manual labour and protecting your business from crime.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">PCI DSS 1 Level Security</h2>
+                    <p class="mt-2 mb-0 fs-lg">Be confident in the security of your business. Crassula holds PCI DSS
+                        level 1 with yearly audits and regular penetration tests, quarterly internal scans and system
+                        updates.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/compliance/03.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/compliance/04.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Notifications</h2>
+                    <p class="mt-2 mb-0 fs-lg">Never miss a thing with Crassula's convenient notifications on new
+                        customer verification or transaction pre-approval, expiring documents or new messages.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Customer Questionnaires</h2>
+                    <p class="mt-2 mb-0 fs-lg">Assess customer risks more easily by requesting extra data and documents
+                        through Crassula’s customer questionnaires</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/compliance/05.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

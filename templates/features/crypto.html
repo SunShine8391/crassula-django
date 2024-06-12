@@ -1,0 +1,167 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label Crypto Banking{% endblock %}
+{% block seo_description %}Enable your clients to deposit, store and withdraw digital assets using the
+    best Crassula crypto custody providers.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "White Label Crypto Banking"
+      }]
+    }
+    </script>
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Crypto</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Open accounts for your clients with unique
+                            crypto addresses, allow them to exchange fiat to crypto, make crypto transfers, invest in
+                            crypto, and issue cards for private and business clients.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-5" data-depth="-0.05">
+                            <img src="{% static 'images/features/crypto/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.15">
+                            <img src="{% static 'images/features/crypto/hero/02.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="0.15">
+                            <img src="{% static 'images/features/crypto/hero/03.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features list -->
+    <section class="container py-lg-5 py-4">
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Deposits and Withdrawals</h2>
+                    <p class="mb-md-4 mb-3 fs-xl">Enable your clients to deposit, store and withdraw digital assets
+                        using the best Crassula crypto custody providers. Crassula allows generating crypto deposit
+                        addresses on the fly with or without additional back-office approval.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/crypto/01.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/crypto/02.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Crypto AML</h2>
+                    <p class="mb-0 fs-xl">Crassula provides all necessary means of controlling your crypto transactions
+                        that comply with the international requirements of OFAC, FATF, MLD5, and others.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Brokerage</h2>
+                    <p class="mb-md-4 mb-3 fs-xl">With Crassula BaaS Crypto module you can launch a fully branded
+                        Cryptocurrency Exchange product in less than a month.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/crypto/03.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="container mb-lg-5 mb-md-4 mb-3 pb-5">
+        <div class="d-flex flex-column mb-xxl-4 mb-xl-3 pb-xxl-2">
+
+            <!-- Items grid -->
+            <div class="order-lg-1 order-2 row row-cols-lg-3 row-cols-1 gy-md-5 gy-4 gx-xl-5 mb-lg-5 pb-xxl-2">
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Crypto Slippage Protection</h3>
+                    <p class="mb-0 fs-xl">You can enable slippage protection for crypto exchange orders to protect your
+                        client from unexpected losses during periods of higher volatility. The functionality allows
+                        securing the source currency volume while the target volume is adjusted in case of a leap in
+                        pricing.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Institutional Grade Custody</h3>
+                    <p class="mb-0 fs-xl">Crassula offers its customers to store digital assets only at Enterprise-grade
+                        Multi-layer Security Companies. In addition to the next-generation means of protection, they are
+                        certified by the International Organization for Standards and recognized by AAA+ world-class
+                        investors.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Licensed Liquidity Providers</h3>
+                    <p class="mb-0 fs-xl">Crassula offers customers only licensed crypto liquidity providers. We are
+                        choosing carefully the companies that maintain their risk policies well, are properly audited,
+                        and provide real-time proof of reserves to their customers.</p>
+                </div>
+            </div>
+
+            <!-- Illustration -->
+            <div class="order-lg-2 order-1 rounded bg-secondary mb-lg-0 mb-md-5 mb-4 pb-md-0 pb-2">
+                <img src="{% static 'images/features/crypto/illustration.png' %}" alt="Illustration" class="d-md-block d-none">
+                <img src="{% static 'images/features/crypto/illustration-m.png' %}" alt="Illustration" class="d-md-none d-block">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% load static %}
+
+<div class=" pt-4 mb-sm-5 mb-4 pb-3">
+    <div class="card border-0 bg-dark text-light py-3 px-sm-5 px-4">
+        <div class="card-body p-md-5 p-4 text-center">
+            <h3 class="mb-4 pb-sm-2 text-light">Let&apos;s discuss your project and see how we can
+                launch your <span class="text-primary">{% if service %}
+                    {{ service }}
+                {% else %}
+                    digital core banking product
+                {% endif %} </span> together</h3>
+            <a href="{% url 'boarding:request_demo' %}" class="btn btn-accent rounded-pill">
+                Request demo
+                <i class="bx bx-chevron-right ms-1 lead"></i>
+            </a>
+        </div>
+    </div>
+</div>

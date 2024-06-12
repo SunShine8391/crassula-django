@@ -1,0 +1,284 @@
+{% load static %}
+
+<!-- Navbar -->
+<header class="header navbar navbar-expand-lg navbar-dark bg-dark position-absolute navbar-sticky">
+
+    {% if promo_event %}
+        <!-- Event message (primary bg) -->
+        <div class="navbar-message w-100 mt-n2 mb-2 p-2 fs-sm bg-white text-dark text-center">
+            {{ promo_event.promo_text|safe }}
+            <a href="{{ promo_event.get_absolute_url }}" class="nav-link d-inline fw-semibold text-dark">
+                <u>Book a meeting</u>
+            </a>
+        </div>
+    {% endif %}
+
+    <div class="container px-3">
+        <a href="{% url 'landings:home' %}" class="navbar-brand pe-3">
+            <img src="{% static 'images/home/logo-white-light.svg' %}" width="148" alt="Crassula">
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+            <div class="offcanvas-header border-bottom border-light">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-lg-center mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">Key Features</a>
+                        <div class="dropdown-menu ms-lg-n5 p-0" style="max-width: 664px;">
+                            <div class="d-lg-flex mt-lg-n3">
+                                <div class="mega-dropdown-column mt-lg-3 py-lg-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="{% url 'features:cards' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                <span class="icon-box icon-box-xs bg-secondary me-2">
+                                                    <i class="cri-card"></i>
+                                                </span>
+                                                <span class="d-block ps-1">
+                                                <span class="dropdown-menu-title d-block h6 mb-0">Cards</span>
+                                                    Enhance your Horizons
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:prices' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-dollar"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Price Lists &amp; Fees</span>
+                                Maximize your Profits
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:accounts' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-account"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Accounts</span>
+                                Set a Flexible Business Model
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:transfers' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-transfer"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Transfers</span>
+                                Payments Without Borders
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:currency_exchange' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-connection"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Currency Exchange</span>
+                                Manage and Control All Requests
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:crypto' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-bitcoin"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Crypto</span>
+                                Innovate and Earn
+                              </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-dropdown-column mt-lg-3 py-lg-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="{% url 'features:dashboard' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-bar-chart"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Dashboard</span>
+                                Oversee, Manage and Control
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:ui' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-cards"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">White Labeled UIs</span>
+                                Shorten your Time to Market
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:compliance' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-security"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Compliance &amp; Security</span>
+                                Stay Compliant and Secure
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:support' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-customer-service"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Support</span>
+                                Use Our Knowledge and Touch
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:api' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-code"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">API</span>
+                                Embed and Distribute
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'features:merchant' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-layer"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Merchant Payments</span>
+                                Enhance your Abilities
+                              </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu ms-lg-n5 p-0" style="max-width: 664px;">
+                            <div class="d-lg-flex mt-lg-n3">
+                                <div class="mega-dropdown-column mt-lg-3 py-lg-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="{% url 'solutions:challenger_banks' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                <img src="{% static 'images/navbar-icons/challenger.svg' %}" alt="logo" class="me-2">
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Challenger Banks</span>
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'solutions:railsr' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                <img src="{% static 'images/navbar-icons/railsbank.svg' %}" alt="logo" class="me-2">
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Railsr</span>
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'solutions:clearbank' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                <img src="{% static 'images/navbar-icons/clearbank.svg' %}" alt="logo" class="me-2">
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Clear.Bank</span>
+                              </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'events:list' %}" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'landings:developers' %}" class="nav-link">Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'guides:main' %}" class="nav-link">Guides</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">Company</a>
+                        <div class="dropdown-menu ms-lg-n5 p-0" style="max-width: 664px;">
+                            <div class="d-lg-flex mt-lg-n3">
+                                <div class="mega-dropdown-column mt-lg-3 py-lg-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="{% url 'landings:company' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                 <span class="icon-box icon-box-xs bg-secondary me-2">
+                                                    <i class="cri-lines"></i>
+                                                </span>
+                                                <span class="d-block ps-1">
+                                                    <span class="dropdown-menu-title d-block h6 mb-0">About us</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'careers:main' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                                                <span class="icon-box icon-box-xs bg-secondary me-2">
+                                                    <i class="cri-briefcase"></i>
+                                                </span>
+                                                <span class="d-block ps-1">
+                                                    <span class="dropdown-menu-title d-block h6 mb-0">Careers</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'landings:contacts' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-send"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Contact Us</span>
+                              </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'blog:main' %}" class="dropdown-item d-flex align-items-center mx-1 py-2 px-3 rounded-3">
+                              <span class="icon-box icon-box-xs bg-secondary me-2">
+                                <i class="cri-chapter"></i>
+                              </span>
+                                                <span class="d-block ps-1">
+                                <span class="dropdown-menu-title d-block h6 mb-0">Blog</span>
+                              </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="offcanvas-header border-top border-light">
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-primary w-100">
+                    Request demo
+                </a>
+            </div>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="{% url 'boarding:request_demo' %}" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex rounded-pill ms-lg-4">
+            Request demo
+        </a>
+    </div>
+</header>

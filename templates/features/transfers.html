@@ -1,0 +1,208 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label Money Transfer Software{% endblock %}
+{% block seo_description %}Choose from many SEPA credit providers who are currently working with
+    Crassula. Whether you are licensed or not, Crassula will help you build a better payment
+    experience for your clients.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "White Label Money Transfer Software"
+      }]
+    }
+    </script>
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Transfers</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Offer your customers SEPA, SWIFT, or local
+                            payment experiences, crypto transfers, payouts to cards, and more. Securely, efficiently,
+                            and reliably.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.15">
+                            <img src="{% static 'images/features/transfers/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="0.25">
+                            <img src="{% static 'images/features/transfers/hero/02.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.3">
+                            <img src="{% static 'images/features/transfers/hero/03.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features list -->
+    <section class="container py-lg-5 py-4">
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">SEPA Credit</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Choose from many SEPA credit providers who are currently working
+                        with Crassula. Whether you are licensed or not, Crassula will help you build a better payment
+                        experience for your clients.</p>
+                    <h2 class="h1 mt-xl-5 mt-4 pt-lg-2 mb-md-4 mb-3">SEPA Instant</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Crassula offers several BaaS providers that support SEPA instant
+                        credit transfer, enabling clients with the fastest way to send EUR across 36 countries of the
+                        Eurozone, presented by more than 1000 banks.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/01.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/02.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Deposit by Card</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Allow your customers to use virtual IBANs for top-up or
+                        withdrawal funds. Use the most recognized BaaS providers and banks to support your project with
+                        IBAN generation for end-use</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Wire Transfers</h2>
+                    <div class="mt-4">
+                        <i class="cri-transfer fs-4 text-dark mb-3"></i>
+                        <p class="mb-0 fs-xl">Send or receive funds via the most popular banking payment systems like
+                            SWIFT or local bank payments provided by several Crassula partners. </p>
+                    </div>
+                    <div class="mt-4">
+                        <i class="cri-layer fs-4 text-dark mb-3"></i>
+                        <p class="mb-0 fs-xl">Use intelligent payment routing and flexible fee structures to define
+                            better pricing models for your clients.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/03.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/04.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">ACH</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Use a card-acquiring provider working with Crassula to allow
+                        clients to top-up their accounts using globally recognized card schemes. Crassula covers all
+                        card payments using PCI standards and supporting s2s connections with providers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Inter-ledger Payments</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl"><b class="text-dark">Internal</b> - between two accounts inside
+                        the Crassula banking platform. Use the internal number generated by Crassula, the client's
+                        nickname, or phone to attribute it to payment.</p>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl"><b class="text-dark">External</b> - within a designated financial
+                        service provider.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/05.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/06.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Card Issuer</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Choose the card issuer and appropriate program for your business
+                        needs. Crassula offers several different card issuers working in the EU, UK, and Globally.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Faster Payments, Chaps, Bacs</h2>
+                    <p class="mt-2 mb-0 pt-lg-1 fs-xl">Choose from Faster Payments or other GBP payment providers
+                        currently covering our customer's UK local payments experience. Enable clients to use UK-based
+                        payments instantly for the lowest fee possible</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/transfers/07.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

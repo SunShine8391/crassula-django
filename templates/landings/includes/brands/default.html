@@ -1,0 +1,77 @@
+{% load static %}
+<section class="container py-5 mt-md-2 mt-lg-4">
+	<hr>
+    <div class="swiper pt-2 mx-n2" data-swiper-options='{
+          "slidesPerView": 2,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 5,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 6,
+              "spaceBetween": 8
+            }
+          }
+        }'>
+        <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="https://techchill.co/semifinalists-fifty-founders-2019/" class="card card-hover card-body p-0 border-0 shadow-none" target="_blank" rel="nofollow">
+                    <img src="{% static 'images/home/brands/01-dark.svg' %}" alt="techchill: The Semifinalists are here: meet the Fifty Founders">
+                </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="https://www.uktech.news/news/industry-analysis/can-the-uk-compete-with-the-baltics-when-it-comes-to-crypto-20180626" class="card card-hover card-body p-0 border-0 shadow-none" target="_blank" rel="nofollow">
+                    <img src="{% static 'images/home/brands/02-dark.svg' %}" alt="UKTN: Can the UK compete with the Baltics when it comes to crypto?">
+                </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="#" class="card card-hover card-body p-0 border-0 shadow-none">
+                    <img src="{% static 'images/home/brands/03-dark.svg' %}" alt="Brand" target="_blank" rel="nofollow">
+                </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="#" class="card card-hover card-body p-0 border-0 shadow-none">
+                    <img src="{% static 'images/home/brands/04-dark.svg' %}" alt="Brand" target="_blank" rel="nofollow">
+                </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="https://www.baltictimes.com/crassula__offering_high-tech_financial_solutions/" class="card card-hover card-body p-0 border-0 shadow-none">
+                    <img src="{% static 'images/home/brands/05-dark.svg' %}" alt="baltictimes: Crassula offering high-tech financial solutions" target="_blank" rel="nofollow">
+                </a>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+                <a href="#" class="card card-hover card-body p-0 border-0 shadow-none">
+                    <img src="{% static 'images/home/brands/06-dark.svg' %}" alt="Brand" target="_blank" rel="nofollow">
+                </a>
+            </div>
+        </div>
+
+        <!-- Pagination (bullets) -->
+        <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}Booking success{% endblock %}
+{% block seo_description %}Thank you for booking a meeting with Crassula. We will contact you within 24 hours with the
+    details.{% endblock %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <section class="py-lg-5 py-md-4 py-3 bg-dark">
+        <div class="container my-5 py-xxl-4 py-xl-3">
+            <div class="row pt-lg-5 pt-4 pb-xxl-2">
+                <div class="col-lg-6 col-md-8 col-sm-10 mx-auto text-center">
+                    <img src="{% static 'images/logo/crassula/logo_green_white.svg' %}" alt="Crassula"
+                         class="d-block mb-4 mx-auto">
+                    <h1 class="mb-2 pb-1 text-white">Thank you for booking a meeting with Crassula</h1>
+                    <p class="mb-0 fs-lg text-white opacity-70">We will contact you within 24 hours with the details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'landings/includes/case-studies/default.html' with marginTop=True %}
+
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

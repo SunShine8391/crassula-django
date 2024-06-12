@@ -1,0 +1,207 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}
+    Build your own digital banking with Crassula and Railsr
+{% endblock %}
+
+{% block seo_description %}
+    Manage Railsr ledgers and virtual IBAN generating, SEPA payments, ACH, Faster
+    Payments, Visa and Mastercard card issuing programs, FX via convenient Crassula Core Banking System
+{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Railsr Solution"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden py-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container py-5">
+            <div class="row align-items-center flex-lg-nowrap">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <img src="{% static 'images/bpm/hero/brand.png' %}" width="138" alt="Logo" class="d-block mb-4 mx-lg-0 mx-auto">
+                    <div class="mx-lg-0 mx-auto pt-2" style="max-width: 584px;">
+                        <h1 class="display-5 pb-lg-3 text-light">Build your own white label digital banking with
+                            Crassula and Railsr within weeks, not months</h1>
+                        <p class="fs-lg mb-lg-5 mb-4 pb-2 me-lg-5 pe-lg-2 text-light opacity-70">Build your own white
+                            label digital banking with Crassula and Railsr within weeks, not months.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent rounded-pill">
+                            Get in touch
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="parallax mt-lg-4 mt-5 ms-xl-5 ps-xl-5" style="max-width: 848px;">
+                    <div class="parallax-layer" data-depth="0.05">
+                        <img src="{% static 'images/bpm/hero/01.png' %}" width="800" alt="Layer">
+                    </div>
+                    <div class="parallax-layer zindex-2" data-depth="0.1">
+                        <img src="{% static 'images/bpm/hero/02.png' %}" alt="Layer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BPM and Customer Engagement Platform for Railsr -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row gy-4">
+            <div class="col-lg-5">
+                <h2 class="h1">BPM and Customer Engagement Platform for Railsr</h2>
+                <p class="mb-0 fs-lg">Manage Railsr ledgers and virtual IBAN generating, SEPA payments, ACH, Faster
+                    Payments, Visa and Mastercard card issuing programs, FX via convenient Crassula Core Banking System
+                    — a back office that gives you control over your clients&apos; profiles, transactions, fees,
+                    verification levels and much more.</p>
+            </div>
+            <div class="col-lg-6 offset-lg-1 px-lg-3 px-0 overflow-hidden">
+                <div class="bpm-features mx-auto mb-3">
+
+                    <!-- Faster Payments -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none top-0 start-50 translate-middle-x">
+                        <img src="{% static 'images/bpm/rush.svg' %}" alt="Icon" class="me-2">
+                        Faster Payments
+                    </div>
+
+                    <!-- Visa -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none" style="top: 25%;">
+                        <img src="{% static 'images/bpm/visa.svg' %}" alt="Icon" class="me-2">
+                        Visa
+                    </div>
+
+                    <!-- Virtual IBAN -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none" style="top: 60%;">
+                        <img src="{% static 'images/bpm/transfer.svg' %}" alt="Icon" class="me-2">
+                        Virtual IBAN
+                    </div>
+
+                    <!-- SEPA payments -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none bottom-0 start-50 translate-middle-x">
+                        <img src="{% static 'images/bpm/card.svg' %}" alt="Icon" class="me-2">
+                        SEPA payments
+                    </div>
+
+                    <!-- Mastercard -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none" style="top: 60%;">
+                        <img src="{% static 'images/bpm/synergy.svg' %}" alt="Icon" class="me-2">
+                        Mastercard
+                    </div>
+
+                    <!-- ACH -->
+                    <div class="bpm-feature btn btn-light bg-white rounded-pill shadow-sm text-body pe-none" style="top: 25%;">
+                        <img src="{% static 'images/bpm/check.svg' %}" alt="Icon" class="me-2">
+                        ACH
+                    </div>
+
+                    <!-- Animation circle -->
+                    <div class="pulse">
+                        <img src="{% static 'images/bpm/logo.svg' %}" alt="Crassula">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to launch with us -->
+    <section class="container mb-lg-5 pb-lg-5 pb-4">
+        <h2 class="h1 pb-3 text-center">How to launch with us</h2>
+        <div class="swiper" data-swiper-options='{
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "0": {
+              "slidesPerView": 1,
+              "spaceBetween": 24
+            },
+            "500": {
+              "slidesPerView": 2,
+              "spaceBetween": 24
+            },
+            "992": {
+              "slidesPerView": 3,
+              "spaceBetween": 24
+            }
+          }
+        }'>
+            <div class="swiper-wrapper">
+
+                <!-- Item -->
+                <div class="swiper-slide h-auto">
+                    <div class="card icon-box-media border-0 bg-secondary h-100">
+                        <div class="icon-box bg-dark">
+                            <i class="cri-code text-light"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4 mb-2 pb-1">Railsr Services</h3>
+                            <p class="mb-0 fs-lg">Railsr's Platform and APIs provide access to a complete set of global
+                                financial capabilities while Crassula Core Banking Platform with back-end, compliance
+                                set-up, and mobile apps enables managing your business processes and interacting with
+                                clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide h-auto">
+                    <div class="card icon-box-media border-0 bg-secondary h-100">
+                        <div class="icon-box bg-accent">
+                            <i class="cri-layer"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4 mb-2 pb-1">Back office</h3>
+                            <p class="mb-0 fs-lg">Manage Railsr ledgers and virtual IBAN generation, SEPA payments,
+                                Faster Payments, Visa and Mastercard card issuing programs, FX via convenient Crassula
+                                Core Banking System - a back office that gives you control over your clients&apos;
+                                profiles, transactions, fees, verification levels, and much more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide h-auto">
+                    <div class="card icon-box-media border-0 bg-secondary h-100">
+                        <div class="icon-box">
+                            <i class="cri-devices"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h4 mb-2 pb-1">Mobile Apps&apos; Web Interfaces</h3>
+                            <p class="mb-0 fs-lg">Crassula apps enable a completely digital account opening process as
+                                well as mobile banking, crypto functionality and card management tools based on the full
+                                banking license and the APIs. Crassula web interface, based on the latest research on UI
+                                and UX standards, provides quick access to all the necessary banking services.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative d-lg-none d-flex mt-5 pt-4"></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

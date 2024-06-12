@@ -1,0 +1,76 @@
+{% load static %}
+
+<section class="container mb-lg-5 mb-4 pb-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="{% static 'images/quote.svg' %}" alt="Icon" class="mb-sm-4 mb-3 pb-2">
+            <h2 class="h1 mb-md-0">What Our Customers Say About Crassula</h2>
+        </div>
+        <div class="col-md-6 offset-md-1">
+            <div class="position-relative">
+
+                <!-- Slider -->
+                <div class="swiper" data-swiper-options='{
+                "loop": true,
+                "navigation": {
+                  "prevEl": "#prev",
+                  "nextEl": "#next"
+                }
+              }'>
+                    <div class="swiper-wrapper">
+
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <p class="mb-2 fs-xl">“A better business banking powered by Crassula. Multi-currency
+                                business accounts, SEPA/SWIFT transfers, corporate Mastercard issuing, online payment
+                                processing.”</p>
+                            <a href="{% url 'cases:paysend' %}" class="text-dark fw-semibold">Read case
+                                study</a>
+                            <div class="mt-4">
+                                <div class="d-inline-block">
+                                    <img src="{% static 'images/logo/customers/paysend/paysend_230_80.jpg' %}" alt="PaySend Logo" class="opacity-90">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <p class="mb-2 fs-xl">“Crassula's product allowed us to quickly launch a payment business. A
+                                huge advantage is the availability of integrations with many banks and acquirers, which
+                                makes it possible to quickly connect new payment methods for customers.”</p>
+                            <a href="{% url 'cases:safe_currency' %}" class="text-dark fw-semibold">Read case
+                                study</a>
+                            <div class="mt-4">
+                                <div class="d-inline-block">
+                                    <img src="{% static 'images/logo/customers/safecorrency/safecorrency_230_80.jpg' %}" alt="SafeCurrency Logo" class="opacity-90">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="swiper-slide">
+                            <p class="mb-2 fs-xl">“The most flexible, convenient and efficient solution that we have
+                                seen on the market.”</p>
+                            <div class="mt-4">
+                                <div class="d-inline-block">
+                                    <img src="{% static 'images/logo/customers/multipass/multipass_230_80.jpg' %}" alt="Multipass Logo" class="opacity-90">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slider prev/next buttons -->
+                <div class="position-absolute bottom-0 end-0 zindex-5 mb-2">
+                    <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm">
+                        <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" id="next" class="btn btn-next btn-icon btn-sm">
+                        <i class="bx bx-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

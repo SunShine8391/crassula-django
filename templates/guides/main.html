@@ -1,0 +1,69 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}FinTech Guides{% endblock %}
+{% block seo_description %}{% endblock %}
+
+
+{% block content %}
+
+    <!-- Guides -->
+    <section class="container mb-lg-5 mb-sm-3 py-5 mt-5 mt-5">
+        <div>
+            <a href="{% url 'landings:home' %}" class="nav-link p-0 mb-5 mt-5 opacity-60">
+                <i class="bx bx-chevron-left me-1"></i>
+                Back to home page
+            </a>
+        </div>
+        <h1 class="display-5 mb-4 mt-5">Guides</h1>
+
+        <!-- Items row -->
+        <div class="row row-cols-md-3 row-cols-1 gy-5">
+
+            <script> var counter = 0 </script>
+
+            {% for guide in guide_list %}
+                <div class="col">
+                    <a href="{{ guide.get_absolute_url }}"
+                    id="{{forloop.counter}}"
+                    class="card card-hover h-100 py-sm-5 flex-row justify-content-center align-items-center border-0 text-decoration-none"
+                    style="min-height: 300px; background-color: #56D3A2;">
+                        <div class="card-body my-lg-5 text-center">
+                            <h3 class="display-5 mb-0 text-uppercase lh-1">{{guide.title}}</h3>
+                        </div>
+                    </a>
+                    <script>
+                        var counter = counter + 1
+                        switch (counter % 6) {
+                            case 1:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#56D3A2";
+                                break;
+                            case 2:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#F4D06B";
+                                break;
+                            case 3:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#86C9DE";
+                                break;
+                            case 4:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#86C9DE";
+                                break;
+                            case 5:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#F4D06B";
+                                break;
+                            case 0:
+                                document.getElementById({{forloop.counter}}).style.backgroundColor = "#56D3A2";
+                                break;
+                            default:
+                                break;
+                        }
+                    </script>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

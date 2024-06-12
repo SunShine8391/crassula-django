@@ -1,0 +1,248 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}
+    Backoffice, interfaces and mobile apps for your Banking-as-a-Service
+{% endblock %}
+
+{% block seo_description %}
+    Launch a complete Banking product with reliable financial services,
+    Operations-as-a-Service (OaaS) or Cards-as-a-Service (CaaS) in weeks, not months.
+{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Challenger Banks Solution"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden py-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container py-5">
+            <div class="row align-items-center flex-lg-nowrap">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 584px;">
+                        <h1 class="display-5 pb-lg-3 text-light">Backoffice, interfaces and mobile apps for your
+                            Banking-as-a-Service <span class="text-primary">(BaaS)</span> of choice</h1>
+                        <p class="fs-lg mb-lg-5 mb-4 pb-2 me-lg-5 pe-lg-2 text-light opacity-70">A complete
+                            out-of-the-box White Label solution that provides you with a powerful software for launching
+                            your digital bank. Focus on growing your business while Crassula will take care of the
+                            rest.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent rounded-pill">
+                            Get in touch
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="parallax parallax-hero mt-lg-4 mt-5">
+                    <div class="parallax-layer" data-depth="0.05">
+                        <img src="{% static 'images/solutions/hero/01.png' %}" width="1180" alt="Layer">
+                    </div>
+                    <div class="parallax-layer zindex-2" data-depth="0.1">
+                        <img src="{% static 'images/solutions/hero/02.png' %}" alt="Layer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features (carousel on screens < 1100px) -->
+    <section class="container mt-md-2 my-lg-5 my-3 py-5">
+        <div class="swiper pt-2 mx-n2 text-sm-start text-center" data-swiper-options='{
+          "slidesPerView": 1,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true,
+            "spaceBetween": 24
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2,
+              "spaceBetween": 24
+            },
+            "992": {
+              "slidesPerView": 3,
+              "spaceBetween": 24
+            }
+          }
+        }'>
+            <div class="swiper-wrapper">
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div class="icon-box bg-primary mb-4">
+                        <i class="cri-rush"></i>
+                    </div>
+                    <h4 class="mb-2 pb-1">Speed</h4>
+                    <p class="mb-0 fs-lg">Launch a complete Banking product with reliable financial services,
+                        Operations-as-a-Service (OaaS) or Cards-as-a-Service (CaaS) in weeks, not months.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div class="icon-box bg-accent mb-4">
+                        <i class="cri-card-connection"></i>
+                    </div>
+                    <h4 class="mb-2 pb-1">Flexibility</h4>
+                    <p class="mb-0 fs-lg">Launch a complete Banking product with reliable financial services,
+                        Operations-as-a-Service (OaaS) or Cards-as-a-Service (CaaS) in weeks, not months.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div class="icon-box bg-secondary mb-4">
+                        <i class="cri-dollar"></i>
+                    </div>
+                    <h4 class="mb-2 pb-1">Cost-efficiency</h4>
+                    <p class="mb-0 fs-lg">Launch a complete Banking product with reliable financial services,
+                        Operations-as-a-Service (OaaS) or Cards-as-a-Service (CaaS) in weeks, not months.</p>
+                </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-lg-0 pt-sm-2 mt-lg-0 mt-5"></div>
+        </div>
+    </section>
+
+    <!-- What you can build with us -->
+    <section class="container mb-lg-5 mb-3 pb-5">
+        <div class="row gy-5 align-items-lg-center">
+            <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                <h2 class="h1">What you can build with us</h2>
+                <p class="mb-4 pb-2 fs-lg">Convenient client UI/UX interfaces: native Android and iOS apps as well as
+                    web interfaces. Convenient backoffice (CRM) for managing your private and business clients,
+                    transactions, reports, card issuing and fees. Robust compliance solutions with AML/KYC onboarding
+                    and financial monitoring tools accomplished with strong client authentication.</p>
+                <h3 class="h5 mb-3">With our infrastructure partners you can get:</h3>
+                <ul class="row row-cols-lg-2 row-cols-1 gy-2 list-unstyled fs-lg">
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        Visa and Mastercard card
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        Ledgers and virtual IBAN
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        Ultimate financial licensing
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        International transfers
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        Faster Payment
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        SEPA payments
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        FX
+                    </li>
+                    <li class="col d-flex align-items-start">
+                        <i class="bx bx-check me-2 fs-3 text-primary"></i>
+                        ACH
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                <div class="card border-0 bg-secondary">
+                    <div class="card-body">
+                        <img src="{% static 'images/solutions/illustration.png' %}" width="622" alt="Illustration" class="d-block mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to launch -->
+    <section class="container mb-lg-5 mb-3 pb-5">
+        <h2 class="h1 pb-3 text-center">How to launch with us</h2>
+        <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-sm-5 gy-4 position-relative text-center">
+
+            <!-- Line -->
+            <div class="d-lg-block d-none position-absolute start-50 w-100 translate-middle-x" style="max-width: 900px; height: 1px; top: 60px; background-image: url({% static 'images/solutions/stroke.svg' %});"></div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="mx-auto" style="max-width: 224px;">
+                    <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+                        <div class="icon-box icon-box-lg bg-white">
+                            <i class="cri-chat"></i>
+                        </div>
+                    </div>
+                    <h3 class="h5 mb-2 pb-1">Tell about your project</h3>
+                    <p class="mb-sm-0 fs-lg">We will support the most disruptive ideas!</p>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="mx-auto" style="max-width: 224px;">
+                    <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+                        <div class="icon-box icon-box-lg bg-white">
+                            <i class="cri-layer"></i>
+                        </div>
+                    </div>
+                    <h3 class="h5 mb-2 pb-1">Construct your product</h3>
+                    <p class="mb-sm-0 fs-lg">Mobile apps, web interfaces, payments and currencies - the way you see
+                        it.</p>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="mx-auto" style="max-width: 224px;">
+                    <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+                        <div class="icon-box icon-box-lg bg-white">
+                            <i class="cri-milestone"></i>
+                        </div>
+                    </div>
+                    <h3 class="h5 mb-2 pb-1">Onboarding</h3>
+                    <p class="mb-sm-0 fs-lg">Takes out hassle to onboard you with preferred Banking-as-a-Platform
+                        partner.</p>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="mx-auto" style="max-width: 224px;">
+                    <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+                        <div class="icon-box icon-box-lg bg-primary">
+                            <i class="cri-shuttle"></i>
+                        </div>
+                    </div>
+                    <h3 class="h5 mb-2 pb-1">Launch!</h3>
+                    <p class="mb-sm-0 fs-lg">You are ready to go in a couple of weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

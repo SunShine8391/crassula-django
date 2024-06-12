@@ -1,0 +1,589 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Core Banking"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Core Banking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>Core banking can be defined as a banking service provided in a form of software that handles all of a bank's basic transactions and tracks all the movements and operations carried out by customers in their bank accounts.</p><p>The core banking system typically includes deposits, loans, credit processing, payments, and transaction accounts available across multiple channels.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What exactly is Crassula platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are a technology provider, delivering you both back-end and front-end banking solutions in web and mobile interfaces for merchant payments and banking products."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to launch products with Crassula?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>With Crassula White Label software your business will get a fully branded Banking solution in less than 2 weeks.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "Who is Crassula Core Banking solution aimed for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We mostly work with Resellers, Banks, FinTech Startups, FinTech companies, and Holding Structures."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are the main benefits of working with Crassula?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"<ul><li>Fast integration time if you choose service providers from Crassula’s list. The entire time to market process will take only up to 2 weeks in case the product uses already existing integrations designed by our service providers.</li><li>Crassula provides the back-end (the Admin panel) and also the front-end (Web interface & Mobile application architecture designed by our experts).</li><li>You access round-the-clock banking anytime and from anywhere through a single real-time data center.</li><li>You can open accounts for your clients with unique crypto addresses, allow them to exchange fiat for crypto, make crypto transfers, invest in digital assets, and issue cards for private and business clients. In simple words, you can run your crypto bank.</li><li>You get to use a completely white labeled and adjustable solution tailored to personal preferences and technology needs.</li><li>You benefit in multiple ways. Among the primary perks above you receive process standardization, customer retention, improved documents management, robust safety, and compliance process.</li></ul>"}
+        }, {
+        "@type": "Question",
+        "name": "What is the Crassula pricing model",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"We provide core banking services based on the SaaS subscription-based pricing model."}
+        }, {
+        "@type": "Question",
+        "name": "Does Crassula sell Core banking source code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"No, Crassula does not sell core banking source code. Our cloud-native model is based on the SaaS model."}
+        }, {
+        "@type": "Question",
+        "name": "Why does my business need Crassula’s Core Banking Technology?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"<p>Nowadays, robust core banking Technology is a must for the survival and growth of any organization that strives to be digital-first in the banking industry also.</p><p>Whether you are looking for next generation core banking systems or you need to embed FinTech services into your existing product, you can rely on Crassula's fully branded Banking-as-a-Service Core Banking software. It supports all daily open banking products that can be adapted to your business needs.</p><h2>Crassula White Label Banking will help you:</h2><ul><li>To meet the dynamically changing market & customer needs.</li><li>To get holistic client information for credit checks and lending.</li><li>To improve and simplify banking processes so that your team can focus on sales and marketing instead.</li><li>To streamline costs and resources.</li><li>To get to market with new products much faster.</li><li>To attract the potential for revenue-driving partnerships.</li></ul>"}
+        }]
+    }
+    </script>
+{% endblock %}
+
+{% block seo_title %}Fulfill your Digital Banking Ambitions With Our Core Banking{% endblock %}
+{% block seo_description %}Seeking cost-effective ways to operate your financial institution more efficiently or start
+    your banking business from scratch with a customizable progressive system?{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Core Banking</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Seeking cost-effective ways to operate your
+                            financial institution more efficiently or start your banking business from scratch with a
+                            customizable progressive system? With us, your desirable fully-branded banking solution will
+                            be launched in less than a week.</p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>Fast and agile Core banking solution for your future
+                                    bank</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>Wide banking functionality</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Redefine the beauty of core banking</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Core Banking platform powered with unique technology for
+                                    businesses of all types</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Fast and agile Core banking solution for your future bank -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">Fast and agile Core banking solution for your future bank</h2>
+                    <p class="mb-4 pb-2 fs-lg">In the ever-changing banking ecosystem, delivering a unique banking
+                        experience that offers customers great convenience and also guarantees safety is an absolute
+                        necessity. Crassula&apos;s bouquet of services aligned to core banking is developed to do just
+                        that.</p>
+                    <ul class="mb-0 ps-3 fs-lg">
+                        <li class="mt-3">
+                            <h5 class="mb-3">Access banking through multiple channels</h5>
+                            <p class="mt-3 mb-0 ms-n3">Manage all aspects of interaction with your customers across all
+                                the integrated channels in a matter of seconds, not hours.</p>
+                        </li>
+                        <li class="mt-3">
+                            <h5 class="mb-3">Offer a wide array of products and services</h5>
+                            <p class="mt-3 mb-0 ms-n3">Quickly adapt to new market patterns and deliver top-notch
+                                financial services that the customers will choose once and for life.</p>
+                        </li>
+                        <li class="mt-3">
+                            <h5 class="mb-3">Open new revenue opportunities</h5>
+                            <p class="mt-3 mb-0 ms-n3">Cut down on the infrastructural and operational costs and wisely
+                                invest the money into your business.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' %}
+
+                <!-- Wide banking functionality -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Wide banking functionality</h2>
+                    <p class="mb-4 pb-2 fs-lg">We&apos;ve built a modern cloud-based core banking technology
+                        encompassing extended functional coverage that helps banks scale new heights, augment
+                        efficiency, deliver flexible customer experience, and gain customer loyalty.</p>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-account"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Multi-currency accounts</h3>
+                        </div>
+                        <p class="mt-2 mb-0">Multi-currency accounts are becoming more popular among start-up owners and
+                            merchants. It&apos;s much faster and less cumbersome than setting up an international bank
+                            account that requires a pile of different to be prepared and approved.</p>
+                        <p class="mt-2 mb-0">Many businesses opt to use multi-currency accounts because they can offer
+                            numerous services and accept major global currencies in a single account.</p>
+                    </div>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-card-connection"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Virtual IBAN integration</h3>
+                        </div>
+                        <p class="mt-2 mb-0">Virtual IBANs are praised by our customers as it unlocks cross-border
+                            payments. Anyone can use it to send and receive payments from customers and clients in
+                            multiple jurisdictions.</p>
+                        <p class="mt-2 mb-0">There&apos;s no need for a physical presence all around the globe. You can
+                            efficiently grow your business and offer a local banking experience remotely, regardless of
+                            where you are based in the world.</p>
+                    </div>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-transfer"></i>
+                            </div>
+                            <h3 class="h5 mb-0">International transfers</h3>
+                        </div>
+                        <p class="mt-2 mb-0">Sending money abroad is easy, transparent, and reliable — no hidden fees,
+                            no hassle, and no long processing time. With Crassula, your customers will be able to
+                            facilitate international payments.</p>
+                        <p class="mt-2 mb-0">They will choose from a vast selection of currencies and make international
+                            transfers at the real market exchange rate in just a few clicks at the comfort of your
+                            app.</p>
+                    </div>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-card"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Instant SEPA &amp; SEPA credit transfers</h3>
+                        </div>
+                        <p class="mt-2 mb-0">The international payments process is simplified thanks to SEPA. The SEPA
+                            Credit Transfer is a euro transaction where both the sender and receiver are registered with
+                            banks located in the SEPA area.</p>
+                        <p class="mt-2 mb-0">Instant SEPA is a payment scheme in euro following the same principle that
+                            is executed in a matter of seconds.</p>
+                    </div>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-connection"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Currency exchange</h3>
+                        </div>
+                        <p class="mt-2 mb-0">The currency exchange functionality provides an automated currency
+                            conversion service via API. You can add one more mean of payment for your customers and
+                            diversify your portfolio.</p>
+                        <p class="mt-2 mb-0">Your customers can make currency exchange transactions and easily switch
+                            currencies in your branded web banking or mobile banking apps. Crassula&apos;s currency
+                            exchange providers and integrations will ensure the best rates and liquidity.</p>
+                    </div>
+
+                    <!-- Feature item -->
+                    <div class="mt-4 pt-2 fs-lg">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box icon-box-sm bg-primary me-3">
+                                <i class="cri-cards"></i>
+                            </div>
+                            <h3 class="h5 mb-0">Card issuing</h3>
+                        </div>
+                        <p class="mt-2 mb-0">Payment cards are a keystone to a successful customer&apos;s financial
+                            experience, which is why more and more businesses, financial institutions, and fintechs are
+                            considering issuing their own.</p>
+                        <p class="mt-2 mb-0">Crassula can provide your clients with the opportunity to spend their money
+                            and make purchases with fully branded physical or virtual payment cards.</p>
+                    </div>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Redefine the beauty of core banking -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4 pb-2">Redefine the beauty of core banking</h2>
+
+                    <!-- Features grid -->
+                    <div class="row row-cols-sm-2 row-cols-1 gy-4">
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-check fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Complete product</h4>
+                            <p class="mt-2 mb-0 fs-lg">Get a ready-to-launch solution with beautiful web UI, iOS,
+                                Android mobile apps, administrative panels, APIs, and much more.</p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-rush fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Speed</h4>
+                            <p class="mt-2 mb-0 fs-lg">Launch your core banking within 5 business days! Adding new
+                                functionalities to a new acquiring bank will take a few more weeks.</p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-contract fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Compliance</h4>
+                            <p class="mt-2 mb-0 fs-lg">Enable secure and compliant operations such as AML, KYC, and
+                                digital to meet all requirements set by regulators.</p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-layer fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Flexibility</h4>
+                            <p class="mt-2 mb-0 fs-lg">Customize your solution to support your USPs and specific
+                                business needs in a function-rich yet simple way with agile banking products.</p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-cloud fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Cloud Solution</h4>
+                            <p class="mt-2 mb-0 fs-lg">Focus on your business while we take care of technology – a
+                                simple, flexible, and lightweight solution running in a cloud.</p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col pb-sm-3">
+                            <i class="cri-wallet fs-2 text-dark mb-3"></i>
+                            <h4 class="h5 mb-2 pb-1">Cost-efficiency</h4>
+                            <p class="mt-2 mb-0 fs-lg">Open your own bank on a limited budget. We offer a while-labeled
+                                product for the price of hiring a software developer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Core Banking platform powered with unique technology for businesses of all types -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">Core Banking platform powered with unique technology for businesses of all
+                        types</h2>
+                    <ul class="mb-0 ps-3 fs-lg">
+                        <li class="mt-3 pt-2">
+                            <h5 class="mb-3">Banks</h5>
+                            <p class="mt-3 mb-0 ms-n3">Modernize the existing core banking legacy infrastructure and
+                                implement the latest technological products.</p>
+                        </li>
+                        <li class="mt-3 pt-2">
+                            <h5 class="mb-3">FinTech Startups</h5>
+                            <p class="mt-3 mb-0 ms-n3">Empower your financial technology start-up with ready-to-launch
+                                Core Banking Software instead of building fintech tools from the ground up.</p>
+                        </li>
+                        <li class="mt-3 pt-2">
+                            <h5 class="mb-3">FinTech Companies</h5>
+                            <p class="mt-3 mb-0 ms-n3">Open a new revenue stream for your FinTech business by adopting
+                                digital wallet products that can address the needs of your customers.</p>
+                        </li>
+                        <li class="mt-3 pt-2">
+                            <h5 class="mb-3">Holding Structures</h5>
+                            <p class="mt-3 mb-0 ms-n3">Build a cash flow management system for your business or group,
+                                launching your private Banking solution.</p>
+                        </li>
+                        <li class="mt-3 pt-2">
+                            <h5 class="mb-3">Resellers</h5>
+                            <p class="mt-3 mb-0 ms-n3">Embrace the industry transformation and strengthen your positions
+                                within the value chain by expanding the FinTech product line.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' %}
+
+                <!-- FAQ -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Core Banking?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Core banking can be defined as a banking service provided in a form
+                                        of software that handles all of a bank's basic transactions and tracks all the
+                                        movements and operations carried out by customers in their bank accounts.</p>
+                                    <p class="mb-0">The core banking system typically includes deposits, loans, credit
+                                        processing, payments, and transaction accounts available across multiple
+                                        channels.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What exactly is Crassula platform?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">We are a technology provider, delivering you both back-end and
+                                        front-end banking solutions in web and mobile interfaces for merchant payments
+                                        and banking products.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How long does it take to launch products with Crassula?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">With Crassula White Label software your business will get a fully
+                                        branded Banking solution in less than 2 weeks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Who is Crassula Core Banking solution aimed for?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">We mostly work with Resellers, Banks, FinTech Startups, FinTech
+                                        companies, and Holding Structures.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What are the main benefits of working with Crassula?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <ul class="ps-3">
+                                        <li class="mb-2">Fast integration time if you choose service providers from
+                                            Crassula’s list. The entire time to market process will take only up to 2
+                                            weeks in case the product uses already existing integrations designed by our
+                                            service providers.
+                                        </li>
+                                        <li class="mb-2">Crassula provides the back-end (the Admin panel) and also the
+                                            front-end (Web interface & Mobile application architecture designed by our
+                                            experts).
+                                        </li>
+                                        <li class="mb-2">You access round-the-clock banking anytime and from anywhere
+                                            through a single real-time data center.
+                                        </li>
+                                        <li class="mb-2">You can open accounts for your clients with unique crypto
+                                            addresses, allow them to exchange fiat for crypto, make crypto transfers,
+                                            invest in digital assets, and issue cards for private and business clients.
+                                            In simple words, you can run your crypto bank.
+                                        </li>
+                                        <li class="mb-2">You get to use a completely white labeled and adjustable
+                                            solution tailored to personal preferences and technology needs.
+                                        </li>
+                                        <li class="mb-2">You benefit in multiple ways. Among the primary perks above you
+                                            receive process standardization, customer retention, improved documents
+                                            management, robust safety, and compliance process.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What is the Crassula pricing model?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">We provide core banking services based on the SaaS
+                                        subscription-based pricing model.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Does Crassula sell Core banking source code?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseSeven" aria-labelledby="headingSeven" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">No, Crassula does not sell core banking source code. Our
+                                        cloud-native model is based on the SaaS model.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Why does my business need Crassula’s Core Banking Technology?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseEight" aria-labelledby="headingEight" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Nowadays, robust core banking Technology is a must for the survival
+                                        and growth of any organization that strives to be digital-first in the banking
+                                        industry also.</p>
+                                    <p class="mb-2">Whether you are looking for next generation core banking systems or
+                                        you need to embed FinTech services into your existing product, you can rely on
+                                        Crassula's fully branded Banking-as-a-Service Core Banking software. It supports
+                                        all daily open banking products that can be adapted to your business needs.</p>
+                                    <h6 class="mb-2 pt-1">Crassula White Label Banking will help you:</h6>
+                                    <ul class="mb-0 ps-3">
+                                        <li class="mb-2">To meet the dynamically changing market & customer needs.</li>
+                                        <li class="mb-2">To get holistic client information for credit checks and
+                                            lending.
+                                        </li>
+                                        <li class="mb-2">To improve and simplify banking processes so that your team can
+                                            focus on sales and marketing instead.
+                                        </li>
+                                        <li class="mb-2">To streamline costs and resources.</li>
+                                        <li class="mb-2">To get to market with new products much faster.</li>
+                                        <li class="mb-2">To attract the potential for revenue-driving partnerships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

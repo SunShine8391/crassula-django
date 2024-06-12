@@ -1,0 +1,206 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}{{ event.name }}: Book a meeting{% endblock %}
+
+{% block seo_description %}{{ event.description }}{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden py-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container py-5">
+            <div class="row gy-lg-0 gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="position-relative mx-lg-0 mx-auto pt-lg-5">
+                        <a href="{% url 'events:list' %}"
+                           class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                            <i class="bx bx-chevron-left me-1"></i>
+                            Back to upcoming events
+                        </a>
+                        <h1 class="display-3 mb-4 pt-lg-0 pt-3 pb-lg-2 text-light">{{ event.name }}</h1>
+                        <p class="fs-lg mb-4 pb-2 text-light opacity-70">{{ event.description }}</p>
+                        <ul class="list-unstyled d-inline-flex justify-content-lg-start justify-content-center align-items-start flex-wrap mb-0 fw-semibold text-nowrap text-white mt-lg-n4 mt-n3 ms-lg-n4 ms-n3">
+                            <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                <span class="d-inline-block me-1 fw-normal opacity-70">Date:</span>
+                                {{ event.date_start }}
+                                {% if event.status == 'live' %}
+                                    <span class="badge bg-danger ms-1">Live</span>
+                                {% elif event.status == 'upcoming' %}
+                                    <span class="badge bg-success ms-1">Upcoming</span>
+                                {% else %}
+                                    <span class="badge bg-secondary ms-1">Ended</span>
+                                {% endif %}
+                            </li>
+                            {% if event.location %}
+                                <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                    <span class="d-inline-block me-1 fw-normal opacity-70">Location:</span>
+                                    {{ event.location }}
+                                </li>
+                            {% endif %}
+                            {% if event.stand %}
+                                <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                    <span class="d-inline-block me-1 fw-normal opacity-70">Stand:</span>
+                                    {{ event.stand }}
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="card border-0 mx-auto p-5" style="max-width: 496px;">
+                        {#                        <form class="needs-validation card-body" method="post" novalidate>#}
+                        {#                            {% if form.errors %}#}
+                        {#                                {% for error in form.errors.as_data.values %}#}
+                        {#                                    {% for data in error.0 %}#}
+                        {#                                        {{ data }}#}
+                        {#                                    {% endfor %}#}
+                        {#                                {% endfor %}#}
+                        {#                            {% endif %}#}
+                        {#                            {% csrf_token %}#}
+                        {#                            {{ form.non_field_errors }}#}
+                        {#                            <h2 class="h4">Book a meeting with Crassula</h2>#}
+                        {#                            {{ form.name }}#}
+                        {#                            {{ form.name.errors }}#}
+                        {#                            <div class="invalid-feedback">Please, enter your name.</div>#}
+                        {#                            {{ form.email }}#}
+                        {#                            {% for error in form.email.errors %}#}
+                        {#                                <div class="bg-danger text-white fs-sm p-2 mt-1 rounded">{{ error }}</div>#}
+                        {#                            {% endfor %}#}
+                        {#                            <div class="invalid-feedback">Please, enter your email.</div>#}
+                        {#                            {{ form.phone }}#}
+                        {#                            {{ form.phone.errors }}#}
+                        {#                            <div class="invalid-feedback">Please, enter your phone.</div>#}
+                        {#                            {{ form.description }}#}
+                        {#                            {{ form.description.errors }}#}
+                        {#                            <div class="invalid-feedback">Please, enter some details.</div>#}
+                        {#                            <div class="form-check d-flex align-items-center mt-4">#}
+                        {#                                <input id="terms" type="checkbox" class="form-check-input flex-shrink-0 me-3" required>#}
+                        {#                                <label for="terms" class="form-check-label">I accept Crassula’s Privacy Policy and agree to#}
+                        {#                                    receive promotional messages from Crassula about its products and services.</label>#}
+                        {#                            </div>#}
+                        {#                            <button type="submit" class="btn btn-lg btn-warning rounded-pill w-100 mt-4">Book a meeting#}
+                        {#                                with Crassula#}
+                        {#                            </button>#}
+                        {#                        </form>#}
+                        <h2 class="h4">Book a meeting with Crassula</h2>
+                        <script charset="utf-8" type="text/javascript"
+                                src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "2931084",
+                                formId: "deb45aef-914d-4388-9960-e932acebf37b",
+                                onFormSubmit: function ($form) {
+                                    document.querySelector('input[name=Event]').value = "{{ event.name }}";
+                                }
+                            });
+
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row gy-5">
+            <aside class="col-lg-3 position-relative">
+                <div class="position-sticky" style="top: 96px;">
+                    {% if event.logo %}
+                        <img src="{{ event.logo.url }}" width="86" alt="Event" class="rounded mb-2">
+                    {% endif %}
+                    <ul class="list-unstyled fw-semibold text-dark mb-0">
+                        <li class="mt-2 pt-1">
+                            <span class="d-inline-block me-1 fw-normal text-muted">Date:</span>
+                            {{ event.date_start }}
+                            {% if event.status == 'live' %}
+                                <span class="badge bg-danger ms-1">Live</span>
+                            {% elif event.status == 'upcoming' %}
+                                <span class="badge bg-success ms-1">Upcoming</span>
+                            {% else %}
+                                <span class="badge bg-secondary ms-1">Ended</span>
+                            {% endif %}
+                        </li>
+                        {% if event.location %}
+                            <li class="mt-2 pt-1">
+                                <span class="d-inline-block me-1 fw-normal text-muted">Location:</span>
+                                {{ event.location }}
+                            </li>
+                        {% endif %}
+                        {% if event.stand %}
+                            <li class="mt-2 pt-1">
+                                <span class="d-inline-block me-1 fw-normal text-muted">Stand:</span>
+                                {{ event.stand }}
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </aside>
+            <div class="col-lg-9">
+                <h2 class="mb-3">About</h2>
+                {{ event.about_top|safe }}
+                {% if event.image_1 or event.image_2 %}
+                    <div class="row row-cols-sm-2 row-cols-1 g-sm-4 g-3 mb-3 py-4">
+                        {% if event.image_1 %}
+                            <div class="col">
+                                <div class="ratio ratio-1x1 bg-size-cover bg-position-center bg-repeat-0 rounded"
+                                     style="background-image: url({{ event.image_1.url }});"></div>
+                            </div>
+                        {% endif %}
+                        {% if event.image_2 %}
+                            <div class="col">
+                                <div class="ratio ratio-1x1 bg-size-cover bg-position-center bg-repeat-0 rounded"
+                                     style="background-image: url({{ event.image_2.url }});"></div>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {{ event.about_bottom|safe }}
+                <div class="mt-4 pt-3">
+                    {% if event.members.all.exists %}
+                        <h2 class="mb-4 pb-2">Hosted by</h2>
+                        <div class="row row-cols-md-3 row-cols-1 g-4">
+                            {% for member in event.members.all %}
+                                <div class="col">
+                                    <div class="d-flex align-items-center">
+                                        {% if member.photo %}
+                                            <img src="{{ member.photo.url }}" width="86" alt="Avatar"
+                                                 class="rounded-circle">
+                                        {% endif %}
+                                        <div class="ms-3">
+                                            <h6 class="mb-1">{{ member.full_name }}</h6>
+                                            <span>{{ member.title }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="container mb-lg-5 mb-3 pb-5">
+        <div class="card border-0 bg-position-center bg-size-cover bg-repeat-0 bg-dark text-light">
+            <div class="card-body mx-auto py-5 text-center" style="max-width: 624px;">
+                <h2 class="р1 mb-2 pb-1 text-light">Book a meeting with Crassula</h2>
+                <p class="mb-4 opacity-70">Meet Crassula {% if event.stand %}at stand {{ event.stand }}{% endif %} and
+                    discuss your next banking
+                    project</p>
+                <a href="#" class="btn btn-lg btn-accent">
+                    Book a meeting
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

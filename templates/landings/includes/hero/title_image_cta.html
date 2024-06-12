@@ -1,0 +1,40 @@
+{% load static %}
+
+<section class="dark-mode bg-dark bg-size-cover bg-repeat-0 bg-position-center position-relative overflow-hidden py-5 mb-4" style="background-image: url({% static 'images/landings/includes/hero/hero-bg.jpg' %});">
+    <div class="container position-relative zindex-2 pt-5 pb-md-2 pb-lg-4 pb-xl-5">
+        <div class="row pt-3 pb-2 py-md-4">
+
+            <!-- Text -->
+            <div class="col-xl-5 col-md-6 pt-lg-5 text-center text-md-start mb-4 mb-md-0">
+                <h1 class="display-4 pb-2 pb-sm-3">Create a <br> <span class="text-gradient-primary">digital bank</span> <br> in a matter of days</h1>
+                <p class="fs-lg d-md-none d-xl-block pb-2 pb-md-0 mb-4 mb-md-5">Whether you are launching your own banking, e-wallet or you want to seamlessly embed FinTech solutions to your product, Crassula Banking will get you covered.</p>
+                <div class="d-flex justify-content-center justify-content-md-start pb-2 pt-lg-2 pt-xl-0">
+                    <a href="{% url 'boarding:request_demo' %}" class="btn btn-warning rounded-pill shadow-warning btn-lg mt-4">Request demo</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start text-start pt-4 pt-lg-5 mt-xxl-5">
+                    <div class="d-flex me-3">
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle" style="width: 52px; height: 52px;">
+                            <img src="{% static 'images/integrations/logo/railsbank.png' %}" class="rounded-circle" width="48" alt="railsbank">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
+                            <img src="{% static 'images/integrations/logo/decta.jpg' %}" class="rounded-circle" width="48" alt="Decta">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 52px; height: 52px;">
+                            <img src="{% static 'images/integrations/logo/clearbank.png.webp' %}" class="rounded-circle" width="48" alt="Clear Bank">
+                        </div>
+                    </div>
+                    <div class="text-light"><strong>150+</strong> companies already with us</div>
+                </div>
+            </div>
+
+            <!-- Parallax gfx -->
+            <div class="col-xl-7 col-md-6 d-md-flex justify-content-end">
+                <div class="parallax mx-auto ms-md-0 me-md-n5" style="max-width: 675px; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                    <div class="parallax-layer zindex-2" data-depth="0.5" style="transform: translate3d(2px, -6.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                        <img src="{% static 'images/devices/macbook/light/macbook_with_p.png' %}" alt="Macbook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

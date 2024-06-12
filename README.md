@@ -1,1 +1,0 @@
-# crassula-django

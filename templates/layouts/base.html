@@ -1,0 +1,228 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block seo_title %}Digital bank in a matter of days{% endblock %} | Crassula</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% block seo_description %}Whether you are launching your own Neobank, e-wallet or you would like to seamlessly embed FinTech solutions to your product, Crassula White Label Banking will get you covered.{% endblock %}">
+    <meta name="author" content="Crassula">
+
+    <!-- Validation -->
+    <meta name="seznam-wmt" content="Sd28iwMDOMn71DVoJdWjqgwzAGJKDp2T"/>
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/favicon/safari-pinned-tab.svg' %}" color="#56d3a2">
+    <link rel="shortcut icon" href="{% static 'images/favicon/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="{% static 'images/favicon/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="{% static '/theme/v5/vendor/vanilla-cookieconsent/dist/cookieconsent.css' %}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/vendor/boxicons/css/boxicons.min.css' %}">
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/vendor/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/vendor/img-comparison-slider/dist/styles.css' %}">
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/vendor/aos/dist/aos.css' %}">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/css/theme.min.css' %}">
+
+    <!-- Canonical URL -->
+    {% with url_name=request.resolver_match.url_name %}
+        {% if url_name == 'home' %}
+            <link rel="canonical" href="https://crassula.io/"/>
+        {% else %}
+            <link rel="canonical" href="https://crassula.io{{ request.path }}"/>
+        {% endif %}
+    {% endwith %}
+
+    {% block structured_data %}{% endblock %}
+
+    <!-- Hero section styles -->
+    <style>
+        @media (min-width: 1199.98px) {
+            .parallax-hero {
+                margin-left: 96px;
+            }
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <link rel='dns-prefetch' href='//www.googletagmanager.com'/>
+
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-554TKSZ');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-554TKSZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+
+    {% block navbar %}
+        {% include 'layouts/includes/navbar.html' %}
+    {% endblock %}
+
+    {% block content %}
+        <div class="container p-5 mt-5">
+            <div class="bg-danger text-center p-3 rounded text-white">There is no content yet!</div>
+        </div>
+    {% endblock %}
+
+</main>
+
+{% include 'layouts/includes/footer.html' %}
+
+<!-- Vendor Scripts -->
+<script defer src="{% static 'theme/v5/vendor/vanilla-cookieconsent/dist/cookieconsent.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/parallax-js/dist/parallax.min.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/img-comparison-slider/dist/index.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/aos/dist/aos.js' %}"></script>
+<script src="{% static 'theme/v5/vendor/rellax/rellax.min.js' %}"></script>
+
+
+<!-- Main Theme Script -->
+<script src="{% static 'theme/v5/js/theme.min.js' %}"></script>
+
+<!-- Cookies usage plugin settings -->
+<!-- Based on https://github.com/orestbida/cookieconsent -->
+<script>
+    window.addEventListener('load', function () {
+
+        // obtain plugin
+        var cc = initCookieConsent();
+
+        // run plugin with your configuration
+        cc.run({
+            current_lang: 'en',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+            gui_options: {
+                consent_modal: {
+                    layout: 'box',                 // box/cloud/bar
+                    position: 'bottom right',      // bottom/middle/top + left/right/center
+                    transition: 'slide',           // zoom/slide
+                    swap_buttons: false            // enable to invert buttons
+                },
+                settings_modal: {
+                    layout: 'box',                 // box/bar
+                    // position: 'left',           // left/right
+                    transition: 'slide'            // zoom/slide
+                }
+            },
+            languages: {
+                'en': {
+                    consent_modal: {
+                        title: 'Cookie Policy',
+                        description: 'We use <button type="button" data-cc="c-settings" class="cc-link">cookies</button> to ensure the accessibility and functioning of our services, to analyze our visitors behavior and to personalize their experience.',
+                        primary_btn: {
+                            text: 'Accept all',
+                            role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Decline',
+                            role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Cookie preferences',
+                        save_settings_btn: 'Save settings',
+                        accept_all_btn: 'Accept all',
+                        reject_all_btn: 'Reject all',
+                        close_btn_label: 'Close',
+                        cookie_table_headers: [
+                            {col1: 'Name'},
+                            {col2: 'Domain'},
+                            {col3: 'Expiration'},
+                            {col4: 'Description'}
+                        ],
+                        blocks: [
+                            {
+                                title: 'Cookie usage 📢',
+                                description: 'Crassula use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="{% url 'pages:privacy' %}" class="cc-link">privacy policy</a>.'
+                            }, {
+                                title: 'Strictly necessary cookies',
+                                description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Performance and Analytics cookies',
+                                description: 'These cookies allow the website to remember the choices you have made in the past',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            }, {
+                                title: 'Advertisement and Targeting cookies',
+                                description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
+                                toggle: {
+                                    value: 'targeting',
+                                    enabled: false,
+                                    readonly: false
+                                }
+                            }, {
+                                title: 'More information',
+                                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="{% url 'landings:company' %}">contact us</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

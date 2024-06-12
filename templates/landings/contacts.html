@@ -1,0 +1,171 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}
+    Contact Crassula for discovering opportunities to work together
+{% endblock %}
+
+{% block seo_description %}
+    Need a Core Banking System for building outstanding mobile applications, web interfaces or embedded banking
+    solutions? Have something unique in mind?
+{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contacts"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden py-5 mb-lg-5 mb-3 bg-dark">
+        <div class="container py-5">
+            <div class="row align-items-center flex-lg-nowrap py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto pt-2" style="max-width: 640px;">
+                        <h1 class="display-5 pb-lg-3 text-light">Build next-generation FinTech products with us</h1>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-warning rounded-pill">
+                            Become a partner
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container mb-lg-5 mb-sm-3 py-5">
+        <div class="swiper" data-swiper-options='{
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "0": {
+              "slidesPerView": 1,
+              "spaceBetween": 24
+            },
+            "500": {
+              "slidesPerView": 2,
+              "spaceBetween": 24
+            },
+            "992": {
+              "slidesPerView": 3,
+              "spaceBetween": 24
+            }
+          }
+        }'>
+            <div class="swiper-wrapper">
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div style="max-width: 400px;">
+                        <div class="icon-box mb-4">
+                            <i class="cri-bullhorn"></i>
+                        </div>
+                        <h4 class="mb-2 pb-1">Affiliate partners</h4>
+                        <p class="mb-0 fs-lg">Crassula offers outstanding partnership programs for companies and
+                            individual agents that help to open and running businesses, choosing technological partners
+                            and getting licensed. You will love to offer our products, let's grow together!</p>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div style="max-width: 400px;">
+                        <div class="icon-box bg-accent mb-4">
+                            <i class="cri-setting"></i>
+                        </div>
+                        <h4 class="mb-2 pb-1">Technological partners</h4>
+                        <p class="mb-0 fs-lg">Need a Core Banking System for building outstanding mobile applications,
+                            web interfaces or embedded banking solutions? Have something unique in mind? Contact
+                            Crassula for discovering opportunities to work together.</p>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide">
+                    <div style="max-width: 400px;">
+                        <div class="icon-box bg-secondary mb-4">
+                            <i class="cri-layer"></i>
+                        </div>
+                        <h4 class="mb-2 pb-1">Infrastructure partners</h4>
+                        <p class="mb-0 fs-lg">Call for card issuers, money transfer service providers, loyalty systems,
+                            licensing partners and any companies that would like to offer their infrastructure through
+                            Crassula platform.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative d-lg-none d-flex mt-5"></div>
+        </div>
+    </section>
+
+    <!-- Brands (carousel on screens < 1100px) -->
+    {% include 'landings/includes/brands/default.html' %}
+
+    <!-- Contact -->
+    <section class="container mb-lg-5 pb-4 pb-5">
+        <div class="row gy-4 align-items-md-center">
+            <div class="col-sm-6">
+                <img src="{% static 'images/contact/illustration.jpg' %}" alt="Illustration" class="rounded">
+            </div>
+            <div class="col-md-5 col-6 offset-md-1">
+                <h2 class="h1 mb-md-4">Contact us</h2>
+                <h5 class="mt-md-4 mt-3 mb-2 pt-sm-2">Business inquiries</h5>
+                <a href="mailto:business@crassula.io" class="nav-link nav-muted fs-lg">business@crassula.io</a>
+                <h5 class="mt-md-4 mt-3 mb-2 pt-sm-2">Support</h5>
+                <a href="mailto:help@crassula.io" class="nav-link nav-muted fs-lg">help@crassula.io</a>
+                <h5 class="mt-md-4 mt-3 mb-2 pt-sm-2">Media inquiries</h5>
+                <a href="mailto:pr@crassula.io" class="nav-link nav-muted fs-lg">pr@crassula.io</a>
+                <div class="mt-4 pt-md-3">
+                    <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent rounded-pill">
+                        Request a demo
+                        <i class="bx bx-chevron-right ms-1 lead"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="container mb-lg-5 pb-4 pb-5">
+        <div class="card border-0 bg-secondary p-3">
+            <div class="card-body p-0 row g-0 align-items-center">
+                <div class="col-lg-6 p-sm-4 p-2">
+                    <p class="mb-0">On 16.09.2021 СRASSULA SIA has signed agreement No. SKV-L-2021/282 with Investment
+                        and Development Agency of Latvia (LIAA) for the project International competitiveness promotion
+                        which is co-financed by the European Regional Development Fund.</p>
+                </div>
+                <div class="col-lg-6 p-sm-4 p-2">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <img src="{% static 'images/contact/eu.png' %}" alt="EU">
+                        </div>
+                        <div class="col">
+                            <img src="{% static 'images/contact/ndp.png' %}" alt="NDP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

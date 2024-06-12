@@ -1,0 +1,147 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}
+    Company
+{% endblock %}
+
+{% block seo_description %}
+    Crassula is constantly developing, growing and improving. We rely on the features and integrations that are desired
+    and requested by our clients and their users - this helps Crassula to move and be a live ecosystem in an
+    always-changing environment.
+{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Company"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative mb-lg-5 pt-5 bg-dark">
+        <div class="position-relative container pt-5 zindex-5">
+            <div class="row align-items-center flex-lg-nowrap pt-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto pt-2" style="max-width: 640px;">
+                        <h1 class="display-5 text-light">Everything you want to know about our <span
+                                class="text-primary">people, principles and mission</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 align-items-end pt-4">
+                <div class="col-sm-8">
+                    <img src="{% static 'images/about/hero/01.jpg' %}" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <img src="{% static 'images/about/hero/02.jpg' %}" alt="Image">
+                </div>
+            </div>
+        </div>
+        <div style="height: 12.5rem;" class="position-absolute start-0 bottom-0 w-100 bg-white"></div>
+    </section>
+
+    <!-- Features -->
+    <section class="container mb-lg-5 mb-sm-3 py-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="h1 mb-lg-0 mb-5 pe-xl-5">People, principles and mission</h2>
+            </div>
+            <div class="col-lg-7 offset-lg-1 mt-n5">
+                <h3 class="h4 mt-lg-5 mt-4">Supporting launch, growth and development of FinTechs around the world</h3>
+                <p class="mb-0 fs-lg">We started with a simple idea - to provide the fast and easy yet product-rich
+                    technological core for launching FinTechs. Today, trusted by the industry leaders, we embrace
+                    security and connectivity, flexibility and convenience, delivering the world-class products to more
+                    than 5 million users.</p>
+                <h3 class="h4 mt-lg-5 mt-4">Always improving</h3>
+                <p class="mb-0 fs-lg">Crassula is constantly developing, growing and improving. We rely on the features
+                    and integrations that are desired and requested by our clients and their users - this helps Crassula
+                    to move and be a live ecosystem in an always-changing environment.</p>
+                <h3 class="h4 mt-lg-5 mt-4">People behind the code</h3>
+                <p class="mb-0 fs-lg">People are our greatest value. We run offices and remote teams, we embrace
+                    diversity and unity. Crassula is built on a culture of trust, support and innovation. We are all
+                    passionate about building next-generation FinTech products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crassula locations -->
+    <section class="container mb-lg-5 mb-4 pb-5">
+        <div class="d-flex align-items-center justify-content-between mb-md-4 mb-3 pb-3">
+            <h2 class="h1 mb-0">Crassula locations</h2>
+            <a href="{% url 'careers:main' %}" class="btn btn-accent rounded-pill ms-4 d-sm-inline-flex d-none">
+                Explore vacancies
+                <i class="bx bx-chevron-right ms-1 lead"></i>
+            </a>
+        </div>
+
+        <!-- Items grid -->
+        <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-sm-5 gy-4">
+
+            <!-- Item -->
+            <div class="col">
+                <img src="{% static 'images/about/location/01.jpg' %}" alt="Location image" class="rounded mb-3">
+                <h3 class="h4 mb-2 pb-1">London, UK</h3>
+                <p class="mb-0">
+                    CRASSULA LTD: 20-22 Wenlock Road,
+                    <br> London, England, N1 7GU
+                </p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <img src="{% static 'images/about/location/02.jpg' %}" alt="Location image" class="rounded mb-3">
+                <h3 class="h4 mb-2 pb-1">Tallinn, Estonia</h3>
+                <p class="mb-0">
+                    Cratech OÜ: Narva maantee 38,
+                    <br> 10120, Tallinn
+                </p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <img src="{% static 'images/about/location/03.jpg' %}" alt="Location image" class="rounded mb-3">
+                <h3 class="h4 mb-2 pb-1">Riga, Latvia</h3>
+                <p class="mb-0">
+                    CRASSULA SIA: Zigfrida Annas Meierovica bulvaris 16, Riga, LV-1050
+                </p>
+            </div>
+
+            <!-- Item -->
+            <div class="col">
+                <img src="{% static 'images/about/location/04.jpg' %}" alt="Location image" class="rounded mb-3">
+                <h3 class="h4 mb-2 pb-1">Limassol, Cyprus</h3>
+                <p class="mb-0">
+                    CRATECH LTD: Kimonos 2, 3095, Limassol, Cyprus
+                </p>
+            </div>
+        </div>
+        <a href="{% url 'careers:main' %}" class="btn btn-accent rounded-pill d-sm-none d-inline-flex w-100 mt-5">
+            Explore vacancies
+            <i class="bx bx-chevron-right ms-1 lead"></i>
+        </a>
+    </section>
+
+    <!-- Reviews -->
+    {% include 'landings/includes/case-studies/default.html' %}
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

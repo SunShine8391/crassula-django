@@ -1,0 +1,351 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden py-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container py-5">
+            <div class="row align-items-center flex-lg-nowrap">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 pb-lg-3 text-light">Create a <span class="text-primary">digital bank</span> in
+                        a matter of days</h1>
+                    <p class="fs-lg mb-4 pb-2 text-light opacity-70">Whether you are launching your own Neobank,
+                        e-wallet or you would like to seamlessly embed FinTech solutions to your product, Crassula White
+                        Label Banking will get you covered</p>
+                    <div class="mt-4 pt-4 pb-3 border-top border-light">
+                        <ul class="list-inline mt-n3 mb-0 ms-n4 pt-2 fs-lg text-light opacity-70">
+                            <li class="d-inline-flex align-items-start mt-3 ms-4">
+                                <i class="bx bx-radio-circle mt-2 me-2 fs-base text-primary"></i>
+                                Core Banking
+                            </li>
+                            <li class="d-inline-flex align-items-start mt-3 ms-4">
+                                <i class="bx bx-radio-circle mt-2 me-2 fs-base text-primary"></i>
+                                Mobile Banking
+                            </li>
+                            <li class="d-inline-flex align-items-start mt-3 ms-4">
+                                <i class="bx bx-radio-circle mt-2 me-2 fs-base text-primary"></i>
+                                Merchant Payments
+                            </li>
+                            <li class="d-inline-flex align-items-start mt-3 ms-4">
+                                <i class="bx bx-radio-circle mt-2 me-2 fs-base text-primary"></i>
+                                Crypto Exchange
+                            </li>
+                            <li class="d-inline-flex align-items-start mt-3 ms-4">
+                                <i class="bx bx-radio-circle mt-2 me-2 fs-base text-primary"></i>
+                                Card issuing
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent rounded-pill mt-3">
+                        Request demo
+                        <i class="bx bx-chevron-right ms-1 lead"></i>
+                    </a>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="parallax parallax-hero mt-lg-4 mt-5">
+                    <div class="parallax-layer" data-depth="0.05">
+                        <img src="{% static 'images/home/hero/hero1.png' %}" width="1180" alt="Crassula WEB Dashboard">
+                    </div>
+                    <div class="parallax-layer zindex-2" data-depth="0.1">
+                        <img src="{% static 'images/home/hero/hero2.png' %}" alt="Crassula Mobile Dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Crassula -->
+    <section class="container mb-5 pt-5 pb-lg-5 pb-md-3">
+        <h2 class="h1 mb-lg-5 mb-4 pb-md-3 pb-2 text-center">Why Crassula</h2>
+
+        <!--  -->
+        <div class="row gy-sm-5 gy-4">
+
+            <!-- Accordion -->
+            <div class="col-md-6 col-12 order-md-1 order-2">
+                <div class="accordion-alt me-lg-5 me-md-4 pe-md-2" id="accordionAbout">
+
+                    <!-- Item -->
+                    <div class="accordion-item mb-2">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-binded-content="#binded-item-1">
+                    <span class="accordion-trail">
+                      <span class="accordion-icon mb-2">
+                        <i class="cri-thunder"></i>
+                      </span>
+                    </span>
+                                <span class="accordion-title h4">Fast And Efficient</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">
+                                <div class="accordion-trail"></div>
+                                <div class="pb-md-5 pb-4 fs-lg">
+                                    Launch your own Neobank fast with ready-to-market Back Office, web and mobile apps.
+                                    With Crassula White Label Banking software you’ll get your project rolled out in 10
+                                    business days in a budget-friendly mode.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item mb-2">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-binded-content="#binded-item-2">
+                    <span class="accordion-trail">
+                      <span class="accordion-icon mb-2">
+                        <i class="cri-smartphone"></i>
+                      </span>
+                    </span>
+                                <span class="accordion-title h4">Beautiful Interfaces</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">
+                                <div class="accordion-trail"></div>
+                                <div class="pb-md-5 pb-4 fs-lg">
+                                    Customized with your color scheme, logos and brand style, get iOS, Android and Web
+                                    apps that look and feel like your own.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item mb-2">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-binded-content="#binded-item-3">
+                    <span class="accordion-trail">
+                      <span class="accordion-icon mb-2">
+                        <i class="cri-account"></i>
+                      </span>
+                    </span>
+                                <span class="accordion-title h4">Any Business Model</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">
+                                <div class="accordion-trail"></div>
+                                <div class="pb-md-5 pb-4 fs-lg">
+                                    Offer services to business and private customers, sell in ranges, build your own
+                                    BaaS offering. Crassula resolves heavy lifting for multiple business models so you
+                                    can focus on your growth.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item mb-2">
+                        <h3 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-binded-content="#binded-item-4">
+                    <span class="accordion-trail">
+                      <span class="accordion-icon mb-2">
+                        <i class="cri-connection"></i>
+                      </span>
+                    </span>
+                                <span class="accordion-title h4">60+ Service Integrations</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">
+                                <div class="accordion-trail"></div>
+                                <div class="pb-md-5 pb-4 fs-lg">
+                                    With an extensive set of service integrations, you can create a unique mix of
+                                    services across countries. Don&apos;t worry, platform is localized to over 15
+                                    languages..
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item mb-2">
+                        <h3 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-binded-content="#binded-item-5">
+                    <span class="accordion-trail">
+                      <span class="accordion-icon mb-2">
+                        <i class="cri-chapter"></i>
+                      </span>
+                    </span>
+                                <span class="accordion-title h4">White Label Banking Software</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">
+                                <div class="accordion-trail"></div>
+                                <div class="fs-lg">
+                                    Launching your own Digital Banking product has never been easier - with
+                                    Crassula software your business will get a fully branded Banking
+                                    product in weeks, not months.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Binded content -->
+            <div class="col-md-6 col-12 order-md-2 order-1 pb-sm-0 pb-2">
+                <div class="binded-content rounded" style="background-color: #f6f7f8;">
+                    <div id="binded-item-1" class="binded-item active">
+                        <img src="{% static 'images/home/about/new/01.png' %}" alt="Fast And Efficient">
+                    </div>
+                    <div id="binded-item-2" class="binded-item">
+                        <img src="{% static 'images/home/about/new/02.png' %}" alt="Beautiful Interfaces">
+                    </div>
+                    <div id="binded-item-3" class="binded-item">
+                        <img src="{% static 'images/home/about/new/03.png' %}" alt="Any Business Model">
+                    </div>
+                    <div id="binded-item-4" class="binded-item">
+                        <img src="{% static 'images/home/about/new/04.png' %}" alt="60+ Service Integrations">
+                    </div>
+                    <div id="binded-item-5" class="binded-item">
+                        <img src="{% static 'images/home/about/new/05.png' %}" alt="White Label Banking Software">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands (carousel on screens < 1100px) -->
+    {% include 'landings/includes/brands/default.html' %}
+
+    <!-- Software -->
+    <section class="bg-dark py-5">
+        <div class="container my-md-5 py-4">
+            <div class="mb-lg-5 mb-4 pb-2 mx-auto text-center" style="max-width: 856px;" data-aos="fade-up"
+                 data-aos-duration="600">
+                <h2 class="h1 text-white">White Label Banking Software</h2>
+                <p class="mb-0 fs-lg text-white opacity-70">Empower your financial technology start-up with
+                    ready-to-launch Core Banking Software instead of building fintech tools from the ground up</p>
+            </div>
+
+            <!-- Comparison slider -->
+            <div class="mb-lg-5 mb-4 mx-auto overflow-hidden"
+                 style="max-width: 1158px; border-radius: 1.25rem; border: 8px solid rgba(255, 255, 255, .15);"
+                 data-aos="fade-up" data-aos-duration="600">
+                <img-comparison-slider>
+                    <img slot="first" src="{% static 'images/home/software/02.jpg' %}" alt="Dak Mode">
+                    <img slot="second" src="{% static 'images/home/software/01.jpg' %}" alt="Light Mode">
+                    <div slot="handle" style="width: 36px;">
+                        <svg class="text-primary shadow-primary rounded-circle" width="36" height="36"
+                             xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 36 36">
+                            <g>
+                                <circle fill="currentColor" cx="18" cy="18" r="18"/>
+                            </g>
+                            <path fill="#fff"
+                                  d="M22.2,17.2h-8.3v-3.3L9.7,18l4.2,4.2v-3.3h8.3v3.3l4.2-4.2l-4.2-4.2V17.2z"/>
+                        </svg>
+                    </div>
+                </img-comparison-slider>
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent">
+                    Request demo
+                    <i class="bx bxs-chevron-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mobile Banking -->
+    <section class="mb-lg-5 mb-3 py-5 overflow-hidden">
+        <div class="container mt-md-5 mt-3 pt-4">
+            <h2 class="h1 mb-md-5 mb-4 text-center">Complete Suite Of Services</h2>
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6 col-12 order-lg-1 order-2">
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-right" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">Multi-currency accounts with IBANs</h5>
+                        <p class="mb-4">Open accounts to your customers in any currency, with IBANs or sort codes, for
+                            saving or spending, converting or receiving money.</p>
+                    </div>
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-right" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">Private and Business banking</h5>
+                        <p class="mb-4">Feature-rich and business-friendly, Crassula solutions were designed to support
+                            your business model.</p>
+                    </div>
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-right" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">Crypto accounts &amp; FX </h5>
+                        <p class="mb-4">Open accounts to your clients with unique crypto addresses, allow them to
+                            exchange fiat to crypto, make crypto transfers, invest in crypto, and much more.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 order-lg-2 order-1 mb-5">
+                    <div class="w-100 mx-auto position-relative parallax">
+                        <div class="parallax-layer zindex-5" data-depth="0.15">
+                            <img src="{% static 'images/home/mobile/01.png' %}" width="292" alt="Mockup">
+                        </div>
+                        <div class="parallax-layer zindex-4" data-depth="-0.15">
+                            <img src="{% static 'images/home/mobile/02.png' %}" width="320" alt="Mockup">
+                        </div>
+                        <img src="{% static 'images/home/mobile/shape.png' %}" width="500" alt="Shape"
+                             class="position-absolute top-50 start-50 translate-middle">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 order-lg-3 order-3">
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-left" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">Card issuing</h5>
+                        <p class="mb-4">Issue and manage virtual and plastic cards, process transactions, set up fees,
+                            with Crassula Card Management module.</p>
+                    </div>
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-left" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">SEPA &amp; International transfers </h5>
+                        <p class="mb-4">
+                            Build local, pan-European or international offering - you choose the markets to grow.
+                        </p>
+                    </div>
+                    <div class="mb-lg-5 mb-sm-1 pb-2" data-aos="fade-left" data-aos-duration="600">
+                        <h5 class="mb-2 pb-sm-1">Onboarding & Verification</h5>
+                        <p class="mb-4">KYC & KYB Module allows you to make automated client checks with hassle-free
+                            experience, store information about your clients securely and communicate with them through
+                            the platform.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pt-4 text-center">
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent">
+                    Request demo
+                    <i class="bx bxs-chevron-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reviews -->
+    {#    {% include 'landings/includes/reviews/default.html' %}#}
+    {% include 'landings/includes/case-studies/default.html' %}
+
+    <!-- CTA -->
+    <section class="container mb-lg-5 mb-4">
+        <div class="card border-0 bg-position-center bg-size-cover bg-repeat-0 bg-dark text-light">
+            <div class="card-body my-lg-5 my-3 mx-auto py-5 text-center" style="max-width: 624px;">
+                <h2 class="display-4 mb-4 pb-2 text-light">Create a digital bank in a matter of days</h2>
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent mb-5">
+                    Request demo
+                    <i class="bx bxs-chevron-right ms-1"></i>
+                </a>
+                <div>
+                    <img src="{% static 'images/home/cta/logos.png' %}" width="104" alt="Companies" class="mb-2">
+                    <div>
+                        <b class="fs-lg">150+</b>
+                        <span class="opacity-70">companies already with us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

@@ -1,0 +1,235 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Request Demo | Crassula</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="truegrowth.io">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/favicon/safari-pinned-tab.svg' %}" color="#56d3a2">
+    <link rel="shortcut icon" href="{% static 'images/favicon/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="{% static 'images/favicon/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/vendor/boxicons/css/boxicons.min.css' %}">
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{% static '/theme/v5/css/theme.min.css' %}">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+      <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-554TKSZ');</script>
+<!-- End Google Tag Manager -->
+
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-554TKSZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <section class="container-fluid px-0 overflow-hidden">
+        <div class="row g-0">
+
+          <!--  -->
+          <div class="col-xl-5 col-lg-6 position-lg-fixed top-0 start-0">
+            <div class="request-screen dark-mode position-relative bg-dark d-flex p-sm-5 p-4">
+              <div class="mx-auto p-3">
+                <span class="d-inline-block">
+                  <img src="{% static 'images/home/logo-light.svg' %}" width="196" alt="Crassula" class="d-sm-block d-none">
+                  <img src="{% static 'images/home/logo-light.svg' %}" width="130" alt="Crassula" class="d-sm-none d-block">
+                </span>
+                <div class="pt-xl-5 pt-4">
+                  <h1 class="display-5 mb-4 pb-md-2 mt-md-4 pt-md-2">Create a <span class="text-primary">digital bank</span> in a matter of days</h1>
+                  <p class="mb-4 pb-2 fs-lg">“Crassula's product allowed us to quickly launch a payment business. A huge advantage is the availability of integrations with many banks and acquirers, which makes it possible to quickly connect new payment methods for customers.”</p>
+                  <div class="d-sm-flex align-items-center mt-n3 ms-n4">
+                    <span class="d-inline-block mt-3 ms-4">
+                      <img src="{% static 'images/request-demo/safe-currency.svg' %}" alt="Safe Currency Logo">
+                    </span>
+                    <span class="d-sm-inline-block d-none mt-3 ms-4">
+                      <img src="{% static 'images/request-demo/paysend.svg' %}" alt="PaySend Logo">
+                    </span>
+                    <span class="d-sm-inline-block d-none mt-3 ms-4">
+                      <img src="{% static 'images/request-demo/clearbank.svg' %}" alt="Clear.Bank Logo">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="request-shape d-lg-block d-none position-absolute start-50 translate-middle-x bg-position-bottom-center bg-size-contain bg-repeat-0" style="background-image: url({% static 'images/request-demo/shape.svg' %});"></div>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="col-xl-5 col-lg-6 offset-lg-6 p-sm-5 p-4">
+            <div class="p-lg-0 p-3">
+              <h2 class="h1 mb-2 pb-1">Request demo</h2>
+              <p class="mb-4 pb-2">Please fill in this form to help us understand and address your needs.</p>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "2931084",
+                  formId: "4b584ca3-d55f-4f31-979a-5b7e9f3b30f0"
+                });
+              </script>
+              <ul class="nav mb-0 ms-n4 pt-md-5 pt-3">
+                <li class="nav-item ms-4 me-2 mt-2">
+                  <a href="{% url 'pages:privacy' %}" class="nav-link p-0 fw-normal">
+                    <u>Privacy Policy</u>
+                  </a>
+                </li>
+                <li class="nav-item ms-4 me-2 mt-2">
+                  <a href="{% url 'pages:terms' %}" class="nav-link p-0 fw-normal">
+                    <u>Terms of Use Data Protection Policy</u>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="{% static 'theme/v5/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'theme/v5/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js' %}"></script>
+
+    <!-- Main Theme Script -->
+    <script src="{% static 'theme/v5/js/theme.min.js' %}"></script>
+  </body>
+</html>

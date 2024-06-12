@@ -1,0 +1,244 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Merchant Management Software"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+
+    </script>
+{% endblock %}
+
+{% block seo_title %}White Label Merchant Management Software (MMS){% endblock %}
+{% block seo_description %}MMS or Merchant management software is a web-designed service that provides instant access to
+    the transactions data, surveys transaction history, tracks inventory, evaluates risks, and generates
+    settlements.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Merchant Management Software</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            MMS is a web-designed and mobile service that provides instant access to the transactions
+                            data.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What is Merchant Management Software?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>Key benefits of using a merchant management software</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>The rising demand for MMC</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Conclusion</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">To keep up with the intensifying competitive pressures in the market,
+                        most businesses need to have a digital online presence. Handling an excellent digital system
+                        requires two handy instruments: software and online programs.</p>
+                    <p class="mb-4 pb-2 fs-lg">A particularly useful tool is merchant management software that
+                        effectively manages merchant functioning, facing difficulties, and enhances finance management,
+                        analyzing client’s behavior with direct data acquisition.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is Merchant Management Software? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is Merchant Management Software?</h2>
+                    <p class="mb-4 pb-2 fs-lg">MMS or Merchant management software is a web-designed service that
+                        provides instant access to the transactions data, surveys transaction history, tracks inventory,
+                        evaluates risks, and generates settlements.</p>
+                    <p class="mb-4 pb-2 fs-lg">For merchants, MMS is essential as it helps classify information with
+                        customer’s info, transaction date, and other details. With the help of such software, merchants
+                        are provided with the opportunity of examining clients’ actions and as a result supplying a
+                        better service.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- Key benefits of using a merchant management software -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Key benefits of using a merchant management software</h2>
+                    <p class="mb-4 pb-2 fs-lg">The merchant management system simplifies critical processes required to
+                        manage merchants of all types and sizes swiftly and efficiently.</p>
+
+                    <h3 class="h4 mb-3">Improve onboarding team productivity</h3>
+                    <p class="mb-4 pb-2 fs-lg">Merchant Management software is an excellent way of elevating teamwork
+                        efficiency and helping them to overcome the difficulties associated with teamwork:</p>
+
+                    <ul>
+                        <li>It assists merchant agents in managing the merchant’s timeliness.</li>
+                        <li>It enables agents spotting merchants in a close area.</li>
+                        <li>It helps to choose merchants depending on various specified criteria.</li>
+                    </ul>
+
+                    <h3 class="h4 mb-3">Rapid verification and merchant onboarding</h3>
+                    <p class="mb-4 pb-2 fs-lg">MMS is ideal for verifying and processing new merchants. Uploading
+                        required miscellaneous documents for additional merchants works effortlessly and with quick
+                        verification. The beauty of the MMS technology is that you can obtain new merchants’ profiles
+                        and personalize every merchant’s demands through it.</p>
+
+                    <h3 class="h4 mb-3">Analyze and track merchant performance</h3>
+                    <p class="mb-4 pb-2 fs-lg">Analyzing the merchants’ and team’s accomplishments helps to determine
+                        the direction of further actions. For instance, Merchant Management Software informs the team of
+                        the performance level so that when efficiency decreases, a company can optimize its merchants’
+                        productivity.</p>
+
+                    <h3 class="h4 mb-3">Analyze and track merchant performance</h3>
+                    <p class="mb-4 pb-2 fs-lg">By implementing MMC, businesses can generate additional revenue streams.
+                        MMC provides more value to the merchants and their customers as well as differentiates the
+                        software in an increasingly saturated and competitive market. That, in turn, significantly
+                        drives the expansion of one’s market share and the revenue potential.</p>
+
+                    <h3 class="h4 mb-3">Analyze and track merchant performance</h3>
+                    <p class="mb-4 pb-2 fs-lg">Security is one of the main parts of most devices and systems. In MMS,
+                        it’s important for merchants to authenticate the transactions safely. Generally, a
+                        well-protected system demands various levels of securing data.</p>
+                    <p class="mb-4 pb-2 fs-lg">PCI DSS is an information security standard that protects data in a most
+                        excellent way. It is an assembly of safety qualities that ensures the security of information
+                        and secures card transactions from schemes and hacking with the help of the latest and most
+                        reliable antivirus software. It’s vital for PCI DSS to be entirely completed, when you are
+                        picking MMS for business.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- The rising demand for MMC -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">The rising demand for MMC</h2>
+
+                    <p class="mb-4 pb-2 fs-lg">The McKinsey analysis of SMB expense wallets reveals that a typical SMB
+                        merchant spends less than 10 percent of its budget for software and services on payment
+                        acceptance.</p>
+
+                    <p class="mb-4 pb-2 fs-lg">Based on these stats, we can assume the demand for SMBs serving hasn’t
+                        gone. Hence, the payment card issuer, merchants, acquirers, payment processors, service
+                        providers, and other third parties pursuing growth across a range of markets will be searching
+                        for an alternative solution supporting clearing and settlements with multiple interchanges such
+                        as VISA, Mastercard, Rupay, Diners, JCB, UnionPay International, Amex.</p>
+                    <p class="mb-4 pb-2 fs-lg">If you are looking for MMC, it’s critical to select a proven partner that
+                        can offer expertise in efficient onboarding of new merchants and customization systems. Crassula
+                        Merchant Payments Management can help any business regardless of its type, model, location, and
+                        POS devices.</p>
+                    <p class="mb-4 pb-2 fs-lg"> With Crassula’s robust and secure software, you can expand your business
+                        capabilities with plenty of offerings or multiple storefronts and manage them independently from
+                        a single access point. All their clients can acquire payments online, be it Visa, Mastercard or
+                        another alternative.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Conclusion -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Conclusion</h2>
+                    <p class="mb-4 pb-2 fs-lg">Merchant Management Software has dozens of advantages. It is its
+                        excellent assistance in navigating the merchant market, supplying the efficient and practical
+                        way of merchant functioning, and customizing features in a productive and customizable way.</p>
+                    <p class="mb-4 pb-2 fs-lg"> It is for those who aim to upgrade management and productivity, improve
+                        merchants’ sales, lower fraudulent activity, and, finally, enlarge profits. Thanks to the
+                        availability of real-time data, merchants are always up to date and can solve possible problems
+                        straight away.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

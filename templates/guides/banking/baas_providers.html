@@ -1,0 +1,488 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "BaaS Providers"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Crassula do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crassula is an innovative white label FinTech company that allows any business to create its own fully operational payment platform or embed financial services in a matter of weeks. It is achieved by API integration and partnerships with BaaS providers. We provide access to our technology and years of experience so that you can launch a financial product with ease."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of businesses does Crassula work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The range of our clients is highly diverse. We have already worked with Primapay, Cauri, Safe Currency, because we like helping others on their business expansion journey. In addition, we look with a favorable eye at both small enterprises and big corporations. If you have an idea for a startup in mind and want to become a full-time boss or, maybe, you already run a business but are looking for new directions or streams of revenue, we are always there to help you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Crassula service without financial expertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! By leveraging our BaaS platform, you can get a banking product off the shelf without any background in finances. Sourcing a team of financial experts is no longer a burden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to get a ready-to-deploy banking product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We guarantee to get you set up in less than two weeks. Obviously, everything depends on the end-product’s functionalities you want to see. But, generally, this time frame is enough to launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request a demo by filling in the form to help us understand your business plan and find the most suitable solution for you."
+      }
+    }
+  ]
+}
+    </script>
+{% endblock %}
+
+{% block seo_title %}BaaS Providers{% endblock %}
+{% block seo_description %}Banking-as-a-service platforms’ capabilities encompass a full suite of products and services
+    provided by the partner network, including sublicensing, IBANs, SEPA, SWIFT, and other types of payment
+    methods.{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">BaaS Providers</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Banking-as-a-service platforms’ capabilities encompass a full suite of products and services
+                            provided by the partner network, including sublicensing, IBANs, SEPA, SWIFT, and other types
+                            of payment methods.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What is Banking as a service?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What can BaaS providers do?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Top Banking-as-a-service platforms</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Who needs a BaaS platform provider?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>How to choose the best BaaS provider?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>Crassula, your quick, inexpensive, and efficient entry
+                                    to the banking platform</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-7" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">Studies conducted by Finder show that British adults that opened an
+                        account with a digital-only bank equated to 14 million people as of January 2022. It is crucial
+                        to indicate that this figure has not changed much since 2021. With such an increase in digital
+                        banking activities, you might want to be among those who take digital transformation initiatives
+                        as fast as possible and discover hidden benefits of banking.</p>
+                    <p class="mb-4 pb-2 fs-lg">There is currently growing awareness that owning a Banking as a service
+                        platform will play a pivotal role in the future of banking. Thus, if you strive to take
+                        advantage of financial technology, this article will help you understand this emerging trend
+                        better. You will find out what BaaS is, what opportunities it unlocks for the non-bank players,
+                        how to choose BaaS platform providers, and whether it has long-term potential for the financial
+                        industry as such.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is Banking as a service? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is Banking as a service?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Banking as a Service (or BaaS for short) constitutes a business model
+                        that enables existing licensed banks, insurers, and wealth managers to directly integrate
+                        financial services and products into other non-financial digital platforms, most typically,
+                        non-bank businesses.</p>
+                    <p class="mb-4 pb-2 fs-lg">Thanks to BaaS, any company that doesn’t have a license or expertise in
+                        digital banking can actually become a financial institution. The cost of opening a bank or
+                        creating digital banking services such as mobile bank accounts, debit cards, loans, and payment
+                        services is sky-high. </p>
+                    <p class="mb-4 pb-2 fs-lg">In this manner, companies often resort to white-label banking providers
+                        that can facilitate banking products adoption.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What can BaaS providers do? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What can BaaS providers do?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Banking-as-a-service platforms’ capabilities encompass a full suite of
+                        products and services provided by the partner network, including sublicensing, IBANs, SEPA,
+                        SWIFT, and other types of payment methods. Here’s more about each service:</p>
+                    <h3 class="h4 mb-3">Sublicensing</h3>
+                    <p class="mb-4 pb-2 fs-lg">Obtaining a license takes month and involves a lot of red tape. Not every
+                        business has time and funds to do that. However, there is an alternative – a competent
+                        supervisory EMD agent that can grant an e-money license. Many banking software platforms,
+                        including Crassula work together with firms and individual agents like that, releasing the
+                        burden of paperwork.</p>
+
+                    <h3 class="h4 mb-3">Virtual/Real IBAN generation</h3>
+                    <p class="mb-4 pb-2 fs-lg">BaaS platforms enable cross-border transactions with their IBAN issuing
+                        capabilities. They provide the infrastructure needed to create both virtual and real IBAN
+                        accounts with SWIFT integration. In addition to that, BaaS providers offer multi-currency
+                        management tools to make operating in foreign markets happen.</p>
+
+                    <h3 class="h4 mb-3">SEPA/Instant SEPA</h3>
+                    <p class="mb-4 pb-2 fs-lg">BaaS providers simplify the international payments process by supporting
+                        SEPA. Beyond that, your customers can make instant euro transactions that are executed in a
+                        matter of seconds, thanks to Instant SEPA.</p>
+
+                    <h3 class="h4 mb-3">FasterPayments</h3>
+                    <p class="mb-4 pb-2 fs-lg">Setting up FasterPayments is the next BaaS provider’s capability. It is a
+                        very common way of making fast and reliable transfers within the UK.</p>
+
+                    <h3 class="h4 mb-3">Swift Payments</h3>
+                    <p class="mb-4 pb-2 fs-lg">Also, BaaS providers leverage partnerships with the leading banking
+                        industry players, such as innovative payment processors, to implement SWIFT payment solutions
+                        that offer the interconnected financial experience your customers demand.</p>
+
+                    <h3 class="h4 mb-3">KYC</h3>
+                    <p class="mb-4 pb-2 fs-lg">As a future company providing banking services or products, you must
+                        comply with
+                        <a href="{% url 'features:compliance' %}">KYC</a> regulations to minimize fraud,
+                        corruption, and money laundering. BaaS platform providers offer an out-of-the-box KYC solution,
+                        which is essentially a process of identity verification (ID card verification, face
+                        verification, document verification such as utility bills as proof of address, and biometric
+                        verification.)</p>
+
+                    <h3 class="h4 mb-3">Card programs</h3>
+                    <p class="mb-4 pb-2 fs-lg">Merchants can issue personalized payment cards by partnering with the
+                        FinTech platforms. Such card programs can be tailored in accordance with specific uses and
+                        needs: financial management, exchange, deposits, payment services, creating loyalty, and so on.
+                        Anyone can create a payment virtual or physical card virtual and link it to an e-wallet
+                        account.</p>
+
+                    <h3 class="h4 mb-3">FX</h3>
+                    <p class="mb-4 pb-2 fs-lg">Most BaaS platforms are FX providers that have extensive foreign exchange
+                        offers for large-scale clients. Now, you can make fast and secure global transactions in the
+                        currencies you need. Depending on the platform, you can access over 50+ currency pairs.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Top Banking-as-a-service platforms -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Top Banking-as-a-service platforms</h2>
+                    <p class="mb-4 pb-2 fs-lg">Here are a few of the top BaaS scalable platforms that Crassula partners
+                        with. They can become your shortcuts to get to the market quickly:</p>
+
+                    <ul>
+                        <li><strong>Railsr</strong>: For Railsr, customer behavior is above all. It’s a frictionless and
+                            fun experience
+                            they need. This platform’s finance capabilities, such as digital wallets, payments, rewards,
+                            loyalty points, or cards, are a way to facilitate an enjoyable embedded finance experience
+                            seamlessly integrated into your brand products.
+                        </li>
+                        <li><strong>Clear.Bank</strong>: Anyone from financial institutions to merchants uses their API
+                            to obtain a
+                            fully-regulated banking infrastructure. Clear.Bank makes opening and managing accounts
+                            easier
+                            and lets you clear payments in real-time.
+                        </li>
+                        <li><strong>Clearjunction</strong>: Clearjunction can integrate seamless, automated cross-border
+                            payments into
+                            your next service offering, navigate the risk and compliance, and offer a vast number of
+                            other features. This global payment solution provider helps to overcome the barriers and
+                            challenges relating to banking and payments.
+                        </li>
+                        <li><strong>Centrolink</strong>: It is a payment system of the Central Bank of Lithuania, which
+                            provides a
+                            technical possibility to connect to the Single Euro Payments Area (SEPA) through the
+                            infrastructure of the CB for all payment service providers licensed in the European Economic
+                            Area – banks, specialized banks, credit unions, e-mails. monetary institutions, payment
+                            institutions.
+                        </li>
+                        <li><strong>Currencycloud</strong>: This last BaaS provider helps you stay relevant in a
+                            fast-paced market. It
+                            has everything you need: from virtual wallets and named accounts to the ability to send,
+                            receive and manage your multi-currency payments.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Who needs a BaaS platform provider? -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Who needs a BaaS platform provider?</h2>
+                    <p class="mb-4 pb-2 fs-lg">BaaS providers are real game-changers for many businesses that want to
+                        provide fintech products or services but don’t have the resources for it. Developing a new
+                        financial product and bringing it to market means finding a bank partner, signing a long-term
+                        contract, following compliance regulations, and then finally building that financial app or
+                        service you were looking to offer to end users.</p>
+                    <p class="mb-4 pb-2 fs-lg">If you aim to cut through the complex path of creating a financial
+                        product on your own and differentiate financial offers in your product at an affordable cost, we
+                        suggest looking for a provider. Don’t attempt to go off the beaten track. Instead, find a
+                        platform of experts that can guide you through the complex stages of product development.</p>
+                </div>
+
+                <!-- How to choose the best BaaS provider? -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How to choose the best BaaS provider?</h2>
+                    <p class="mb-4 pb-2 fs-lg">The rapid development of the BaaS industry and increasing demand for the
+                        banking platform contributed to the entrance of many new players in the market. Making an
+                        informed decision about which BaaS provider is right for your specific business idea is probably
+                        the most daunting. There are many providers out there, and every single BaaS provider offers
+                        different banking features. Here are the key points to look out for:</p>
+
+                    <h3 class="h4 mb-3">Diverse client base</h3>
+                    <p class="mb-4 pb-2 fs-lg">Nothing can tell you more than the client base of the BaaS platform. The
+                        more diverse it is, the more likely the platform is versatile. Thus, search for a provider that
+                        specializes in working with many different types of businesses.</p>
+
+                    <h3 class="h4 mb-3">A range of products</h3>
+                    <p class="mb-4 pb-2 fs-lg">You don’t want to hop from one service BaaS provider to another, do you?
+                        We suggest finding one that offers a wide range of specialized, high quality products and
+                        related services. Opt for a provider that has various offers designed to provide limitless
+                        combinations. This way you will build a comprehensive solution with all the required bells and
+                        whistles.</p>
+
+                    <h3 class="h4 mb-3">Regulatory compliant</h3>
+                    <p class="mb-4 pb-2 fs-lg">Regulatory compliance helps you protect your business’s resources. It
+                        lays the foundation on which you build your company’s reputation. Respectively, choosing a BaaS
+                        provider that complies with all essential regulations is essential.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- How to choose the best BaaS provider? -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How to choose the best BaaS provider?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Entering the finance and banking industry is always time-consuming and
+                        stressful in terms. However, you can unlock the world of core banking operations and innovations
+                        through our marketplace of fully customizable banking-as-a-service platform providers.</p>
+                    <p class="mb-4 pb-2 fs-lg">Our BaaS providers give you flexibility, a quick time through the market,
+                        and reduced risk.</p>
+                    <p class="mb-4 pb-2 fs-lg">Choose ready-to-use API-accessible banking services, connect to the most
+                        preferred ones, and enrich the banking experience of your existing and potential customers.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- FAQ -->
+                <div id="anchor-7" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What does Crassula do?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula is an innovative white label FinTech company that allows
+                                        any business to create its own fully operational payment platform or embed
+                                        financial services in a matter of weeks. It is achieved by API integration and
+                                        partnerships with BaaS providers. We provide access to our technology and years
+                                        of experience so that you can launch a financial product with ease.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What kind of businesses does Crassula work with?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">The range of our clients is highly diverse. We have already worked
+                                        with Primapay, Cauri, Safe Currency, because we like helping others on their
+                                        business expansion journey. In addition, we look with a favorable eye at both
+                                        small enterprises and big corporations.</p>
+                                    <p class="mb-2">If you have an idea for a startup in mind and want to become a
+                                        full-time boss or, maybe, you already run a business but are looking for new
+                                        directions or streams of revenue, we are always there to help you.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Can I use Crassula service without financial expertise?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Absolutely! By leveraging our BaaS platform, you can get a banking
+                                        product off the shelf without any background in finances. Sourcing a team of
+                                        financial experts is no longer a burden.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How long does it take to get a ready-to-deploy banking product?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">We guarantee to get you set up in less than two weeks. Obviously,
+                                        everything depends on the end-product’s functionalities you want to see. But,
+                                        generally, this time frame is enough to launch.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How do I get started?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Request a demo by filling in the form to help us understand your
+                                        business plan and find the most suitable solution for you.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

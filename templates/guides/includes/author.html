@@ -1,0 +1,23 @@
+{% load static %}
+<div class="d-flex align-items-center mb-4 pb-4 border-bottom">
+    <img src="{% static 'images/core-banking/ava.png' %}" width="60" alt="Kate Drozd" class="me-2">
+    <div class="ps-1 fs-sm">
+        <ul class="list-unstyled mt-n1 mb-0">
+            <li class="mt-1">
+                <span class="text-muted">Author:</span>
+                <a href="https://www.linkedin.com/in/kate-drozd-1b2bb8191/" class="text-dark" target="_blank" rel="nofollow">Kate
+                    Drozd</a>
+            </li>
+            <li class="mt-1">
+                <span class="text-muted">Checked by:</span>
+                <a href="https://www.linkedin.com/in/novozhenov/" class="text-dark" target="_blank" rel="nofollow">Aleksandrs
+                    Novozenovs</a>
+            </li>
+            {% if date_edit %}
+                <li class="mt-1">
+                    <span class="text-muted">Last edited {{ date_edit }} — {{ read_time }} min read</span>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

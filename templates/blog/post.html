@@ -1,0 +1,225 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}{{ object.seo_title }}{% endblock %}
+{% block seo_description %}{{ object.seo_description }}{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/blog/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ object.header }}"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <!-- Post -->
+    <section class="container mb-lg-5 mb-4 pt-5 pb-2 mt-5">
+        <a href="{% url 'blog:main' %}" class="nav-link nav-muted mb-4 p-0 mt-5">
+            <i class="bx bx-chevron-left fs-lg me-2"></i>
+            Back to blog
+        </a>
+
+        <!-- Post title -->
+        <h1 class="mb-3" style="max-width: 53.5rem;">{{ object.header }}</h1>
+
+        <!-- Post meta -->
+        <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-5 pb-2">
+            <div class="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
+                <div class="fs-sm border-end pe-3 me-3 mb-2">{{ object.date_edit }}</div>
+                <div class="fs-sm mb-2">
+                    <i class="bx bx-check-circle mt-n1 align-middle me-1 text-success"></i>
+                    Checked by expert:
+                    <a href="https://www.linkedin.com/in/novozhenov/" rel="nofollow" class="ms-1 text-dark" target="_blank">Aleksandrs
+                        Novozenovs</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center position-relative ps-md-3 pe-lg-5 mb-2">
+                <img src="{% static 'images/blog/avatar.png' %}" class="rounded-circle" width="60" alt="Avatar">
+                <div class="ps-3">
+                    <h6 class="mb-1 fw-normal">Kate Drozd</h6>
+                    <a href="https://www.linkedin.com/in/kate-drozd-1b2bb8191/" rel="nofollow" class="text-dark text-decoration-none" target="_blank">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post image -->
+        <img src="{{ object.image.url }}" alt="Post image" class="d-block rounded mb-5">
+
+        <!-- Post content -->
+        <div class="row pt-2">
+
+            <!-- Articles grid -->
+            <div class="col-lg-8 fs-lg">
+                {{ object.text|safe }}
+            </div>
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 offset-lg-1">
+                <div class="offcanvas-lg offcanvas-end" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header border-bottom">
+                        <h3 class="offcanvas-title fs-lg">Sidebar</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        <!-- Follow Us -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="mb-4">Follow Us</h5>
+                                <a href="https://www.linkedin.com/company/crassula/" class="btn btn-icon btn-sm btn-secondary btn-linkedin me-2 mb-2" target="_blank" rel="nofollow">
+                                    <i class="bx bxl-linkedin"></i>
+                                </a>
+                                <a href="https://www.facebook.com/crassula.io" class="btn btn-icon btn-sm btn-secondary btn-facebook me-2 mb-2" target="_blank" rel="nofollow">
+                                    <i class="bx bxl-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/crassu_la" class="btn btn-icon btn-sm btn-secondary btn-twitter me-2 mb-2" target="_blank" rel="nofollow">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/crassula_io/" class="btn btn-icon btn-sm btn-secondary btn-instagram me-2 mb-2" target="_blank" rel="nofollow">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Advertising -->
+                        <div class="card border-0 bg-dark bg-repeat-0 bg-position-bottom-end" style="min-height: 25rem; background-image: url({% static 'images/blog/banner.png' %}); background-size: 306px;">
+                            <div class="card-body">
+                                <h5 class="h3 mb-4 text-light">Create a digital bank in a matter of days with
+                                    Crassula</h5>
+                                <a href="{% url 'boarding:request_demo' %}" class="btn btn-sm btn-accent rounded-pill">Get
+                                    started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="pt-4">
+            <hr class="mt-3">
+        </div>
+    </section>
+
+
+{#    <!-- Related blogs -->#}
+{#    <section class="container mb-lg-5 mb-4 pb-5">#}
+{#        <h2 class="h1 mb-4 pb-2">Related blogs</h2>#}
+{#        <div class="swiper" data-swiper-options='{#}
+{#          "pagination": {#}
+{#            "el": ".swiper-pagination",#}
+{#            "clickable": true#}
+{#          },#}
+{#          "breakpoints": {#}
+{#            "0": {#}
+{#              "slidesPerView": 1,#}
+{#              "spaceBetween": 24#}
+{#            },#}
+{#            "500": {#}
+{#              "slidesPerView": 2,#}
+{#              "spaceBetween": 24#}
+{#            },#}
+{#            "992": {#}
+{#              "slidesPerView": 3,#}
+{#              "spaceBetween": 24#}
+{#            }#}
+{#          }#}
+{#        }'>#}
+{#            <div class="swiper-wrapper">#}
+{##}
+{#                <!-- Item -->#}
+{#                <div class="swiper-slide">#}
+{#                    <article class="card border-0 bg-transparent">#}
+{#                        <div class="position-relative overflow-hidden rounded-3">#}
+{#                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>#}
+{#                            <img src="{% static 'images/blog/03.jpg' %}" alt="Image">#}
+{#                        </div>#}
+{#                        <div class="card-body px-0">#}
+{#                            <h3 class="h4 mb-4">#}
+{#                                <a href="#">Merchant management software: What it is and How it#}
+{#                                    functions</a>#}
+{#                            </h3>#}
+{#                            <div class="d-flex align-items-center fs-sm text-muted">#}
+{#                                <div class="border-end pe-3 me-3">Oct 9, 2021</div>#}
+{#                                by#}
+{#                                <a href="#" class="nav-link ms-1 p-0 text-dark">Kate Drozd</a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </article>#}
+{#                </div>#}
+{##}
+{#                <!-- Item -->#}
+{#                <div class="swiper-slide">#}
+{#                    <article class="card border-0 bg-transparent">#}
+{#                        <div class="position-relative overflow-hidden rounded-3">#}
+{#                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>#}
+{#                            <img src="{% static 'images/blog/04.jpg' %}" alt="Image">#}
+{#                        </div>#}
+{#                        <div class="card-body px-0">#}
+{#                            <h3 class="h4 mb-4">#}
+{#                                <a href="#">Crassula product and features update during Q3 2022</a>#}
+{#                            </h3>#}
+{#                            <div class="d-flex align-items-center fs-sm text-muted">#}
+{#                                <div class="border-end pe-3 me-3">Oct 9, 2021</div>#}
+{#                                by#}
+{#                                <a href="#" class="nav-link ms-1 p-0 text-dark">Kate Drozd</a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </article>#}
+{#                </div>#}
+{##}
+{#                <!-- Item -->#}
+{#                <div class="swiper-slide">#}
+{#                    <article class="card border-0 bg-transparent">#}
+{#                        <div class="position-relative overflow-hidden rounded-3">#}
+{#                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>#}
+{#                            <img src="{% static 'images/blog/05.jpg' %}" alt="Image">#}
+{#                        </div>#}
+{#                        <div class="card-body px-0">#}
+{#                            <h3 class="h4 mb-4">#}
+{#                                <a href="#">How to Build a Cryptocurrency Exchange Platform</a>#}
+{#                            </h3>#}
+{#                            <div class="d-flex align-items-center fs-sm text-muted">#}
+{#                                <div class="border-end pe-3 me-3">Oct 9, 2021</div>#}
+{#                                by#}
+{#                                <a href="#" class="nav-link ms-1 p-0 text-dark">Kate Drozd</a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </article>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{##}
+{#            <!-- Pagination (bullets) -->#}
+{#            <div class="swiper-pagination position-relative d-lg-none d-flex mt-5"></div>#}
+{#        </div>#}
+{#    </section>#}
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

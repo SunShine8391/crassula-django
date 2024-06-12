@@ -1,0 +1,56 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-weight: 700;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 600;
+}
+
+
+// Headings line height
+
+h4, .h4, .fs-4,
+h5, .h5, .fs-5,
+h6, .h6, .fs-6 { line-height: $line-height-sm; }
+
+
+// Link inside headings
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+  > a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: var(--#{$prefix}heading-link-hover-color);
+    }
+    &.active {
+      color: $nav-link-active-color;
+    }
+  }
+}
+
+
+// Description lists
+
+dt {
+  color: var(--#{$prefix}heading-color);
+}
+
+
+// Dark mode for general type colors
+
+@if $enable-dark-mode {
+  body .dark-mode {
+    p, ul, ol, span:not(.badge), dd {
+      color: var(--#{$prefix}body-color);
+    }
+  }
+}

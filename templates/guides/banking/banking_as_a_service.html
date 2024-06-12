@@ -1,0 +1,364 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Banking As A Service: Ultimate Guide"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Banking as a Service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Banking-as-a-Service (BaaS) is an ecosystem in which licensed financial institutions provide their services to non-banking businesses by leveraging APIs. BaaS makes financial services more open and accessible and breaks the frontier of complex regulation, slow-moving launch, and old technologies."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Does it mean Banking as a Service is the same as Open Banking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>No, it is not. Open banking describes a process, in which third-party providers (TPP) are granted permission to share bank customer information and account transaction data to build FinTech products and services. It also uses software API connectors and serves as a BaaS deployment enabler.</p><p>Open banking also makes it possible for consumers and businesses alike to initiate a payment on their behalf. So instead of launching a banking app, customers can make transactions or payment orders directly through the service they’re using.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is Banking as a Service Provider?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A BaaS provider is a licensed bank or any other licensed financial institution, for example, Money Service Business, Electronic Money Institution, Authorized Payment Institution that enables other businesses to embed digital banking products and payment services into their own app or platform. Being connected to the BaaS provider through the front end via API technology, businesses access the offered services."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are the various services of Banking as a Service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>The Banking-as-a-Service model offers all services that you will find in a traditional bank. For example, credit and debit card processing, account management, digital transactions, online and mobile banking, customer support, card issuances, IBANs, SEPA, and SWIFT payment solutions.</p><p>But the BaaS model is constantly being empowered to allow customers to enjoy a wider range of services. Except for Banking as a Service, we can find XaaS and CaaS. In short, XaaS means “Everything and anything as a Service.” This term was born following the emergence of many cloud computing services such as SaaS (Software as a Service), PaaS (Platform as a Service), or IaaS (Infrastructure as a Service). CaaS, on the other hand, stands for Crypto as a Service that deals with issuing crypto wallets, transactions, exchanges via API, etc. In a way, this is an evolution of BaaS.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are the examples of top-rated BaaS providers? ",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"The most popular companies we associate with BaaS are Railsr, ClearBank, Clear Junction, and Currencycloud. They offer the integration of financial services globally and are recognized as very influential financial institutions. Crassula has partnerships with all of them and can connect you directly with a preferable provider and walk you through the entire onboarding process. Find out more about these providers <a href=https://crassula.io/guides/baas-providers/>here.</a>"}
+        }, {
+        "@type": "Question",
+        "name": "How important is Banking as a Service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"<p>All parties involved in Banking as a Service benefit equally. Traditional banks gain new customers base and bring up their economies of scale. FinTech companies and BaaS enablers develop new business models and deploy their advanced technologies. And the end customers enjoy more user-friendly and frictionless financial products.</p><p>BaaS incorporates the most secure and innovative practices that allow to automate banking and add extra levels of security at all stages. And these two factors are crucial in surviving in a highly regulated and saturated market.</p>"}
+        }, {
+        "@type": "Question",
+        "name": "What is Banking as a Service Platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":"<p>A BaaS platform is a software-as-a-service platform that helps banks to distribute their financial services through a White Label business model. Essentially, BaaS platforms empower their customers with the fast and convenient process of utilizing the Bank's infrastructure.</p><p>Currently, Crassula is providing services through cloud SaaS and looking into expanding its offering. In 2023, we plan to become a one-stop shop for our clients who are licensed and non-licensed FinTech businesses. And, then, resell the services received from BaaS providers and banks through our APIs to those who do not have their own licenses. And for those who do, we will continue to provide access to our platform as usual.</p>"}
+        }]
+    }
+    </script>
+{% endblock %}
+
+{% block seo_title %}Banking As A Service: Ultimate Guide{% endblock %}
+{% block seo_description %}Banking as a service BaaS is an end-to-end process that enables licensed banks to execute
+    financial operations and offer digital banking services to other third parties.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Banking As A Service: Ultimate Guide</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Banking as a service BaaS is an end-to-end process that enables licensed banks to execute
+                            financial operations and offer digital banking services to other third parties.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What is BaaS?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>How does banking-as-a-service work?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>What are the benefits?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>How to build your Banking as a Service platform?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>To sum up</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">The financial industry is immensely expanding its scope to attain an improved customer experience and boost the revenue even more than it was just yesterday. Indeed, fintech banks are introducing a surging amount of services that sometimes we can lose count of new things emerging on the market.</p>
+                    <p class="mb-4 pb-2 fs-lg">This guide will help you catch up and stay on-trend with one of the service branches in the financial industry. Here you will find the most relevant information about this banking model and how to apply it in your own business. If you are excited as much as we are, let’s roll into the definition straight away:</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is BaaS? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is BaaS?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Banking as a service BaaS is an end-to-end process that enables licensed banks to execute financial operations and offer digital banking services to other third parties.</p>
+                    <p class="mb-4 pb-2 fs-lg">It grants non-banking enterprises access to the bank’s systems and information through APIs. This way any independent company can create new financial products or offer white label banking services.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' %}
+
+                <!-- How does banking-as-a-service work? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How does banking-as-a-service work?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Non-bank companies leverage their offerings to deliver an enhanced customer experience and boost their revenue in multiple kinds of ways. With a BaaS digital banking platform they can take these achievements to an entirely new level by allowing their customers to access additional financial products.</p>
+                    <p class="mb-4 pb-2 fs-lg">But there is always a twist. If you want to offer banking services, you are obliged to acquire a banking license of your own. Obtaining a license is a daunting task that requires both a significant amount of capital and a lot of time.</p>
+                    <p class="mb-4 pb-2 fs-lg">Additionally, if you want to get involved in the financial sector, you must recognise the sheer volume and breadth of regulations taken on your shoulders. Apart from that, your non-banking institution will need to deal with the complex risk calculations, cope with new demands of data management and adjust to the regulatory challenges. If this looks like a huge burden for your company, don’t worry. This is where a banking-as-a-service platform comes in.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What are the benefits? -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What are the benefits?</h2>
+                    <h3 class="h4 mb-3">For financial institutions:</h3>
+                    <p class="mb-4 pb-2 fs-lg">You might be questioning yourself about the intentions of traditional banks and other financial institutions to lend their entire client base to other financial institutions, agents or non-banking businesses. And if you are still convinced that their piece of a big pie seems to be the smallest, you should dig deeper. By granting licenses, infrastructure and technology to FinTechs, the BaaS providers win over a significant revenue stream. Furthermore, lending enterprises, accounting companies equally have a head start.</p>
+                    <p class="mb-4 pb-2 fs-lg">How does it work? The bank or electronic money institution provides the basic infrastructure services – financial products such as current accounts, ledgers, seamless bank card issuance, SEPA, SWIFT payments to a FinTech client or platform. And the second party has to pay them for accessing the required licensed financial products through enabling core-banking services within the FinTech platform. A traditional bank or financial institution (a baas infrastructure provider) reaps the benefits of banking-as-a-service by offering new innovative embedded payments products that attract new customers in the long run.</p>
+
+                    <h3 class="h4 mb-3">For financial institutions:</h3>
+                    <p class="mb-4 pb-2 fs-lg">If you own a non-financial business, what is in it for you? BaaS offerings allow you to put forward extra services such as, debit cards, payment services and international payments. And all of these choices give you a competitive edge over other companies as you can stand out with a longer list of extra features that your competitors might not have.</p>
+                    <p class="mb-4 pb-2 fs-lg">This might sound pretty vague without examples, so let’s take a look at a few of the most popular brands and how they win the loyalty of their users or customers and earn profits by adopting embedded finance on their individual platforms.</p>
+                    <p class="mb-4 pb-2 fs-lg">For instance, a ride-sharing app like Uber offers drivers a debit card that helps them manage their driving activity and earnings through the Uber app. They made it possible with BaaS, of course. Or take for example Google Pay that gives its users an elevated experience: a digital wallet with cash back rewards. In order to access such unique offerings a major non-financial company like Google or other BigTech doesn’t need to become a bank or electronic money institution.</p>
+                    <p class="mb-4 pb-2 fs-lg">After all, accommodating legacy banking services involves a lot of infrastructure costs. Therefore, the company takes advantage of BaaS and distributes banking services without opening its own bank or becoming a relevant financial institution.</p>
+                    <p class="mb-4 pb-2 fs-lg">On top of that, banking-as-a service helps non-banking businesses analyze their customers’ spending habits and understand them better. So, any enterprise can become more successful and respond to new customer purchasing habits faster.</p>
+
+                    <h3 class="h4 mb-3">For financial institutions:</h3>
+                    <p class="mb-4 pb-2 fs-lg">Obviously, the benefit of banking-as-a-service is not just for non-financial companies and banks. Financial services are not just about getting a loan or making a deposit. It involves smart contracts, loyalty programs, and blockchain that change customers’ experience in leaps and bounds.</p>
+                    <p class="mb-4 pb-2 fs-lg">For example, company X might want to integrate with a financial institution and distribute financial products. The BaaS allows it to do that under a company X’s own brand. This way the customer journey is shortened at the moment of purchase because they buy a product from a familiar brand. Little do they know that, actually, it is a BaaS provider, a FinTech platform and licensed banking or other regulated financial institutions staying behind the curtain. Thus, end customers reap the benefits in the same way just like other parties without doing many frictions on their customer’s journey.</p>
+                    <p class="mb-4 pb-2 fs-lg">Also, thanks to banking-as-a-service, consumers have more diversified choices and avail multiple value-adding services. A common trick is to give customers points and rewards every time they use a debit card while purchasing something from one of your stores. So, the transaction is not only effortless, convenient but also money-saving. Many brands generate revenue and strengthen their customers’ loyalty by equipping their customers with a wide selection of similar tools.</p>
+                    <p class="mb-4 pb-2 fs-lg">All in all, end customers have their own gains. The developments offered by BaaS result in a pleasant experience and an abundance of choices for buyers.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- How to build your Banking as a Service platform? -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How to build your Banking as a Service platform?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Today there are many ways to unlock opportunities to become Banking as a Service. One of the most effective is White Label Software Solution like Crassula which will allow you to turn an idea into a product just in a few days.</p>
+                    <p class="mb-4 pb-2 fs-lg">With Crassula Software API Financial Institutions can become BaaS Providers for their clients, get the opportunity to embed customer onboarding, account opening, payments processing or to sublicense your financial services for your clients.</p>
+                    <p class="mb-4 pb-2 fs-lg">Crassula can lend you a hand in launching your BaaS to provide your customers with functionality for seamless integration of financial products to their marketplaces and digital businesses.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- To sum up -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">To sum up</h2>
+                    <p class="mb-4 pb-2 fs-lg">With BaaS, pretty much any business can unlock the open banking opportunity and create financial solutions from scratch. You do not need to comply with legacy systems or seek bank software. Finding a platform that delivers all the advancements of BaaS would be just enough.</p>
+                    <p class="mb-4 pb-2 fs-lg">This model serves each of its players and rewards everyone with plenty of winnings. From a Fintech platform to neobanks, from to non-financial start-ups. Everyone stays ahead of the game. Would you like to leverage it to get higher revenue next month and accomplish tremendous success? If so, Crassula can help you to introduce to more than 10 most popular Banking as a Service providers, which already is integrated into our Banking platform.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' %}
+
+                <!-- FAQ -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Banking as a Service?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Banking-as-a-Service (BaaS) is an ecosystem in which licensed financial institutions provide their services to non-banking businesses by leveraging APIs. BaaS makes financial services more open and accessible and breaks the frontier of complex regulation, slow-moving launch, and old technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Does it mean Banking as a Service is the same as Open Banking?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">No, it is not. Open banking describes a process, in which third-party providers (TPP) are granted permission to share bank customer information and account transaction data to build FinTech products and services. It also uses software API connectors and serves as a BaaS deployment enabler.</p>
+                                    <p class="mb-2">Open banking also makes it possible for consumers and businesses alike to initiate a payment on their behalf. So instead of launching a banking app, customers can make transactions or payment orders directly through the service they’re using.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is Banking as a Service Provider?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">A BaaS provider is a licensed bank or any other licensed financial institution, for example, Money Service Business, Electronic Money Institution, Authorized Payment Institution that enables other businesses to embed digital banking products and payment services into their own app or platform. Being connected to the BaaS provider through the front end via API technology, businesses access the offered services.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What are the various services of Banking as a Service?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">The Banking-as-a-Service model offers all services that you will find in a traditional bank. For example, credit and debit card processing, account management, digital transactions, online and mobile banking, customer support, card issuances, IBANs, SEPA, and SWIFT payment solutions.</p>
+                                    <p class="mb-2">But the BaaS model is constantly being empowered to allow customers to enjoy a wider range of services. Except for Banking as a Service, we can find XaaS and CaaS. In short, XaaS means “Everything and anything as a Service.” This term was born following the emergence of many cloud computing services such as SaaS (Software as a Service), PaaS (Platform as a Service), or IaaS (Infrastructure as a Service). CaaS, on the other hand, stands for Crypto as a Service that deals with issuing crypto wallets, transactions, exchanges via API, etc. In a way, this is an evolution of BaaS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What are the examples of top-rated BaaS providers?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">The most popular companies we associate with BaaS are Railsr, ClearBank, Clear Junction, and Currencycloud. They offer the integration of financial services globally and are recognized as very influential financial institutions. Crassula has partnerships with all of them and can connect you directly with a preferable provider and walk you through the entire onboarding process. Find out more about these providers
+                                        <a href="{% url 'guides:baas_providers' %}">here</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How important is Banking as a Service?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">All parties involved in Banking as a Service benefit equally. Traditional banks gain new customers base and bring up their economies of scale. FinTech companies and BaaS enablers develop new business models and deploy their advanced technologies. And the end customers enjoy more user-friendly and frictionless financial products.</p>
+                                    <p class="mb-2">BaaS incorporates the most secure and innovative practices that allow to automate banking and add extra levels of security at all stages. And these two factors are crucial in surviving in a highly regulated and saturated market.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What is Banking as a Service Platform?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseSeven" aria-labelledby="headingSeven" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">A BaaS platform is a software-as-a-service platform that helps banks to distribute their financial services through a White Label business model. Essentially, BaaS platforms empower their customers with the fast and convenient process of utilizing the Bank's infrastructure.</p>
+                                    <p class="mb-2">Currently, Crassula is providing services through cloud SaaS and looking into expanding its offering. In 2023, we plan to become a one-stop shop for our clients who are licensed and non-licensed FinTech businesses. And, then, resell the services received from BaaS providers and banks through our APIs to those who do not have their own licenses. And for those who do, we will continue to provide access to our platform as usual.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

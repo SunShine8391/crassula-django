@@ -1,0 +1,311 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <script type="application/ld+json">
+
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it possible to connect Crassula Card Issuing Module to existing Core Banking system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Crassula card issuing module is closely used in combination with Core Banking. Our API solutions provide a secure onboarding and data exchange among our partners so that our clients can have fully functioning virtual and plastic cards issued and all required financial records obtained."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to request a card issuing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crassula offers a variety of Card Issuing Providers. Sign an agreement with one of the white label banking issuing partners and stipulate the conditions. Once you do that, you are ready to launch your white label prepaid card with Visa, Mastercard, or UnionPay, set up the functionalities of a prepaid or debit card, designate physical or virtual options, and finally, optimize it for multiple uses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will plastic cards take to be issued?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As soon as you land a contract with a card program manager, your request will start being processed. Then, it’s up to a financial institution how quickly it will be delivered. Usually, it takes from 1 to 2 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How and where will virtual cards be issued?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Virtual card issuing process is easy. It could be done by a customer inside Crassula Mobile App or internet bank. Usually, virtual card issuing process is fully automated but according to customer needs could be done with pre-approval phase."
+      }
+    }
+  ]
+}
+
+
+    </script>
+{% endblock %}
+
+{% block seo_title %}Issuing white label debit cards for your business{% endblock %}
+{% block seo_description %}There is no need to search for developers or strike up partnerships to bring the new banking
+    product to market. Thanks to white-label possibilities, someone can do the hard work for you.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Issuing white label debit cards for your business</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">There is no need to search for developers or
+                            strike up partnerships to bring the new banking product to market. Thanks to white-label
+                            possibilities, someone can do the hard work for you.</p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What Is a White Label Debit Card?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What are the benefits of White Label Debit Cards?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Who can Issue a Debit Card?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- What Is a White Label Debit Card? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">What Is a White Label Debit Card?</h2>
+                    <p class="mb-4 pb-2 fs-lg">A debit card is a bank card that is linked to your bank account. It
+                        enables you to make purchases and withdraw cash by using the funds you have deposited at the
+                        bank.</p>
+                    <p class="mb-4 pb-2 fs-lg">It operates pretty distinctly from a Prepaid Card. Unlike a debit one,
+                        this one is not linked to a bank account. Instead, you are spending money you loaded in the
+                        special prepaid card account in advance. No further payments or overdrafts are possible once you
+                        spend everything up until you top up your card.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What are the benefits of White Label Debit Cards? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What are the benefits of White Label Debit Cards?</h2>
+                    <h3 class="h4 mb-3">Easy set-up</h3>
+                    <p class="mb-4 pb-2 fs-lg">Everything is aimed at saving your time. There is no need to search for
+                        developers or strike up partnerships to bring the new banking product to market. Thanks to
+                        white-label possibilities, someone can do the hard work for you.</p>
+
+                    <h3 class="h4 mb-3">Revenue stream</h3>
+                    <p class="mb-4 pb-2 fs-lg">You can earn money every time your customers use them to pay. Depending
+                        on the fees charged when a user withdraws cash at an ATM or purchases something, you can create
+                        multiple revenue streams for your company.</p>
+
+                    <h3 class="h4 mb-3">Customization</h3>
+                    <p class="mb-4 pb-2 fs-lg">You can customize it according to the options and preferences of your
+                        business. You can also set everything, from fees to rewards and its designs, which will help you
+                        reflect your brand idea and satisfy customers’ needs in the best way possible.</p>
+
+                    <h3 class="h4 mb-3">Customer loyalty programs</h3>
+                    <p class="mb-4 pb-2 fs-lg">You will also be able to launch all kinds of rewards programs, such as
+                        customer loyalty bonuses and points. Every single one of them has ID encryption, which allows
+                        you to track all customers’ spending and analyze the acquired data to increase loyalty and
+                        deliver better offers.</p>
+
+                    <h3 class="h4 mb-3">High compliance level</h3>
+                    <p class="mb-4 pb-2 fs-lg">As your business grows, more security risks emerge because there are more
+                        and more payment card transactions and information to process, store, or transmit. To tackle
+                        security issues, PCI with compliance level 1 comes in. Its certification ensures your debit
+                        cards’ data protection through a series of requirements defined by the PCI SSC.</p>
+                    <p class="mb-4 pb-2 fs-lg">These include a variety of security standards designed to maintain a
+                        secure environment to protect both consumers and merchants. Some examples of the best practices
+                        can be firewall deployment, data encryption, and the use of anti-virus software.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Who can Issue a Debit Card? -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4 pb-2">Who can Issue a Debit Card?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Companies that want to obtain cards either for their customers,
+                        employees, or even themselves have a few options. One of them is white labeling of card issuing
+                        process or co-branded issuing programs support.</p>
+                    <p class="mb-4 pb-2 fs-lg">During white label card issuing, one company manufactures a banking
+                        product, such as a debit or prepaid card, and then sells or grants the use of that product to a
+                        second company. This company puts its logo and branding on the product and has some ownership of
+                        it, in spite of not being indirectly connected to the process of its creation or design of the
+                        product itself.</p>
+                    <p class="mb-4 pb-2 fs-lg">White label solutions allow your FinTech company to use reloadable debit
+                        cards here and now without having to spend the time and money building them from scratch. Sounds
+                        very tempting, right? If you want to get a virtual card accessed through mobile phones that will
+                        serve you to make online payments or a physical card primarily used for in-person spending,
+                        Crassula will assist you in doing so.</p>
+                    <p class="mb-4 pb-2 fs-lg">You won’t need to merge different systems and spend months on obtaining
+                        an own debit or virtual card issuing license. Our service providers are in charge of issuing
+                        functioning virtual and plastic cards for you, whereas our open API platform will ensure
+                        embedding, monitoring and clearing. It’s as simple as that.</p>
+
+
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- FAQ -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Is it possible to connect Crassula Card Issuing Module to existing Core Banking
+                                    system?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">The Crassula card issuing module is closely used in combination with
+                                        Core Banking. Our API solutions provide a secure onboarding and data exchange
+                                        among our partners so that our clients can have fully functioning virtual and
+                                        plastic cards issued and all required financial records obtained.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to request a card issuing?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula offers a variety of Card Issuing Providers. Sign an
+                                        agreement with one of the white label banking issuing partners and stipulate the
+                                        conditions. Once you do that, you are ready to launch your white label prepaid
+                                        card with Visa, Mastercard, or UnionPay, set up the functionalities of a prepaid
+                                        or debit card, designate physical or virtual options, and finally, optimize it
+                                        for multiple uses.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How long will plastic cards take to be issued?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">As soon as you land a contract with a card program manager, your
+                                        request will start being processed. Then, it’s up to a financial institution how
+                                        quickly it will be delivered. Usually, it takes from 1 to 2 weeks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                    How and where will virtual cards be issued?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Virtual card issuing process is easy. It could be done by a customer
+                                        inside Crassula Mobile App or internet bank. Usually, virtual card issuing
+                                        process is fully automated but according to customer needs could be done with
+                                        pre-approval phase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

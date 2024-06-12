@@ -1,0 +1,358 @@
+//
+// Font Icons
+// Font generated using:
+// https://icomoon.io/app
+// --------------------------------------------------
+
+
+// Define icon code variables
+
+$cri-chevron-right: '\e933';
+$cri-chevron-left: '\e934';
+$cri-code: '\e92d';
+$cri-account: '\e900';
+$cri-agent: '\e901';
+$cri-bar-chart: '\e902';
+$cri-bitcoin: '\e903';
+$cri-bitcoin-circle: '\e904';
+$cri-briefcase: '\e905';
+$cri-bullhorn: '\e906';
+$cri-cancel: '\e907';
+$cri-card: '\e908';
+$cri-card-connection: '\e909';
+$cri-cards: '\e90a';
+$cri-chapter: '\e90b';
+$cri-chat: '\e90c';
+$cri-check: '\e90d';
+$cri-clock: '\e90e';
+$cri-cloud: '\e90f';
+$cri-coin: '\e910';
+$cri-connection: '\e911';
+$cri-contract: '\e912';
+$cri-customer-service: '\e913';
+$cri-devices: '\e914';
+$cri-dollar: '\e915';
+$cri-done: '\e916';
+$cri-folder: '\e917';
+$cri-growth: '\e918';
+$cri-handcuffs: '\e919';
+$cri-idea: '\e91a';
+$cri-laptop: '\e91b';
+$cri-layer: '\e91c';
+$cri-loyalty: '\e91d';
+$cri-milestone: '\e91e';
+$cri-notification: '\e91f';
+$cri-percent: '\e920';
+$cri-question: '\e921';
+$cri-relationship: '\e922';
+$cri-rush: '\e923';
+$cri-security: '\e924';
+$cri-send: '\e925';
+$cri-setting: '\e926';
+$cri-shuttle: '\e927';
+$cri-smartphone: '\e928';
+$cri-synergy: '\e929';
+$cri-transfer: '\e92a';
+$cri-wallet: '\e92b';
+$cri-withdraw: '\e92c';
+$cri-lines: '\e92e';
+$cri-thunder: '\e92f';
+$cri-info: '\e930';
+$cri-external-link: '\e931';
+$cri-download: '\e932';
+
+
+// Icons styles
+
+@font-face {
+  font-family: $icons-font-family;
+  src:
+    url('#{$icons-font-path}/#{$icons-font-family}.ttf?70lp74') format('truetype'),
+    url('#{$icons-font-path}/#{$icons-font-family}.woff?70lp74') format('woff'),
+    url('#{$icons-font-path}/#{$icons-font-family}.svg?70lp74##{$icons-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='cri-'], [class*=' cri-'] {
+  display: inline-block;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icons-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cri-chevron-right {
+  &:before {
+    content: $cri-chevron-right;
+  }
+}
+.cri-chevron-left {
+  &:before {
+    content: $cri-chevron-left;
+  }
+}
+.cri-code {
+  &:before {
+    content: $cri-code;
+  }
+}
+.cri-account {
+  &:before {
+    content: $cri-account;
+  }
+}
+.cri-agent {
+  &:before {
+    content: $cri-agent;
+  }
+}
+.cri-bar-chart {
+  &:before {
+    content: $cri-bar-chart;
+  }
+}
+.cri-bitcoin {
+  &:before {
+    content: $cri-bitcoin;
+  }
+}
+.cri-bitcoin-circle {
+  &:before {
+    content: $cri-bitcoin-circle;
+  }
+}
+.cri-briefcase {
+  &:before {
+    content: $cri-briefcase;
+  }
+}
+.cri-bullhorn {
+  &:before {
+    content: $cri-bullhorn;
+  }
+}
+.cri-cancel {
+  &:before {
+    content: $cri-cancel;
+  }
+}
+.cri-card {
+  &:before {
+    content: $cri-card;
+  }
+}
+.cri-card-connection {
+  &:before {
+    content: $cri-card-connection;
+  }
+}
+.cri-cards {
+  &:before {
+    content: $cri-cards;
+  }
+}
+.cri-chapter {
+  &:before {
+    content: $cri-chapter;
+  }
+}
+.cri-chat {
+  &:before {
+    content: $cri-chat;
+  }
+}
+.cri-check {
+  &:before {
+    content: $cri-check;
+  }
+}
+.cri-clock {
+  &:before {
+    content: $cri-clock;
+  }
+}
+.cri-cloud {
+  &:before {
+    content: $cri-cloud;
+  }
+}
+.cri-coin {
+  &:before {
+    content: $cri-coin;
+  }
+}
+.cri-connection {
+  &:before {
+    content: $cri-connection;
+  }
+}
+.cri-contract {
+  &:before {
+    content: $cri-contract;
+  }
+}
+.cri-customer-service {
+  &:before {
+    content: $cri-customer-service;
+  }
+}
+.cri-devices {
+  &:before {
+    content: $cri-devices;
+  }
+}
+.cri-dollar {
+  &:before {
+    content: $cri-dollar;
+  }
+}
+.cri-done {
+  &:before {
+    content: $cri-done;
+  }
+}
+.cri-folder {
+  &:before {
+    content: $cri-folder;
+  }
+}
+.cri-growth {
+  &:before {
+    content: $cri-growth;
+  }
+}
+.cri-handcuffs {
+  &:before {
+    content: $cri-handcuffs;
+  }
+}
+.cri-idea {
+  &:before {
+    content: $cri-idea;
+  }
+}
+.cri-laptop {
+  &:before {
+    content: $cri-laptop;
+  }
+}
+.cri-layer {
+  &:before {
+    content: $cri-layer;
+  }
+}
+.cri-loyalty {
+  &:before {
+    content: $cri-loyalty;
+  }
+}
+.cri-milestone {
+  &:before {
+    content: $cri-milestone;
+  }
+}
+.cri-notification {
+  &:before {
+    content: $cri-notification;
+  }
+}
+.cri-percent {
+  &:before {
+    content: $cri-percent;
+  }
+}
+.cri-question {
+  &:before {
+    content: $cri-question;
+  }
+}
+.cri-relationship {
+  &:before {
+    content: $cri-relationship;
+  }
+}
+.cri-rush {
+  &:before {
+    content: $cri-rush;
+  }
+}
+.cri-security {
+  &:before {
+    content: $cri-security;
+  }
+}
+.cri-send {
+  &:before {
+    content: $cri-send;
+  }
+}
+.cri-setting {
+  &:before {
+    content: $cri-setting;
+  }
+}
+.cri-shuttle {
+  &:before {
+    content: $cri-shuttle;
+  }
+}
+.cri-smartphone {
+  &:before {
+    content: $cri-smartphone;
+  }
+}
+.cri-synergy {
+  &:before {
+    content: $cri-synergy;
+  }
+}
+.cri-transfer {
+  &:before {
+    content: $cri-transfer;
+  }
+}
+.cri-wallet {
+  &:before {
+    content: $cri-wallet;
+  }
+}
+.cri-withdraw {
+  &:before {
+    content: $cri-withdraw;
+  }
+}
+.cri-lines {
+  &:before {
+    content: $cri-lines;
+  }
+}
+.cri-thunder {
+  &:before {
+    content: $cri-thunder;
+  }
+}
+.cri-info {
+  &:before {
+    content: $cri-info;
+  }
+}
+.cri-external-link {
+  &:before {
+    content: $cri-external-link;
+  }
+}
+.cri-download {
+  &:before {
+    content: $cri-download;
+  }
+}

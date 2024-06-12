@@ -1,0 +1,213 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label Bank Accounts{% endblock %}
+{% block seo_description %}Create deposit accounts for individuals, with or without linked card, IBAN, or
+    internal payments. Define special tariffs, statuses, and an account provider automatically or
+    manually depending on a configuration.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "White Label Bank Accounts"
+      }]
+    }
+    </script>
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Accounts</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Allow your customers to create mono and multicurrency accounts, with IBANs or crypto addresses. Work with private and business customers, set multiple roles and limits for accounts. Crassula ledgers will get you covered.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.15">
+                            <img src="{% static 'images/features/accounts/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="0.3">
+                            <img src="{% static 'images/features/accounts/hero/03.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content -->
+    <section class="container py-4">
+
+        <!-- Items list -->
+        <div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Deposit accounts for individuals</h2>
+                    <p class="mb-3 pb-1 fs-xl">Create deposit accounts for individuals, with or without linked card,
+                        IBAN, or internal payments. Define special tariffs, statuses, and an account provider
+                        automatically or manually depending on a configuration.</p>
+{#                    <ul class="list-unstyled mb-0 fs-xl">#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="Icon" class="me-1">#}
+{#                            Deposit accounts for individuals#}
+{#                        </li>#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="Icon" class="me-1">#}
+{#                            Special tariffs for individuals#}
+{#                        </li>#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="Icon" class="me-1">#}
+{#                            Automatically or manually depending#}
+{#                        </li>#}
+{#                    </ul>#}
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <img src="{% static 'images/features/accounts/01.png' %}" alt="Deposit accounts for individuals" class="rounded">
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-md-6">
+                    <img src="{% static 'images/features/accounts/02.jpg' %}" alt="Crypto Accounts" class="rounded">
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Crypto Accounts</h2>
+                    <p class="mb-4 pb-md-3 pb-2 fs-xl">Enable your customers to create crypto accounts with a crypto
+                        address linked to them. Use enterprise-grade custody and liquidity providers to store
+                        cryptocurrencies and buy or sell operations made by your end-users.</p>
+                    <div class="d-flex align-items-center justify-content-between mt-n2 ms-n2 pt-md-4 pt-3 border-top">
+                        <img src="{% static 'images/features/badges/01.svg' %}" alt="Icon" class="d-block mt-2 ms-2">
+                        <img src="{% static 'images/features/badges/02.svg' %}" alt="Icon" class="d-block mt-2 ms-2">
+                        <img src="{% static 'images/features/badges/03.svg' %}" alt="Icon" class="d-block mt-2 ms-2">
+                        <img src="{% static 'images/features/badges/04.svg' %}" alt="Icon" class="d-block mt-2 ms-2">
+                        <img src="{% static 'images/features/badges/05.svg' %}" alt="Icon" class="d-block mt-2 ms-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Multi-Currency Accounts</h2>
+                    <p class="mb-0 fs-xl">Define which accounts will be single or multi-currency. Unless with a single
+                        provider currency, this account type allows maintaining multi-currency accounts provided by a
+                        BaaS partner or bank</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <img src="{% static 'images/features/accounts/03.jpg' %}" alt="Multi-Currency Accounts" class="rounded">
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-md-6">
+                    <img src="{% static 'images/features/accounts/04.jpg' %}" alt="Virtua IBANs" class="rounded">
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-4 pb-md-3">Virtua IBANs for top-up or withdrawal funds</h2>
+                    <div class="row row-cols-sm-2 row-cols-1 g-4">
+                        <div class="col">
+                            <i class="cri-security mb-3 fs-xl text-dark"></i>
+                            <p class="mb-0 fs-lg">Allow your customers to use virtual IBANs for top-up or withdrawal
+                                funds. Crassula will enable it easily by request.</p>
+                        </div>
+                        <div class="col">
+                            <i class="cri-transfer mb-3 fs-xl text-dark"></i>
+                            <p class="mb-0 fs-lg">Use the most recognized BaaS providers and banks to support your
+                                project with IBAN generation for end-users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Business Accounts</h2>
+                    <p class="mb-0 fs-xl">Create accounts for legal entities with linked business card, IBAN, or used
+                        for internal payments. Set an account priority status. Mostly, Primary accounts are opened first
+                        and used for fee charging.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <img src="{% static 'images/features/accounts/05.jpg' %}" alt="Business Accounts" class="rounded">
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-md-6">
+                    <img src="{% static 'images/features/accounts/06.jpg' %}" alt="Omnibus Accounts" class="rounded">
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Omnibus Accounts</h2>
+                    <p class="mb-3 pb-1 fs-xl">Allow 3rd party Business customers to generate unlimited amount of your
+                        virtual IBANs using Crassula offered API. Use one of two generation algorithms: random account
+                        number, based on sequence generated from pre-defined rule.</p>
+{#                    <ul class="list-unstyled mb-0 fs-xl">#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="checkmark" class="me-1">#}
+{#                            Unlimited amount of your virtual IBANs#}
+{#                        </li>#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="checkmark" class="me-1">#}
+{#                            Random account number#}
+{#                        </li>#}
+{#                        <li class="mt-2 pt-1">#}
+{#                            <img src="{% static 'images/features/accounts/checkmark.svg' %}" alt="checkmark" class="me-1">#}
+{#                            Based on sequence generated from pre-defined rule#}
+{#                        </li>#}
+{#                    </ul>#}
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="row gy-4 align-items-lg-center mb-4 py-lg-5 py-md-4 py-3">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Vaults</h2>
+                    <p class="mb-2 pb-1 fs-xl">Give your clients the ability to earn with the Vaults functionality
+                        add-on. Vaults are interest-bearing accounts that have a pre-configured maturity date.</p>
+                    <p class="mb-0 fs-xl">This account requires the client's funds to remain for a fixed period to earn
+                        the defined interest rate.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <img src="{% static 'images/features/accounts/07.jpg' %}" alt="Vaults" class="rounded">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

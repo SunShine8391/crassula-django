@@ -1,0 +1,369 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Digital Banking Platform Powerful Trends"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+        {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to try digital banking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you want to build a banking product that makes customers use, investors invest in, and competitors admire, you need to consider digital banking software services. There are plenty of solutions that you might want to deploy in your business: from mobile apps to money management products. On top of that, it offers many advantages and ways for you to grow. So, begin your digitalization journey full of new revenue streams and endless benefits with no hesitation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are digital banking services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thanks to digital banking services, you can access great features starting from a remote account opening to a loan application in a few clicks. We do not even mention simple transfers between accounts, transfers of funds from and to external bank accounts, cards set-ups, and account balances statements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can build your digitized bank products today. Simply tell us about your expectations and most peculiar ideas. Do it with the consideration of details. Would you like a mobile app? What kind of interface and features do you see there? What digital banking services would you like your product to have? How about currencies? Once we know all that, the onboarding process begins. Crassula takes out the hassle of onboarding you with a preferred Banking-as-a-Platform (BaaP) partner. And voilà! Your product will be ready to launch in a week. Digital banking is a one-in-a-lifetime opportunity that offers numerous advantages and ways to improve your business. Every company that wants to please customers with digital payments is welcome to customize an easy-to-use solution without much money and effort."
+      }
+    }
+  ]
+}
+
+    </script>
+{% endblock %}
+
+{% block seo_title %}Digital Banking Platform Powerful Trends{% endblock %}
+{% block seo_description %}Digital banking is a one-in-a-lifetime opportunity that offers numerous advantages and ways
+    to improve your business.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Digital Banking Platform Powerful Trends</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Digital banking is a one-in-a-lifetime opportunity that offers numerous advantages and ways
+                            to improve your business.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What is digital banking?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What is the difference between online banking and
+                                    digital banking?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Types of trendy digital banking platform products</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Fast or Instant Payments (Instant SEPA, Faster
+                                    payments)</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>Alternative Finance</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">Unfortunately, traditional banks can’t operate administrative tasks and
+                        data processing as efficiently and securely as digital banks do. With the increased consumer
+                        demand, more and more financial institutions resort to deploying technological advancements
+                        within their product or service.</p>
+                    <p class="mb-4 pb-2 fs-lg">In this brief guide, we will break down the shift to the digital banking
+                        landscape and share the most recent trends in the fintech industry with you.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is digital banking? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is digital banking?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Digital banking is a more advanced and sophisticated way of managing
+                        finances that emerged due to the immense growth of the digital-only market. It implies that all
+                        banking operations exclusively available only within a bank branch some years back became
+                        entirely digitized.</p>
+                    <p class="mb-4 pb-2 fs-lg">Beyond that, the entire customer journey relies on artificial
+                        intelligence (AI) to automate front- and back-end operations, from the subscription to a new
+                        service or contract (online credit, savings, etc.). The digital transmission of all client
+                        documents and the electronic signature at any subscription place is an integral part of this
+                        process. This automation of all the bank services provides financial institutions, companies,
+                        and, most importantly, their customers the opportunity to conduct wealth management services
+                        faster and cheaper.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What is the difference between online banking and digital banking? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is the difference between online banking and digital banking?</h2>
+                    <p class="mb-4 pb-2 fs-lg">These two new alternatives to traditional physical establishments may
+                        seem interchangeable, but they significantly differ.</p>
+                    <p class="mb-4 pb-2 fs-lg">First of all, digital banks are most often accessible from a dedicated
+                        mobile application, while online banks are available on any terminal: PC, smartphone, or
+                        tablet.</p>
+                    <p class="mb-4 pb-2 fs-lg">Secondly, online banking is systematically backed by a traditional bank.
+                        Even if it is not connected to a physical branch, an online bank uses the existing principles
+                        and structure to offer a dematerialized offer of equivalent quality. Digital banks, on the other
+                        hand, have to do with high-level process automation, web-based services, and APIs.</p>
+                    <p class="mb-4 pb-2 fs-lg">Last but not least is the time of processing. And it’s not just about
+                        opening an account that takes a few minutes when you use a digital bank. All banking
+                        transactions are processed instantly. This immediacy of financial services is something that
+                        some online banks still need to deploy.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Types of trendy digital banking platform products -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Types of trendy digital banking platform products</h2>
+
+                    <h3 class="h4 mb-3">Native Mobile Banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">Given how convenient mobile apps are to their users, banks developed a
+                        native app to facilitate financial operations. They can be programmed from scratch with the
+                        native code language and an intelligent ecosystem fitting the technical and user experience
+                        frameworks of the device’s particular operating system.</p>
+
+                    <h3 class="h4 mb-3">BaaS</h3>
+                    <p class="mb-4 pb-2 fs-lg">Essentially, BaaS (Banking as a Service) designates the banking services
+                        which grant the use of their application programming interface (API) to third parties. It is
+                        done to enable different players to ultimately manage accounts, issue cards, provide IBANs and
+                        deliver other payment systems to their customers.</p>
+
+                    <h3 class="h4 mb-3">Embedded Banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">Embedded banking is the practice of embedding banking tools in
+                        non-financial platforms. Businesses implement it with the use of the Baas system. It allows
+                        companies, brands, or retailers to incorporate banking software directly into their websites or
+                        mobile apps with comprehensive services. They don’t need to redirect users to third-party
+                        websites, which means a smoother customer experience.</p>
+
+                    <h3 class="h4 mb-3">Cloud-Native Banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">The following automotive and scalable trend is a cloud-native environment
+                        in which IT guys build unique applications with the proper allocation of IT resources. And
+                        although the cloud-native philosophy means the detachment from on-premises infrastructure, a
+                        developed solution doesn’t lose its value—just the opposite. You have new services delivered to
+                        the market in a much shorter time frame and of high quality.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Fast or Instant Payments (Instant SEPA, Faster payments) -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Fast or Instant Payments (Instant SEPA, Faster payments)</h2>
+                    <p class="mb-4 pb-2 fs-lg">Now comes the following solution: an instant transfer of money in
+                        seconds! You can also hear the term “SEPA,” which signifies “Single Euro Payments Area,” a
+                        single euro payment area that aims to simplify bank transfers and direct debit payments. Thanks
+                        to it, individuals and companies can thus make standard or instant transfers and direct debits
+                        within this geographical area.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Alternative Finance -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Alternative Finance</h2>
+                    <p class="mb-4 pb-2 fs-lg">Alternative finance has to do with emerging banking mechanisms such as
+                        cryptocurrencies, Defi, crowdfunding, etc. Often, it is carried out with the assistance of an
+                        intermediary platform. This mode of financing involves third-party capital to connect
+                        fundraisers directly with funders, which in turn streamlines transaction costs and improves
+                        market efficiency.</p>
+                </div>
+
+                <!-- Banner -->
+                <div class="mt-5 pt-lg-5 pt-4 mb-sm-5 mb-4 pb-3">
+                    <div class="card border-0 bg-dark text-light py-3 px-sm-5 px-4">
+                        <div class="card-body p-md-5 p-4 text-center">
+                            <h3 class="mb-4 pb-sm-2 text-light">Let&apos;s discuss your project and see how we can
+                                launch your <span class="text-primary">digital core banking product</span> together</h3>
+                            <a href="{% url 'boarding:request_demo' %}" class="btn btn-accent rounded-pill">
+                                Request demo
+                                <i class="bx bx-chevron-right ms-1 lead"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Do I need to try digital banking?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">If you want to build a banking product that makes customers use,
+                                        investors invest in, and competitors admire, you need to consider digital
+                                        banking software services. There are plenty of solutions that you might want to
+                                        deploy in your business: from mobile apps to money management products</p>
+                                    <p class="mb-0">On top of that, it offers many advantages and ways for you to grow.
+                                        So, begin your digitalization journey full of new revenue streams and endless
+                                        benefits with no hesitation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What are digital banking services?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Thanks to digital banking services, you can access great features
+                                        starting from a remote account opening to a loan application in a few clicks. We
+                                        do not even mention simple transfers between accounts, transfers of funds from
+                                        and to external bank accounts, cards set-ups, and account balances
+                                        statements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    How do I get started?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">You can build your digitized bank products today. Simply tell us
+                                        about your expectations and most peculiar ideas. Do it with the consideration of
+                                        details. Would you like a mobile app? What kind of interface and features do you
+                                        see there? What digital banking services would you like your product to have?
+                                        How about currencies? Once we know all that, the onboarding process begins.
+                                        Crassula takes out the hassle of onboarding you with a preferred
+                                        Banking-as-a-Platform (BaaP) partner. And voilà! Your product will be ready to
+                                        launch in a week.</p>
+                                    <p class="mb-2">Digital banking is a one-in-a-lifetime opportunity that offers
+                                        numerous advantages and ways to improve your business. Every company that wants
+                                        to please customers with digital payments is welcome to customize an easy-to-use
+                                        solution without much money and effort.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

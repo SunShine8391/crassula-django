@@ -1,0 +1,174 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+
+// Navbar dropdown
+
+@include media-breakpoint-down(lg) {
+  .navbar-dark .dropdown-menu:not(.dropdown-menu-dark) {
+    border-color: $border-light-color;
+    .dropdown-menu-title {
+      color: $white;
+    }
+    .dropdown-item {
+      color: rgba($white, .65);
+      &:hover {
+        background-color: rgba($white, .14);
+      }
+    }
+  }
+}
+
+
+// Accordion alt style
+
+.accordion-alt {
+
+  .accordion-item:last-child {
+    .accordion-trail::after {
+      display: none;
+    }
+
+    .accordion-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: $accordion-alt-icon-size;
+    height: $accordion-alt-icon-size;
+    margin-right: $accordion-alt-icon-spacer-x;
+    border-radius: $accordion-alt-icon-border-radius;
+    font-size: $accordion-alt-icon-font-size;
+    transition: all .25s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+      margin-right: $accordion-alt-icon-spacer-x * .5;
+    }
+  }
+
+  .accordion-trail {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    width: $accordion-alt-icon-size;
+    margin-right: $accordion-alt-icon-spacer-x;
+
+    @include media-breakpoint-down(md) {
+      margin-right: $accordion-alt-icon-spacer-x * .5;
+    }
+
+    &::after {
+      display: block;
+      width: $border-width;
+      height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      transform: translateX(-($border-width * .5));
+      background-color: $accordion-alt-trail-bg;
+      transition: background-color .25s ease-in-out;
+      content: '';
+    }
+  }
+
+  .accordion-title {
+    margin-bottom: 3.5rem;
+    transition: margin-bottom .25s ease-out;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 2rem;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .accordion-button {
+    align-items: stretch;
+
+    &:not(.collapsed) {
+      pointer-events: none;
+
+      .accordion-icon {
+        background-color: $accordion-alt-icon-active-bg;
+        color: $accordion-alt-icon-active-color;
+      }
+
+      .accordion-trail::after {
+        background-color: $accordion-alt-trail-active-bg;
+      }
+
+      .accordion-title {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .accordion-icon {
+      background-color: $accordion-alt-icon-bg;
+      color: $accordion-alt-icon-color;
+    }
+
+  }
+
+  .accordion-collapse {
+    .accordion-trail::after {
+      background-color: $accordion-alt-trail-active-bg;
+    }
+  }
+
+  .accordion-body {
+    display: flex;
+  }
+}
+
+
+// Binded content
+//
+// Bind different content to different navs or even accordion.
+
+.binded-content {
+  position: relative;
+}
+.binded-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: opacity, transform;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  transform: scale(.95);
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  &.active {
+    position: relative;
+    transform: none;
+    opacity: 1;
+    z-index: 5;
+    cursor: initial;
+    pointer-events: initial;
+  }
+}
+
+
+// Card hover effect
+
+.card-hover-secondary {
+  .badge {
+    transition: all .25s ease-in-out;
+  }
+  &:hover {
+    background-color: $gray-100;
+    .badge.bg-secondary {
+      background-color: $white !important;
+    }
+  }
+}

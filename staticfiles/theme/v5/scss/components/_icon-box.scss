@@ -1,0 +1,71 @@
+//
+// Icon-box
+// --------------------------------------------------
+
+
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: $icon-box-size;
+  height: $icon-box-size;
+  font-size: $icon-box-font-size;
+  text-align: center;
+  background-color: $icon-box-bg;
+  box-shadow: $icon-box-shadow;
+  border-radius: 50%;
+  color: $icon-box-color;
+  transition: box-shadow .25s ease-in-out, background-color .25s ease-in-out, color .25s ease-in-out;
+  will-change: box-shadow;
+}
+
+
+// Sizing
+
+.icon-box-lg {
+  width: $icon-box-lg-size;
+  height: $icon-box-lg-size;
+  font-size: $icon-box-lg-font-size;
+}
+
+.icon-box-sm {
+  width: $icon-box-sm-size;
+  height: $icon-box-sm-size;
+  font-size: $icon-box-sm-font-size;
+}
+
+.icon-box-xs {
+  width: $icon-box-xs-size;
+  height: $icon-box-xs-size;
+  font-size: $icon-box-xs-font-size;
+}
+
+
+// Inside card
+
+.card.icon-box-media {
+  position: relative;
+  overflow: visible;
+  margin-top: (($icon-box-size + .375rem) * .5);
+
+  .icon-box {
+    position: absolute;
+    top: -(($icon-box-size + .375rem) * .5);
+    left: $card-spacer-x;
+    width: $icon-box-size + .375rem;
+    height: $icon-box-size + .375rem;
+    border: .375rem solid $white;
+  }
+
+  .card-body {
+    padding-top: (($icon-box-size + .375rem) * .5) + ($spacer * 1.125);
+  }
+}
+
+
+// Hover state
+
+.dropdown-item:hover > .icon-box.bg-secondary {
+  background-color: $white !important;
+}

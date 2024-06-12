@@ -1,0 +1,212 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}What is White Label Payment Gateway?{% endblock %}
+{% block seo_description %}A white-label gateway is a gateway system that allows entrepreneurs or brands to process
+    online payments using their brand name while using third-party services.{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">White Label Payment Gateway</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            A white-label gateway is a gateway system that allows entrepreneurs or brands to process
+                            online payments using their brand name while using third-party services.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>White label payment in 5 minutes</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What is a payment gateway?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>What does a payment gateway do?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Who needs a white label payment gateway and how to get
+                                    it?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>What do you need to consider when choosing a white-label
+                                    company?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>What will you get with our solution?</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Learn about a white label payment in just 5 minutes -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Learn about a white label payment in just 5 minutes</h2>
+                    <p class="mb-4 pb-2 fs-lg">As an entrepreneur, you definitely want to keep up with the latest
+                        trends. And the financial industry is not an exception. The way money inflows and outflows
+                        worked before is no longer the case now. White-label Gateway has distinctively changed the
+                        course of financial operations, serving as an efficient money gateway for businesses. If you
+                        want to find out more about it and, perhaps, build your own solution, stay tuned.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is a payment gateway? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is a payment gateway?</h2>
+                    <p class="mb-4 pb-2 fs-lg">First of all, we need to come to grips with the term. A white-label
+                        gateway is a gateway system that allows entrepreneurs or brands to process online payments using
+                        their brand name while using third-party services. “White” here refers to a product manufactured
+                        by another company with a white-label tag with no brand name or trademark on it. It is done for
+                        another company to put their label onto the product. </p>
+                    <p class="mb-4 pb-2 fs-lg">In simple words, a company puts its logo on the customized solutions
+                        while the initial brand name of the producer is removed. Then, a company uses the product for
+                        branding and selling. Basically, attributes this end product to the company itself.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What does a payment gateway do? -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What does a payment gateway do?</h2>
+
+                    <h3 class="h4 mb-3">Offers plenty of tools and interfaces</h3>
+                    <p class="mb-4 pb-2 fs-lg">If you are a great marketer or seller and don’t necessarily have the
+                        skills to develop your own online tools, a decent money gateway platform will help you. The
+                        third party developing your white-label gateway will provide you with all the assistance and
+                        technical support. Crassula, for instance, uses a modular approach to build solutions. It means
+                        that you are free to choose what functions and tools you want your financial product to have,
+                        and which ones are not important. You can design a white-label product of your dream and solve
+                        all your problems in a few clicks. This way you can save your time and effort but will still get
+                        a customized white-label gateway for your business. </p>
+
+                    <h3 class="h4 mb-3">Enables better customer retention</h3>
+                    <p class="mb-4 pb-2 fs-lg">You definitely know first-hand that customers are very picky and
+                        demanding. When it comes to making online transfers they have even more questions related to
+                        their safety and pleasant experience. If you are using a white-label-payment service, you can
+                        rebrand the solution the way you see it and use your logo on it, so that your customers will not
+                        doubt the authenticity of the payment services. This can help you increase customer loyalty and
+                        uniquely respond to every client’s needs.</p>
+
+                    <h3 class="h4 mb-3">Ensures a great level of security</h3>
+                    <p class="mb-4 pb-2 fs-lg">Thanks to predictive detection of threats and risks, white-label
+                        companies offer you great flexibility when building your security solution. You can integrate
+                        third-party services to secure your customers’ data and maximize better accuracy. If the
+                        security of your financial product is one of your concerns, our security experts can help you
+                        identify and evaluate the gravity of possible or existing risks and help you fix your compliance
+                        shortfalls. </p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Who needs a white label payment gateway and how to get it? -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Who needs a white label payment gateway and how to get it?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Every business that wishes to earn recognition and customer satisfaction
+                        needs a white-label gateway technology. To be more precise, online shops, e-commerce software,
+                        gaming platforms are often clients of ours. If you also want to get a payment gateway, you can
+                        get started simply by telling us which concrete white-label product idea you have and we will
+                        develop and launch it for you the way you see it.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What do you need to consider when choosing a white-label company? -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What do you need to consider when choosing a white-label company?</h2>
+                    <p class="mb-4 pb-2 fs-lg">The first thing to keep in mind is the company’s values. You will want to
+                        look for not only a team of experts, but also an agency of agile professionals that can fit in
+                        with your culture. Also, pay attention to a company’s PCI compliance validation. As a service
+                        provider, they will have full access to sensitive customers personal information. Therefore, you
+                        need to make sure that no data will be leaked. And for that purpose, a company you are choosing
+                        to work with should be compliant with the standards set for while label companies.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What will you get with our solution? -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What will you get with our solution?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Just taking a look at our ever-growing list of the latest integrations,
+                        can help you understand how seriously we are intended to fulfill your business aspirations.
+                        Crassula is working with over 20 banks and this number is constantly growing. This means that
+                        you are free to choose the most preferred financial institution among our trusted partners.
+                        Another undeniable advantage is the myriad of payment methods. From standard Visa, Mastercard to
+                        foreign payment types such as WeChat, Alipay, and much more. </p>
+                    <p class="mb-4 pb-2 fs-lg">Crassula is your best helper in white-label gateway building. With our
+                        experienced team of specialists in white label product development and efficient hands-on
+                        support, you can leverage and deploy a bunch of white-label managed services, allowing you to
+                        increase revenue streams and business profitability.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

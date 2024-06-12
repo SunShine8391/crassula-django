@@ -1,0 +1,353 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+    <script type="application/ld+json">
+        {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it worth building a cryptocurrency exchange platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you already have a FinTech business or planning to launch it soon, you can connect it to the blockchain to scale up internationally and add a complementary service to your offering. However, building it will be a wonderful business case if you have no background. In both situations, it is a definite ‘yes.’"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to reach the market?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crassula’s white label crypto exchange platform offers the fastest time to market. It enables you to launch a Crypto Banking solution in less than a week. This includes basic branding changes, such as adding your company logo and changing the color theme in accordance with your brand style. Deploying the base set of these features doesn’t take much. But if you’d like to add any other functionalities, features, or tools, it will take more time depending on the specific business requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Get in touch with us, and we will discuss your project and how we can build our partnership in the most joyful way possible."
+      }
+    }
+  ]
+}
+
+    </script>
+{% endblock %}
+
+
+{% block seo_title %}How to Build a Cryptocurrency Exchange Platform{% endblock %}
+{% block seo_description %}Essentially, there are two ways to create a cryptocurrency exchange platform: choosing
+    white-label products or creating the path for themselves.{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">How to Build a Cryptocurrency Exchange Platform</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Essentially, there are two ways to create a cryptocurrency exchange platform: choosing
+                            white-label products or creating the path for themselves.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What is a cryptocurrency exchange?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>How to create your own cryptocurrency exchange
+                                    platform</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>What is a white label crypto exchange?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>What are the advantages of a white label crypto banking
+                                    platform?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>Build a crypto exchange platform with Crassula</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">The crypto sector is now on the brink of mass adoption. Crypto payment
+                        transaction value will surge 70.5% in 2022 to reach $10.40 billion, and by the end of 2023, this
+                        number is expected to be 55.4% to exceed $16 billion.</p>
+                    <p class="mb-4 pb-2 fs-lg">Due to the high volume of digital transactions, crypto holders and
+                        traders require a more secure, simple, and convenient platform to store their funds. Users want
+                        to buy cryptocurrencies, wait until they hit higher exchange rates, and trade them on the
+                        exchange website.</p>
+                    <p class="mb-4 pb-2 fs-lg">This is why cryptocurrency exchanges are necessary in this industry. They
+                        allow crypto enthusiasts to buy, sell and trade their cryptocurrencies instantly and with ease.
+                        The time to build your own exchange platform is just ripe.</p>
+                    <p class="mb-4 pb-2 fs-lg">In this article, you will find out about all the nuances of
+                        cryptocurrency exchange and how to set up your own trading space with the minimum budget
+                        allocations.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is a cryptocurrency exchange? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is a cryptocurrency exchange?</h2>
+                    <p class="mb-4 pb-2 fs-lg">A cryptocurrency exchange is a virtual space in which exchanges for other
+                        digital assets, such as traditional fiat currency or other cryptographic transactions, are
+                        carried out.</p>
+                    <p class="mb-4 pb-2 fs-lg">The objective of cryptocurrency exchange is simple: to allow the trader
+                        to acquire or sell cryptocurrencies. They do this by converting fiat currency (real currency
+                        backed by a government) into the digital currency of the user’s choice and vice versa. Some
+                        players only take real money. Others only accept the digital currency. All of them charge fees
+                        in one way or another, which is key to their profitability.</p>
+                    <p class="mb-4 pb-2 fs-lg">It goes without saying that such exchange sites do not just provide
+                        payment facilities but also pay attention to security and compliance. And that’s what the
+                        regular user can’t make do without.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='crypto banking product' %}
+
+                <!-- How to create your own cryptocurrency exchange platform -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How to create your own cryptocurrency exchange platform</h2>
+                    <p class="mb-4 pb-2 fs-lg">Essentially, there are two ways to create an exchange platform: choosing
+                        white-label products or creating the path for themselves. If you are bold to try the latter one,
+                        these are the key steps you should take into consideration while developing a cryptocurrency
+                        trading platform on your own:</p>
+                    <h3 class="h4">Legal framework</h3>
+                    <p class="mb-4 pb-2 fs-lg">Studying all regulatory requirements is essential to guarantee the
+                        security of your platform. Mandatory requirements in the vast majority of crypto exchanges are
+                        AML (Anti-Money Laundering) controls and KYC crypto processes.</p>
+
+                    <h3 class="h4">Liquidity</h3>
+                    <p class="mb-4 pb-2 fs-lg">Liquidity is an important determinant of cryptocurrency’s existence
+                        exchange business. The liquidity levels determine how quickly and easily an asset can be
+                        converted into another asset. If a market is illiquid, it can cause spikes in cryptocurrency
+                        prices and, as a result, hinder trade execution.</p>
+
+                    <h3 class="h4">Protection and security</h3>
+                    <p class="mb-4 pb-2 fs-lg">A new report by Atlas VPN claims that the amount stolen by blockchain
+                        hackers throughout the first quarter of 2022 is nearly $1.3 billion. Indeed, this profitable
+                        industry is highly susceptible to hacker attacks. Thus, the protection of your cryptocurrency
+                        exchange website should be constantly updated with innovative cybersecurity solutions.</p>
+                    <p class="mb-4 pb-2 fs-lg">As you can already tell, manufacturing a product, which is a crypto
+                        exchange in our case, is a complex process that requires a lot of capital and knowledge of the
+                        volatile market. Moreover, building a basic cryptocurrency exchange from scratch also requires
+                        time: at least six months for the platform itself and 12-18 months to deploy all advanced
+                        features and implement regulations.</p>
+                    <p class="mb-4 pb-2 fs-lg">As a brand, not everyone necessarily has the expertise and resources to
+                        do it all. Developing a brand is one thing, and creating a platform is another dimension.</p>
+                    <p class="mb-4 pb-2 fs-lg">If you don’t want to risk losing your investment and making a poor
+                        quality or even faulty product, you need to consider an alternative: a white label crypto
+                        exchange solution.</p>
+
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is a white label crypto exchange? -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is a white label crypto exchange?</h2>
+                    <p class="mb-4 pb-2 fs-lg">A white label crypto exchange solution – is an off-the-shelf software
+                        designed for launch in a matter of days. With this SaaS solution, one just needs to make the
+                        preferred customizations and start his own digital asset exchange business.</p>
+                    <p class="mb-4 pb-2 fs-lg">White label solutions are gaining popularity among adventurous
+                        entrepreneurs aspiring to launch a brand-new exchange facility. Of course, you can create the
+                        software from scratch through the efforts of developers or by an open-source and modify it,
+                        which is more cost-effective and time-saving.</p>
+                    <p class="mb-4 pb-2 fs-lg">Crassula is your gateway to the world of cryptocurrencies. We can help
+                        you save tons of time and money with our software package. Our crypto exchange platform is built
+                        with a feature-rich technology packed with everything you need to get your exchange business
+                        rolling.</p>
+                    <p class="mb-4 pb-2 fs-lg">You can open accounts for your clients with unique crypto addresses,
+                        allow them to exchange fiat for crypto, make crypto transfers, invest in crypto, and issue cards
+                        for private and business clients.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What are the advantages of a white label crypto banking platform? -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What are the advantages of a white label crypto banking platform?</h2>
+                    <h3 class="h4 pb-3">Fast-entry into the crypto market</h3>
+                    <p class="mb-4 pb-2 fs-lg">Cryptocurrency trading is growing day by day, and there are more new
+                        entrants, respectively. According to the Gibraltar Finance report, the market size for
+                        cryptocurrency will reach $1087.7 million by 2026. A white label crypto exchange solution is a
+                        viable way to get to the market promptly. It is a ready-to-go and fully integrated business
+                        architecture that you can use and adjust to your own needs.</p>
+
+                    <h3 class="h4 pb-3">Enhanced Security</h3>
+                    <p class="mb-4 pb-2 fs-lg">The most important part of an exchange is security. Unless your team has
+                        cybersecurity experience to protect data during the transaction and ensure the customer’s
+                        information is not stolen, outsourcing can be a backup plan. A white label partnership will take
+                        over your exchange security.</p>
+
+                    <h3 class="h4 pb-3">An existing business expansion</h3>
+                    <p class="mb-4 pb-2 fs-lg">Many traditional financial or even non-financial businesses can upgrade
+                        their existing infrastructure by offering quick and easy access to additional brand-new products
+                        and services to their customers. For businesses trying to reach a larger audience, there’s no
+                        better way to start than by partnering with a white label platform.</p>
+
+                    <h3 class="h4 pb-3">A catalog of solutions</h3>
+                    <p class="mb-4 pb-2 fs-lg">You can multiply your sales force and boost income. Thanks to a large
+                        catalog of the most up-to-date solutions, a white label partnership allows you to diversify your
+                        offer. You will be able to announce new products that your customers hadn’t seen before, making
+                        stepping into a competitive market more seamless.</p>
+
+                    <h3 class="h4 pb-3">Reduced costs</h3>
+                    <p class="mb-4 pb-2 fs-lg">A White Label option is always cheaper than can build a platform from
+                        scratch. Marketing campaigns or expensive infrastructure are no longer a burden for you. In this
+                        vein, the financial benefits don’t go just to you but also to your consumers, that will
+                        ultimately get more affordable products and services.</p>
+
+                    <h3 class="h4 pb-3">Support around the clock</h3>
+                    <p class="mb-4 pb-2 fs-lg">You have the opportunity to set your own priorities and focus on your
+                        core competencies, while a white label partner will take care of the rest. You shouldn’t and
+                        can’t be an expert in everything. So, just keep growing the business, and operational and
+                        compliance activities will be carried out for you.</p>
+
+                    <h3 class="h4 pb-3">Increased brand awareness</h3>
+                    <p class="mb-4 pb-2 fs-lg">A white label cryptocurrency platform can integrate certain features,
+                        tools, or metrics that are essential for your business case. In other words, it means that you
+                        can fully customize it with a corporate design and a logo. Whenever your customers need trading
+                        service, they will think of you.</p>
+                    <p class="mb-4 pb-2 fs-lg">Ultimately, white-label outsourcing has numerous advantages. Do not
+                        hesitate any longer to contact a competent service provider who can deliver a top-notch platform
+                        to you in the shortest possible time.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Build a crypto exchange platform with Crassula -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Build a crypto exchange platform with Crassula</h2>
+                    <p class="mb-4 pb-2 fs-lg">If you are looking for a secure and fully-featured system in this
+                        industry, Crassula can help. Our top-rated cryptocurrency trading software supports major
+                        digital assets that you can buy, sell, trade, and exchange.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='crypto banking product' %}
+
+                <!-- FAQ -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Is it worth building a cryptocurrency exchange platform?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">If you already have a FinTech business or planning to launch it soon, you can connect it to the blockchain to scale up internationally and add a complementary service to your offering. However, building it will be a wonderful business case if you have no background. In both situations, it is a definite ‘yes.’</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long does it take to reach the market?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula’s white label crypto exchange platform offers the fastest time to market. It enables you to launch a Crypto Banking solution in less than a week.</p>
+                                    <p class="mb-2">This includes basic branding changes, such as adding your company logo and changing the color theme in accordance with your brand style. Deploying the base set of these features doesn’t take much.</p>
+                                    <p class="mb-2">But if you’d like to add any other functionalities, features, or tools, it will take more time depending on the specific business requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How can I get started?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Get in touch with us, and we will discuss your project and how we can build our partnership in the most joyful way possible.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

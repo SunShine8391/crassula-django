@@ -1,0 +1,42 @@
+{% load static %}
+
+<!-- Case studies -->
+<section class="overflow-hidden{% if marginTop %} mt-5{% endif %}">
+    <div class="container mb-lg-5 mb-4 pb-5">
+        <h2 class="h1 mb-4 pb-md-3 pb-1 text-center">Case Studies</h2>
+        <div class="row row-cols-sm-2 row-cols-1 gy-4">
+
+            <!-- Item -->
+            <div class="col" data-aos="fade-right" data-aos-duration="600">
+                <div class="card h-100 border-0 bg-secondary">
+                    <div class="card-body mt-md-4 mb-md-2 mx-md-4 m-2">
+                        <img src="{% static 'images/case-studies/logo/paysend.svg' %}" alt="Paysend Logo" class="d-block mx-auto mb-4">
+                        <div class="mx-auto text-center" style="max-width: 18.75rem">
+                            <p class="mb-2">Paysend &amp; Crassula - a banking solution for international companies</p>
+                            <a href="{% url 'cases:paysend' %}" class="nav-link d-inline fw-semibold text-dark">
+                                <u>Read case study</u>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/case-studies/assets/paysend.png' %}" alt="Paysend" class="card-img-bottom">
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col" data-aos="fade-left" data-aos-duration="600">
+                <div class="card h-100 border-0 bg-secondary">
+                    <div class="card-body mt-md-4 mb-md-2 mx-md-4 m-2">
+                        <img src="{% static 'images/case-studies/logo/safecurrency.svg' %}" alt="Safe Currency Logo" class="d-block mx-auto mb-4">
+                        <div class="mx-auto text-center" style="max-width: 18.75rem">
+                            <p class="mb-2">Safe Currency offers smooth and safe conversion of funds</p>
+                            <a href="{% url 'cases:safe_currency' %}" class="nav-link d-inline fw-semibold text-dark">
+                                <u>Read case study</u>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/case-studies/assets/safecurrency.png' %}" alt="Safe Currency" class="card-img-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

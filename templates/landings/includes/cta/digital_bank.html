@@ -1,0 +1,19 @@
+{% load static %}
+<section class="container mb-lg-5 mb-4">
+    <div class="card border-0 bg-position-center bg-size-cover bg-repeat-0 bg-dark text-light">
+        <div class="card-body my-lg-5 my-3 mx-auto py-5 text-center" style="max-width: 624px;">
+            <h2 class="display-4 mb-4 pb-2 text-light">Create a digital bank in a matter of days</h2>
+            <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-accent mb-5">
+                Request demo
+                <i class="bx bxs-chevron-right ms-1"></i>
+            </a>
+            <div>
+                <img src="{% static 'images/home/cta/logos.png' %}" width="104" alt="Companies" class="mb-2">
+                <div>
+                    <b class="fs-lg">150+</b>
+                    <span class="opacity-70">companies already with us</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

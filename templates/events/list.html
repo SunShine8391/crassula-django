@@ -1,0 +1,81 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}Events{% endblock %}
+
+{% block seo_description %}
+    Our team attends a wide range of events, including conferences, seminars, and workshops, to stay up-to-date with the
+    latest industry trends and connect with other professionals in the fintech community.
+{% endblock %}
+
+{% block content %}
+    <!-- Events -->
+    <section class="container mb-lg-5 mb-sm-3 py-5 mt-5">
+        <a href="{% url 'landings:home' %}" class="nav-link d-inline-block mb-4 fs-sm text-muted mt-5">
+            <i class="cri-chevron-left me-1"></i>
+            Back to home page
+        </a>
+        <h1 class="display-5 mb-4">Upcoming events</h1>
+
+        <!-- Item -->
+        {% for event in events %}
+            <div class="row gy-4 align-items-xl-center">
+                <div class="col-lg-2 col-sm-3">
+                    <a href="{{ event.get_absolute_url }}" class="d-block">
+                        <div class="ratio ratio-1x1 bg-size-cover bg-position-center bg-repeat-0 rounded"
+                             style="background-image: url({% if event.logo %}{{ event.logo.url }}{% endif %});"></div>
+                    </a>
+                </div>
+                <div class="col-lg-10 col-sm-9">
+                    <div class="d-md-flex align-items-xl-center align-items-start justify-content-between mt-n4">
+                        <div class="mt-4" style="max-width: 46.625rem;">
+                            <h5 class="mb-2 pb-1">
+                                <a href="{{ event.get_absolute_url }}">{{ event.name }}</a>
+                            </h5>
+                            <p class="mb-md-4 mb-3 fs-lg">{{ event.description }}</p>
+                            <ul class="list-unstyled d-flex align-items-start flex-wrap fw-semibold text-nowrap text-dark mt-lg-n4 mt-n3 mb-0 ms-lg-n4 ms-n3">
+                                <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                    <span class="d-inline-block me-1 fw-normal text-muted">Date: </span>
+                                    {{ event.date_start }}
+                                    {% if event.status == 'live' %}
+                                        <span class="badge bg-danger ms-1">Live</span>
+                                    {% elif event.status == 'upcoming' %}
+                                        <span class="badge bg-success ms-1">Upcoming</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary ms-1">Ended</span>
+                                    {% endif %}
+                                </li>
+                                {% if event.location %}
+                                    <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                        <span class="d-inline-block me-1 fw-normal text-muted">Location:</span>
+                                        {{ event.location }}
+                                    </li>
+                                {% endif %}
+                                {% if event.stand %}
+                                    <li class="mt-lg-4 mt-3 ms-lg-4 ms-3 me-lg-2">
+                                        <span class="d-inline-block me-1 fw-normal text-muted">Stand:</span>
+                                        {{ event.stand }}
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <div class="mt-4 ms-md-4">
+                            <a href="{{ event.get_absolute_url }}"
+                               class="btn btn-lg btn-outline-secondary rounded-pill w-sm-auto w-100">
+                                Book a meeting
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 2.5rem 0;">
+        {% endfor %}
+
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

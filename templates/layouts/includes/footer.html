@@ -1,0 +1,138 @@
+{% load static %}
+<footer class="container py-lg-5 py-4">
+    <div class="row gy-lg-5 gy-4 mb-md-5 mb-3 pb-2">
+        <div class="col-md-4 mb-lg-0 mb-3">
+            <img src="{% static 'images/home/logo-dark.svg' %}" alt="Crassula" class="mb-md-4 mb-2">
+            <div>
+
+                <!-- App Store button -->
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-dark btn-lg mt-3 px-3 py-2 rounded-pill" style="min-width: 174px;">
+                    <img src="{% static 'images/market/appstore-light.svg' %}" class="light-mode-img" width="124" alt="App Store">
+                    <img src="{% static 'images/market/appstore-dark.svg' %}" class="dark-mode-img" width="124" alt="App Store">
+                </a>
+
+                <br>
+
+                <!-- Google Play button -->
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-dark btn-lg mt-3 px-3 py-2 rounded-pill" style="min-width: 174px;">
+                    <img src="{% static 'images/market/googleplay-light.svg' %}" class="light-mode-img" width="139"
+                         alt="Google Play">
+                    <img src="{% static 'images/market/googleplay-dark.svg' %}" class="dark-mode-img" width="139"
+                         alt="Google Play">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <h6 class="mb-2 pb-1">Solution</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'solutions:challenger_banks' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Challenger
+                        Banks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'solutions:railsr' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Railsr</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'solutions:clearbank' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Clear.Bank</a>
+                </li>
+            </ul>
+            <h6 class="mb-2 pb-1 mt-5">Case Studies</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'cases:paysend' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Paysend</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'cases:safe_currency' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Safe Currency</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <h6 class="mb-2 pb-1">Developers</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'landings:developers' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.crassula.io/client" rel="nofollow" class="nav-link d-inline-block px-0 py-1 fw-normal">Banking
+                        API</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.crassula.io/" rel="nofollow" class="nav-link d-inline-block px-0 py-1 fw-normal">Checkout
+                        doc</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.crassula.io/api/" rel="nofollow" class="nav-link d-inline-block px-0 py-1 fw-normal">REST
+                        API doc</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <h6 class="mb-2 pb-1">Resources</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'blog:main' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'guides:main' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://help.crassula.io/knowledge/" rel="nofollow" class="nav-link d-inline-block px-0 py-1 fw-normal">Documentation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <h6 class="mb-2 pb-1">Company</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'landings:company' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'careers:main' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'landings:contacts' %}" class="nav-link d-inline-block px-0 py-1 fw-normal">Contact
+                        us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-top pt-4 pb-3 text-lg-start text-center">
+        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-center pt-lg-2">
+            <div>
+                <ul class="nav justify-content-lg-start justify-content-center mx-sm-n3 mb-2">
+                    <li class="nav-item"><a href="{% url 'pages:privacy' %}" class="nav-link me-lg-1 px-3 fw-normal">Privacy Policy</a></li>
+                    <li class="nav-item"><a href="{% url 'pages:terms' %}" class="nav-link me-lg-1 px-3 fw-normal">Terms of Use</a></li>
+                    <li class="nav-item"><a href="{% url 'pages:gdpr' %}" class="nav-link me-lg-1 px-3 fw-normal">Data Protection Policy</a>
+                    </li>
+                </ul>
+                <p class="mb-0 text-muted">CRASSULA SIA designs and operates the Crassula website and mobile
+                    application.</p>
+                <p class="mb-0 text-muted">Crassula is a registered Trademark of CRATECH LTD, and may not be used or
+                    reproduced without the consent of the owner.</p>
+            </div>
+            <div class="mt-lg-n3 ms-n3">
+                <a href="https://www.facebook.com/crassula.io" rel="nofollow" target="_blank" class="btn btn-icon btn-secondary btn-facebook mt-3 ms-3">
+                    <i class="bx bxl-facebook-square"></i>
+                </a>
+                <a href="https://twitter.com/crassu_la" rel="nofollow" target="_blank" class="btn btn-icon btn-secondary btn-twitter mt-3 ms-3">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/crassula_io/" rel="nofollow" target="_blank" class="btn btn-icon btn-secondary btn-instagram mt-3 ms-3">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://t.me/crassula" rel="nofollow" target="_blank" class="btn btn-icon btn-secondary btn-telegram mt-3 ms-3">
+                    <i class="bx bxl-telegram"></i>
+                </a>
+                <a href="https://medium.com/@Crassula" rel="nofollow" target="_blank" class="btn btn-icon btn-secondary btn-medium mt-3 ms-3">
+                    <i class="bx bxl-medium"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Back to top button -->
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>

@@ -1,0 +1,292 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Open Banking"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+{% endblock %}
+
+{% block seo_title %}Open Banking: a Revolution for the Financial Sector{% endblock %}
+{% block seo_description %}A comprehensive guide to open banking. The banking industry has undergone a major digital
+    transformation over the past years, and the traditional banking concentration is slowly ceasing to
+    exist.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Open Banking</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            A comprehensive guide to open banking
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>A comprehensive guide to open banking</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What is Open Banking?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>What is API?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Open banking solutions and trends</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>Benefits of Open Banking</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>Is open banking the future of conducting business?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-7" data-scroll>What businesses and projects can benefit from open
+                                    banking?</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- A comprehensive guide to open banking -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">A comprehensive guide to open banking</h2>
+                    <p class="mb-4 pb-2 fs-lg">The banking industry has undergone a major digital transformation over
+                        the past years, and the traditional banking concentration is slowly ceasing to exist. An ample
+                        of regulatory initiatives, the most recent of which is referred to as open banking, helps to
+                        replace an old and rusty way of managing money with more unique online services or mobile
+                        applications.</p>
+                    <p class="mb-4 pb-2 fs-lg">Such a revolution allows every player in the financial sector to better
+                        manage their finances, make informed decisions and use innovative financial solutions with
+                        transparency and trust.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What is Open Banking? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is Open Banking?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Essentially, it is when banks enable regulated trusted financial
+                        providers and third-party payment services to access, use and share a customer’s data. Banks can
+                        exchange information such as transactions, payment history, and much more. In other words, the
+                        customer’s data is open to everyone.</p>
+                    <p class="mb-4 pb-2 fs-lg">And if you are wondering, no one will share your bank credentials without
+                        your consent. National banks have developed a regulatory approach to build the data sharing
+                        framework and implement it in financial services without friction and much effort. This practice
+                        is possible by using application programming interfaces (APIs).</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What is API? -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What is API?</h2>
+
+                    <p class="mb-4 pb-2 fs-lg">As you might have understood, banks are revolutionizing the way that they
+                        generate value by embracing an open-banking approach with the use of APIs. What is an API
+                        actually? Essentially, it is like a set of routine protocols that grants access to a bank’s
+                        services to other third-party companies.</p>
+
+                    <p class="mb-4 pb-2 fs-lg">Data allows fintech to offer more innovative solutions and services that
+                        meet its customers’ needs. It enables companies or brands to connect more seamlessly with the
+                        consumers and ensure their satisfaction.</p>
+
+                    <p class="mb-4 pb-2 fs-lg">An API robust ecosystem is an integral part of data exposure, exchange,
+                        and performance. Using it within banking allows you to accelerate the data sharing process,
+                        promote connectivity and endless integration possibilities.</p>
+
+                    <p class="mb-4 pb-2 fs-lg">Crassula Banking API documentation allows you to build your own
+                        alternative and better services connected to your version of the Core Banking, whether it be a
+                        mobile application, additional services or interface for your existing product. We ensure that
+                        we are working with an up-to-date, accurate view of all the data and integrate it into your
+                        future product and help you develop embedded banking services in it.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Open banking solutions and trends -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Open banking solutions and trends</h2>
+                    <h3 class="h4 mb-3">PSD2/PSD3</h3>
+                    <p class="mb-4 pb-2 fs-lg">To put it simply, PSD2 is a European regulation for e-payment services
+                        designed to directly access online payment service users’ accounts with their consent through a
+                        dedicated interface built on APIs. The PSD2 measures are designed to open up the bank industry
+                        to new players and promote the development and use of innovative online services while ensuring
+                        consumer protection.</p>
+                    <p class="mb-4 pb-2 fs-lg">The Tink platform aggregates PSD2 data through reliable connections to
+                        European banks and financial institutions. And so, they build projects operating under their
+                        DSP2 license.</p>
+
+                    <h3 class="h4 mb-3">Embedded banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">Embedded finance is the inclusion of financial solutions in a company’s
+                        portfolio that does not have a main activity in the financial market. Thanks to this technology,
+                        companies from different sectors can be in the role of a bank, providing personalized services
+                        that are much more adjusted to the expectations of their consumers.</p>
+                    <p class="mb-4 pb-2 fs-lg">Using your own brand name, you can create your own digital bank connected
+                        to Banking-As-a-Service and deploy numerous services in your product, such as a digital account,
+                        credit card, and loans.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Benefits of Open Banking -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Benefits of Open Banking</h2>
+                    <h3 class="h4 mb-3">Improve customer relationship</h3>
+                    <p class="mb-4 pb-2 fs-lg">Open banking stimulates companies to offer a qualitative and personalized
+                        experience to each individual customer. You will no longer have to make them fill out endless
+                        questionnaires or ask for consent to access specific information.</p>
+                    <p class="mb-4 pb-2 fs-lg">Thanks to open banking, you can get in touch with a new client and have
+                        all the required data you need to answer concrete questions or requests concerning them.
+                        Moreover, by acquiring a digital bank solution, your customers will have greater control over
+                        their expenditures.</p>
+                    <p class="mb-4 pb-2 fs-lg">They will have the chance to make decisions about their investments and
+                        credit card spending, manage their money, and track their current account with one click.
+                        Everything from a single interface. Believe it or not, but such convenience of service will help
+                        you retain and even attract new customers in a short period.</p>
+
+                    <h3 class="h4 mb-3">Grow financial inclusion</h3>
+                    <p class="mb-4 pb-2 fs-lg">Open banking makes it possible to offer a truly comprehensive range of
+                        services to your customers. You can go beyond the services provided by your bank by creating all
+                        the partnerships necessary to provide the best financial solution to your customers.</p>
+                    <p class="mb-4 pb-2 fs-lg">One of them is the ability to use bank services built into the client
+                        workflow / third-party applications or devices. Indeed, this will let you conquer new markets
+                        and create partnerships with services that the bank did not yet offer.</p>
+
+                    <h3 class="h4 mb-3">Expand product offerings</h3>
+                    <p class="mb-4 pb-2 fs-lg">The open-banking ecosystem promotes the significant emergence of
+                        personalized offers to serve consumers and meet their expectations. The data enriches the
+                        knowledge of user needs that helps new techs personalize services.</p>
+                    <p class="mb-4 pb-2 fs-lg">They learn different subtleties associated with the consumers’ demands in
+                        the financial industry and find creative ways to release an excellent bank app or offer a bank
+                        solution.</p>
+                    <p class="mb-4 pb-2 fs-lg">The core open business provides financing, gives our professional,
+                        corporate, and individual customers the possibility of benefiting from means of payment, and
+                        guarantees the security of their data.</p>
+
+                    <h3 class="h4 mb-3">Overcome the industry barriers</h3>
+                    <p class="mb-4 pb-2 fs-lg">Looking back at the past of banking, consumers owning a bank account with
+                        all their data were utterly dependent on the financial institution they were in. Now, small and
+                        medium-sized businesses can enter the financial sector without the hassle of collaborating.</p>
+                    <p class="mb-4 pb-2 fs-lg">Having obtained the sharing of the consumers’ transaction data, open
+                        banking lets fintech communities build new and more affordable alternatives to traditional
+                        financial services or products. There are fewer restrictions or barriers and, as a consequence,
+                        more opportunities.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Is open banking the future of conducting business? -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Is open banking the future of conducting business?</h2>
+                    <p class="mb-4 pb-2 fs-lg">Open Banking is fundamentally changing the financial landscape, and it
+                        deserves to be taken seriously. Currently, as the number of bank branches shrinks and the role
+                        of technology accelerates, businesses have a lot to gain by setting up open banking functions in
+                        their products.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What businesses and projects can benefit from open banking? -->
+                <div id="anchor-7" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What businesses and projects can benefit from open banking?</h2>
+                    <p class="mb-4 pb-2 fs-lg">It is for businesses of all sizes. Whether you are running a large bank,
+                        managing a growing fintech platform, or a small business, it will be a win-win situation for
+                        you.</p>
+                    <p class="mb-4 pb-2 fs-lg">Crassula and our providers can introduce you to the most diverse
+                        financial solutions and unlock open banking opportunities with the minimum budget and
+                        qualitative support.</p>
+                    <p class="mb-4 pb-2 fs-lg">Would you like to move from traditional branch-based banking to open
+                        alternatives? Pick the right platform.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

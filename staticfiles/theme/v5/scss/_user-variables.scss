@@ -1,0 +1,129 @@
+//
+// user-variables.scss
+// Use this to override Bootstrap and Silicon variables
+//
+
+// Example of a variable override to change Silicon background color
+// Remove the "//" to comment it in and see it in action!
+// $body-bg: #12263F;
+
+
+
+//== Colors
+//
+// Grayscale
+$white:                       #fff;
+$gray-100:                    #f6f7f8;
+$gray-200:                    #f1f3f4;
+$gray-300:                    #e7e9ec;
+$gray-400:                    #d2d7dd;
+$gray-500:                    #b2b6bc;
+$gray-600:                    #898c96;
+$gray-700:                    #646b76;
+$gray-800:                    #242529;
+$gray-900:                    #0a0b0c;
+$black:                       #000;
+
+// Theme colors
+$primary:                     #56d3a2;
+$accent:                      #f4d06b;
+$secondary:                   $gray-200;
+$info:		                    #4c82f7;
+$success:                     #22c55e;
+$warning:                     #F4D06B;
+$danger:                      #ef4444;
+$light:                       $gray-100;
+$dark:                        $gray-900;
+
+// Bootstrap's $theme-colors map
+$theme-colors: (
+  'primary':    $primary,
+  'accent':     $accent,
+  'secondary':  $secondary,
+  'success':    $success,
+  'info':       $info,
+  'warning':    $warning,
+  'danger':     $danger,
+  'light':      $light,
+  'dark':       $dark
+);
+
+
+// Fonts
+
+$path-to-fonts:                             'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap';
+
+$font-family-sans-serif:                    'Source Sans Pro', sans-serif;
+
+$font-weight-medium:                        600;
+$font-weight-semibold:                      600;
+$font-weight-bold:                          700;
+
+$headings-font-weight:                      $font-weight-semibold;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width:                              1px;
+$border-color:                              $gray-300;
+$border-light-color:                        rgba($white, .14);
+
+$border-radius:                             .375rem;
+$border-radius-lg:                          .5rem;
+$border-radius-sm:                          .25rem;
+$border-radius-pill:                        50rem;
+
+
+// Buttons
+
+$btn-color:                                 $gray-900;
+$btn-font-weight:                           $font-weight-semibold;
+
+$btn-border-radius:                         $border-radius-pill;
+$btn-border-radius-sm:                      $border-radius-pill;
+$btn-border-radius-lg:                      $border-radius-pill;
+
+
+// Mega dropdown
+
+$mega-dropdown-column-width:                20.625rem;
+
+
+// Navs
+
+$nav-link-color:                            $gray-700;
+
+
+// Navbar
+
+$navbar-nav-link-padding-x:                 1rem;
+
+
+// Dropdown
+
+$dropdown-link-hover-color:                 $nav-link-color;
+$dropdown-link-hover-bg:                    $gray-100;
+
+
+// Carousel
+
+$carousel-nav-btn-border-radius:            50%;
+$carousel-nav-btn-bg:                       $gray-100;
+$carousel-nav-btn-box-shadow:               none;
+
+
+// Accordion alt
+
+$accordion-alt-icon-spacer-y:               .5rem;
+$accordion-alt-icon-spacer-x:               2rem;
+$accordion-alt-icon-size:                   2rem;
+$accordion-alt-icon-font-size:              1rem;
+$accordion-alt-icon-border-radius:          50%;
+$accordion-alt-icon-bg:                     $gray-100;
+$accordion-alt-icon-active-bg:              $primary;
+$accordion-alt-icon-color:                  $gray-700;
+$accordion-alt-icon-active-color:           $gray-800;
+$accordion-alt-trail-bg:                    $gray-300;
+$accordion-alt-trail-active-bg:             $primary;

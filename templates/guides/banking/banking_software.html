@@ -1,0 +1,380 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://crassula.io/guides/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Banking software precisely designed for your Fintech business"
+      }]
+    }
+    </script>
+
+    <!-- FAQ -->
+    <script type="application/ld+json">
+        {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who can use the Crassula banking software solution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our virtual online banking platform is a perfect fit for anyone who wants to build its own banking or payment solution and deal with client accounts. Whether you are a finance or trust company, a regulated financial institution, a bank, an exchange currency company, or even a non-financial organization, you are warmly welcome to reach out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What banking solution options do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crassula offers a SaaS solution that allows various companies to build other fintech solutions on the platform. Based on your business needs and goals, you can choose an ideal solution. If you are a finance market newbie, we suggest going for our SaaS solution. However, for companies experienced in the fintech industry, we recommend the second option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add financial products to my own app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If you already have an app, we will connect to it through API and integrate all the functionalities with external third-party platforms."
+      }
+    }
+  ]
+}
+
+    </script>
+{% endblock %}
+
+{% block seo_title %}Best White Label Digital Banking software{% endblock %}
+{% block seo_description %}Our single banking software platform has everything you need and provides facilities under
+    proper management.{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section
+            class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}"
+                       class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">Banking software precisely designed for your Fintech
+                            business</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Our single banking software platform has everything you need and provides facilities under
+                            proper management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5"
+                         style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
+                                data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>We are ready to make your business goals come to
+                                    life</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>What are the gains?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Redefine your retail and corporate banking customer
+                                    experience</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>Digitize your business with Crassula</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">Crassula offers the most comprehensive and hassle-free portfolio of
+                        software solutions in the market. We know how to address the needs and wants of banks, financial
+                        service businesses, and other regulated electronic money institutions of any size and scope. Our
+                        platform guarantees cost reduction and elimination of complexities and obstacles associated with
+                        building and launching financial products or services. Would you like to innovate and expand
+                        yours? Crassula’s team is ready to help you out with its banking offerings.</p>
+                </div>
+
+                <!-- We are ready to make your business goals come to life -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">We are ready to make your business goals come to life</h2>
+                    <h3 class="h4">Single Platform for Efficiency</h3>
+                    <p class="mb-4 pb-2 fs-lg">You don’t need to look for other platforms or providers to kick the
+                        entire process. Our single banking software platform has everything you need and provides
+                        facilities under proper management. We introduce you to all the required service providers or
+                        assign new ones for your particular project.</p>
+
+                    <h3 class="h4">Tighter Compliance</h3>
+                    <p class="mb-4 pb-2 fs-lg">In order to meet all requirements, we deliver configurable best practices
+                        for managing manual revaluations, updates, and releases. It is ideally designed for Banks, EMIs,
+                        APIs, MSBs, and other financial institutions that want to maintain regulatory procedures in a
+                        modern way. Crassula brings the best AML/KYC and onboarding tools inside its banking software
+                        product. Financial monitoring tools like ComplyAdvantage or Hantli could give Crassula customers
+                        an ideal inside outlook on its customer database and transactions integrity.</p>
+
+                    <h3 class="h4">Speedy launch</h3>
+                    <p class="mb-4 pb-2 fs-lg">How about this one? We will not keep you waiting longer than ten business
+                        days. With Crassula, you can customize a brand new financial product in less than a week and
+                        offer a range of opportunities to your customers. Crassula software banking product stays in the
+                        cloud giving customers 24/7 access with up to 99.9% uptime.</p>
+
+                    <h3 class="h4">Enhanced flexibility</h3>
+                    <p class="mb-4 pb-2 fs-lg">Crassula’s platform is built on a modular system that enables excellent
+                        flexibility and many variations of how financial solutions can be done. You can adjust a
+                        financial product to match any specific business needs and build an exclusive development on the
+                        market with us. Crassula’s development team is capable of performing complex integration tasks
+                        in addition to new feature development aimed to cover customers’ demands in UX/UI and core
+                        functionality improvements.</p>
+
+                    <h3 class="h4">Minimum budget</h3>
+                    <p class="mb-4 pb-2 fs-lg">We introduce you to the latest banking software technology even if your
+                        budget is limited, letting everyone digitize their banking customer experience. Launching with
+                        us is so affordable that you can get a White Labeled product for the price of hiring an IT
+                        developer.</p>
+
+                    <h3 class="h4">Versatility</h3>
+                    <p class="mb-4 pb-2 fs-lg">Crassula is the most versatile white-label online banking app on the
+                        market. We are working with a dozen institutions, including banks, neo-banks, payment
+                        institutions, cryptocurrency exchanges, asset companies, e-money institutions, and anyone else
+                        involved in client accounts management.</p>
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='digital banking product' %}
+
+                <!-- What are the gains? -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What are the gains?</h2>
+                    <h3 class="h4">For your business</h3>
+                    <ul>
+                        <li>You will receive many customer insights and understand their needs and behaviors better
+                            thanks to the automation of our solutions.
+                        </li>
+                        <li>You can get rid of your own IT department and development hassle to minimize integrations
+                            and have everything implemented at one platform very cost-efficiently .
+                        </li>
+                        <li>As a business owner, you just think about how to grow your business and customer engagement,
+                            and we will take care of everything else.
+                        </li>
+                    </ul>
+
+                    <h3 class="h4">For your business</h3>
+                    <ul>
+                        <li>You can build a unique customer journey and hook them with end-to-end online banking
+                            solutions with our future-forward approaches.
+                        </li>
+                        <li>Crassula helps you keep customers at the core by giving them the most personalized
+                            offerings.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Redefine your retail and corporate banking customer experience -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Redefine your retail and corporate banking customer experience</h2>
+                    <p class="mb-4 pb-2 fs-lg">We want your finance experience to come off with flying colors. That’s
+                        why we give you access to a wealth of the essential features and tools necessary to build the
+                        banking solutions of your dreams.</p>
+
+                    <h3 class="h4 mb-3">Mobile banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">Bring your customers’ experience to the next level with a full range of
+                        loyalty programs, exchanges, transactions, personalized offerings, and much more on their
+                        phones. Crassula will assist you in building mobile banking solutions or provide ready-made iOS
+                        and Android applications ideally matching your clients’ specific needs.</p>
+
+                    <h3 class="h4 mb-3">Balance and operations</h3>
+                    <p class="mb-4 pb-2 fs-lg">If your goal is to carry out finance operations, but you know nothing
+                        about how to organize your own bank, we are ready to make your life easier. The BaaS model
+                        enables you to implement financial operations such as lending and depositing through its
+                        interface. Moreover, this is your extra channel of essential data and insights: forecast a
+                        banking app’s customer trends and spending behaviors.</p>
+
+                    <h3 class="h4 mb-3">KYC and AML compliance</h3>
+                    <p class="mb-4 pb-2 fs-lg">Be confident that increased security and protection against fraud are
+                        guaranteed. Protect your business and your customers. Crassula platform is compliant with Know
+                        Your Customer (KYC) and Anti-Money Laundering (AML). We can help you mitigate any risks
+                        associated with financial crimes.</p>
+
+                    <h3 class="h4 mb-3">Support around the clock</h3>
+                    <p class="mb-4 pb-2 fs-lg">Crassula will service you on a daily basis. In case any questions arise,
+                        we are there for you to solve them. Your own manager and tech support will handle
+                        everything.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Digitize your business with Crassula -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Digitize your business with Crassula</h2>
+                    <p class="mb-4 pb-2 fs-lg">It is easier to run a business with automation of all processes and new
+                        future forward-driven solutions. You can earn a competitive advantage and high revenue by
+                        delivering personalized offerings and robust financial products to your customers.</p>
+                    <p class="mb-4 pb-2 fs-lg">However, achieving all of that is possible only when you have your own
+                        bank or with our providers that can do everything at a low cost and in less than a week.
+                        Crassula is your getaway solution to make a vast array of integrations and revolutionize how you
+                        do business.</p>
+                </div>
+
+                <!-- Banner -->
+                <div class="mt-5 pt-lg-5 pt-4 mb-sm-5 mb-4 pb-3">
+                    <div class="card border-0 bg-dark text-light py-3 px-sm-5 px-4">
+                        <div class="card-body p-md-5 p-4 text-center">
+                            <h3 class="mb-4 pb-sm-2 text-light">Let&apos;s discuss your project and see how we can
+                                launch your <span class="text-primary">digital core banking product</span> together</h3>
+                            <a href="{% url 'boarding:request_demo' %}" class="btn btn-accent rounded-pill">
+                                Request demo
+                                <i class="bx bx-chevron-right ms-1 lead"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Who can use the Crassula banking software solution?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Our virtual online banking platform is a perfect fit for anyone who
+                                        wants to build its own banking or payment solution and deal with client
+                                        accounts. Whether you are a finance or trust company, a regulated financial
+                                        institution, a bank, an exchange currency company, or even a non-financial
+                                        organization, you are warmly welcome to reach out.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What banking solution options do you offer?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula offers a SaaS solution that allows various companies to
+                                        build other fintech solutions on the platform. Based on your business needs and
+                                        goals, you can choose an ideal solution. If you are a finance market newbie, we
+                                        suggest going for our SaaS solution. However, for companies experienced in the
+                                        fintech industry, we recommend the second option.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Can I add financial products to my own app?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Yes. If you already have an app, we will connect to it through API
+                                        and integrate all the functionalities with external third-party platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

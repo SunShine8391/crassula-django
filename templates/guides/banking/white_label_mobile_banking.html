@@ -1,0 +1,556 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block structured_data %}
+    <script type="application/ld+json">
+    {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [{
+		"@type": "Question",
+		"name": "What Is A White-label Mobile Banking App?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "A white label mobile banking app is an app supercharged with digital banking services. In white-label banking, businesses leverage pre-built technology and software supplied by the fintech solution provider and the regulated infrastructure, such as banking licenses, compliance, and regulatory authorization from banks."
+		}
+	}, {
+		"@type": "Question",
+		"name": "Why Use A White-label Mobile Banking App For Building A Neo-bank?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Because it allows you to offer banking services quickly and at lower development costs. If you see the magnitude with which neo-banks are revolutionising the banking industry and thinking of building one, a white label mobile banking app is a great choice."
+		}
+	}, {
+		"@type": "Question",
+		"name": "How Do I Start Using A White Label Banking App?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Crassula specialises in building neo-banks of different scopes and propositions. With our White Label Software and Clear.Bank's banking infrastructure, you can set up a successful fintech business."
+		}
+	}]
+    }
+    </script>
+{% endblock %}
+
+{% block seo_title %}White-label Mobile Banking App | An Ultimate Guide To Using The Solution{% endblock %}
+{% block seo_description %}Building Mobile Banking is now bliss with Crassula White Label SaaS compatible with iOS and
+    Android mobile platforms. Launch a fully branded Mobile Banking in a cloud in less than a week.{% endblock %}
+
+{% block content %}
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 mb-lg-5 mb-3 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 position-relative text-center text-lg-start">
+                    <a href="{% url 'guides:main' %}" class="nav-link position-absolute top-0 start-0 mx-2 mt-lg-n5 mt-n4 p-0">
+                        <i class="bx bx-chevron-left me-1"></i>
+                        Back to the guides
+                    </a>
+                    <div class="mx-lg-0 mx-auto pt-lg-0 pt-4" style="max-width: 526px;">
+                        <h1 class="display-5 text-light">White Label Mobile Banking Apps</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">
+                            Building Mobile Banking is now bliss with Crassula White Label SaaS compatible with iOS and
+                            Android mobile platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="0.1">
+                            <img src="{% static 'images/guides/core-banking/1.png' %}" alt="Core Banking Interface">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.2">
+                            <img src="{% static 'images/guides/core-banking/2.png' %}" alt="Core Banking Card">
+                        </div>
+                        <div class="parallax-layer zindex-3" data-depth="0.15">
+                            <img src="{% static 'images/guides/core-banking/3.png' %}" alt="Core Banking Payments">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Legend -->
+    <section class="container mb-lg-5 mb-3 py-5">
+        <div class="row">
+
+            <!-- Sidebar (Offcanvas below lg breakpoint) -->
+            <aside class="col-lg-3 d-lg-block d-none">
+                <div class="offcanvas-lg offcanvas-start offcanvas-sticky start-0" id="blog-sidebar" tabindex="-1">
+
+                    <!-- Header -->
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title fs-4">
+                            <i class="bx bx-menu fs-2 align-middle mt-n1 me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#blog-sidebar"></button>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="offcanvas-body">
+
+                        {% include 'guides/includes/author.html' %}
+
+                        <h3 class="d-lg-flex d-none mb-4 py-2 fs-4">
+                            <i class="bx bx-menu fs-2 align-middle me-1"></i>
+                            <span>Table of Contents</span>
+                        </h3>
+                        <div id="jumpToNav">
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-1" data-scroll>What Is A White-Label Mobile Banking App?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-2" data-scroll>Benefits of using a White-Label solution for building a
+                                    neo-bank</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-3" data-scroll>Private-label Banking Vs White-label Banking Apps</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-4" data-scroll>How To Start Using A White Label Banking App</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-5" data-scroll>What Does The Future Hold For White Label Banking
+                                    Services?</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-6" data-scroll>Digitize Your Business With Crassula</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-7" data-scroll>Conclusion</a>
+                            </h6>
+                            <h6 class="mb-3 pb-1">
+                                <a href="#anchor-8" data-scroll>FAQ</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8 offset-lg-1">
+
+                <!-- Description -->
+                <div class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <p class="mb-4 pb-2 fs-lg">In the not-so-distant future, many companies will rely on financial
+                        services as a significant source of income, potentially leading to a world in which every
+                        company becomes a financial service provider. What drives this fundamental transformation in
+                        business is a single infrastructure comprised of an established bank's licensing, regulatory
+                        compliance, and technology on the backend. You guessed it! We’re alluding to a proven white
+                        label business model. If you aim to keep pace with a fast-moving digital landscape and provide
+                        advanced financing solutions to your customers in your own mobile bank, you’ve come to the right
+                        place.</p>
+                    <p class="mb-4 pb-2 fs-lg">In this guide, we will cover white label mobile banking apps and the
+                        benefits of using them from a business perspective. Then, the focus will be shifted to FinTech
+                        application and software development. You will find out more about the pathway from the ground
+                        up to your own white label mobile banking app and business digitization. So, keep reading to
+                        learn all the ins and outs of affordable and secure app development. </p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- What Is A White-Label Mobile Banking App? -->
+                <div id="anchor-1" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What Is A White-Label Mobile Banking App?</h2>
+
+                    <p class="mb-4 pb-2 fs-lg">In recent years, mobile banking has gained immense popularity among
+                        consumers as a convenient and easy-to-use way of managing their finances. So, more and more
+                        businesses opt for a white label banking solution to hop on the trend and build their own proper
+                        app. But before we spill the secrets of mobile banking app development, let’s first get to the
+                        basics. </p>
+
+                    <h3 class="h4 mb-3">About White-Label Mobile Banking</h3>
+                    <p class="mb-4 pb-2 fs-lg">In a nutshell, White-Label Mobile Banking is a process in which banks
+                        provide third parties with access to APIs to build a mobile banking app that financial
+                        institutions can customize with their branding and use to provide their customers with banking
+                        services. Such an app allows remote 24-hour access and finance management via a mobile device,
+                        like a smartphone or tablet. From checking the balance and viewing account history to
+                        transferring money abroad. Thanks to the indispensable white label model, your customers can
+                        leverage a mobile banking app to the fullest without visiting a brick-and-mortar branch. </p>
+
+                    <h3 class="h4 mb-3">Flexibility</h3>
+                    <p class="mb-4 pb-2 fs-lg">Customize your mobile apps to support your USPs and specific business
+                        needs in a function-rich yet simple way. The modular solution helps to enable new functionality
+                        fast while White Label features allow modifying your branding features to stand out from the
+                        crowd.</p>
+                    <p class="mb-4 pb-2 fs-lg">Would you like to explore new revenue streams and gain a competitive
+                        advantage by giving your customers a top-notch financial experience? A white-label mobile
+                        banking solution can be a good idea for you.</p>
+
+                    <h3 class="h4 mb-3">Common Services</h3>
+                    <p class="mb-4 pb-2 fs-lg">A broad variety of providers offer FinTechs a simple integration for all
+                        the services, such as deposits, lending, and payment features, under one platform. The following
+                        is a complete list of white label banking app services:</p>
+                    <ul class="mb-4 pb-2 fs-lg">
+                        <li>Savings and checking accounts</li>
+                        <li>Account management</li>
+                        <li>Account balance and transaction history</li>
+                        <li>Debit and credit cards</li>
+                        <li>Simplified bill payments</li>
+                        <li>Online payment transfer systems</li>
+                        <li>Loan and credit card applications</li>
+                        <li>Bank statements with transaction details</li>
+                        <li>Balance notifications</li>
+                        <li>Budgeting and expense tracking</li>
+                        <li>Multi-currency accounts with IBANs</li>
+                        <li>Private and Business banking</li>
+                        <li>Crypto accounts & FX</li>
+                        <li>SEPA & International transfers</li>
+                        <li>Card issuing</li>
+                        <li>Mobile onboarding & Verification</li>
+                    </ul>
+
+                    <h3 class="h4 mb-3">How Does It Work?</h3>
+                    <p class="mb-4 pb-2 fs-lg">White label is a simple solution for fintech companies to get into the
+                        market faster and save valuable resources. These companies purchase software from a service
+                        provider and then rebrand it as their own.</p>
+                    <p class="mb-4 pb-2 fs-lg">Essentially, certified banking providers offer their code and
+                        infrastructure to deploy a white label mobile banking app with banking features. With API-based
+                        solutions, companies can connect to financial and accounting software provided by banking
+                        institutions and build their own financial product. </p>
+                    <p class="mb-4 pb-2 fs-lg">Once the launch is done, they can supercharge the customer-centric white
+                        label mobile banking app with all the bells and whistles that customers will love. That is to
+                        say, enable them to create and operate their accounts, receive, transfer, and exchange money,
+                        get an overview of all transactions, manage all aspects of interaction across all the integrated
+                        channels, and ensure the highest level of customer satisfaction.</p>
+
+                </div>
+
+                {% include 'landings/includes/cta/digital_bank_small.html' with service='mobile banking app' %}
+
+                <!-- Benefits of using a White-Label solution for building a neo-bank -->
+                <div id="anchor-2" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Benefits of using a White-Label solution for building a neo-bank</h2>
+                    <p class="mb-4 pb-2 fs-lg">In this section of our guide, we will define the main pros of building
+                        your own financial services and products facilitated by a white label digital banking platform.
+                        Without any doubt, there are various advantages of using such solutions. Let’s take a look at
+                        all of them in greater detail below.</p>
+
+                    <h3 class="h4 mb-3">Lower Costs</h3>
+                    <p class="mb-4 pb-2 fs-lg">Building a custom app with seasoned designers, developers, and project
+                        managers will cost you much more than buying a ready-made app solution and branding and
+                        customizing it to your needs. Such outsourced development allows you to direct and allocate
+                        financial resources more smartly.</p>
+
+                    <h3 class="h4 mb-3">Saves Time</h3>
+                    <p class="mb-4 pb-2 fs-lg">Efficient use of resources is guaranteed. You can save hundreds of hours
+                        and leave in-house development to tech experts, cut the time to launch, and obtain a
+                        ready-to-use white label mobile banking app in a matter of a few weeks.</p>
+
+                    <h3 class="h4 mb-3">Increased Flexibility</h3>
+                    <p class="mb-4 pb-2 fs-lg">When you create a white label mobile banking app, you can choose the app
+                        architecture on your own, including packaging, branding, marketing, design, currency options,
+                        and much more. Regardless of your niche or business industry, it can be tailored to your unique
+                        business needs.</p>
+
+                    <h3 class="h4 mb-3">Access To Advanced Technology</h3>
+                    <p class="mb-4 pb-2 fs-lg">Are you looking into turning your app idea into a full-fledged business?
+                        It's only possible with the latest cutting-edge technology. White label ready-made licensed
+                        software allows you to bring new tools and services to the market before anyone else.</p>
+
+                    <h3 class="h4 mb-3">Better Customer Experience</h3>
+                    <p class="mb-4 pb-2 fs-lg">In the financial service industry, we need to recognize the importance of
+                        customer satisfaction. The white label model takes this into account and allows you to service
+                        your customers with the greatest attention to detail.</p>
+
+                    <h3 class="h4 mb-3">Regulatory Compliance</h3>
+                    <p class="mb-4 pb-2 fs-lg">Cultivating a compliance-competent culture within financial institutions
+                        has never been easier. A white-label mobile banking solution takes away the regulatory burden
+                        off your shoulders. Essentially, it helps to limit fraud, identify money laundering, prevent
+                        terrorism financing and other malicious schemes through AML/KYC procedures. Inevitably,
+                        regulatory requirements constantly evolve, so it’s crucial to know how to respond to them
+                        flexibly.</p>
+
+                    <h3 class="h4 mb-3">Branding Opportunities</h3>
+                    <p class="mb-4 pb-2 fs-lg">Last but not least, you get the chance to focus on what you excel in the
+                        most — building a brand and honing your marketing strategy. From the visual elements of your
+                        financial product and tone of voice to your business vision and mission. The technical side of
+                        app development can be left to the tech experts instead.</p>
+
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- Private-label Banking Vs White-label Banking Apps -->
+                <div id="anchor-3" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Private-label Banking Vs White-label Banking Apps</h2>
+                    <p class="mb-4 pb-2 fs-lg">White-label and private-label banking products bare some resemblance. For
+                        instance, both of them are created by one company and sold under another company's brand.
+                        However, there are specific differences between the two.</p>
+
+                    <p class="mb-4 pb-2 fs-lg"><strong>Ownership</strong>: White-label mobile banking apps are owned by
+                        the company that creates them and are sold to other companies to rebrand and sell to their
+                        customers. In contrast, private-label products are owned by the company that sells them under
+                        their own brand.</p>
+                    <p class="mb-4 pb-2 fs-lg"><strong>Customization</strong>: White-label products are generally
+                        manufactured for multiple retailers, whereas private-label products are designed to be fully
+                        customized to meet the needs of a specific company.</p>
+                    <p class="mb-4 pb-2 fs-lg"><strong>Cost</strong>: White-label products are less complex in
+                        deployment and, thus, lower in price. Conversely, the manufacturers of private-label products
+                        charge more for a higher level of customization and exclusivity.</p>
+
+                    <h3 class="h4 mb-3">Advantages of Private-label solutions</h3>
+                    <p class="mb-4 pb-2 fs-lg">In comparison, private-label is a go-to choice for businesses aiming to
+                        build distinctive custom-made projects not yet presented in the market. These solutions are
+                        built from scratch, so you have full control of the end product’s functionalities, unique
+                        design, and branding.</p>
+                    <p class="mb-4 pb-2 fs-lg">Another advantage of private-label banking is that financial institutions
+                        can outshine their rivals in the same niche by offering a unique value proposition. You do not
+                        just create another banking app, you bring novelty to a crowded market and declare yourself as a
+                        functional and personalized bank.</p>
+
+                    <h3 class="h4 mb-3">Advantages of White-label solutions</h3>
+                    <p class="mb-4 pb-2 fs-lg">Usually, white label mobile banking apps aren’t customized. But that’s
+                        what makes them special. Such pre-built solutions don’t require a major financial commitment and
+                        can enter the market more quickly and easily. Therefore, this is an ideal option if cost and
+                        time-to-market are your primary concerns.</p>
+                    <p class="mb-4 pb-2 fs-lg">Moreover, when you look ahead, a white label product is less expensive to
+                        maintain. There’s a lot of work, on which you can’t shut your eyes, including fixing bugs,
+                        adding new features, improving its overall functionality, providing technical support to
+                        resellers and end-users, and keeping track of quality assurances. All this can be taken care of
+                        with much lower costs.</p>
+                </div>
+
+                <hr class="mb-sm-5 mb-4">
+
+                <!-- How To Start Using A White Label Banking App -->
+                <div id="anchor-4" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">How To Start Using A White Label Banking App</h2>
+                    <p class="mb-4 pb-2 fs-lg">Building an app from scratch may not always be the best option. It can be
+                        time-consuming, expensive, and risky, which is why fintech start-ups and other financial
+                        institutions resort to white label banking. If you need help figuring out where to start, here's
+                        an action plan.</p>
+
+                    <h3 class="h4 mb-3">Understanding The Requirements</h3>
+                    <p class="mb-4 pb-2 fs-lg">Licensing conditions guide how banks can launch and develop, therefore,
+                        you need to come to grips with the main requirements for building a white label bank.</p>
+
+                    <h4 class="h5 mb-3">1. Identifying The Target Market</h4>
+                    <p class="mb-4 pb-2 fs-lg">Above all, you need to identify your core customer base and understand
+                        the marketplace. For this, find local demographic information, look into who your potential
+                        clients are (e.g., behaviors, values, personality, and lifestyle), and, obviously, access
+                        competition. Having done that, you can use this information to create a white label product that
+                        your target market needs.</p>
+
+                    <h4 class="h5 mb-3">2. Assessing The Regulatory Environment</h4>
+                    <p class="mb-4 pb-2 fs-lg">Another vital thing to keep in mind is the legal framework. Fintechs
+                        should seek legal advice and implement robust compliance functions, such as a core banking
+                        system, Anti-Money Laundering (AML) and Know-Your-Customer (KYC) regulations, and General Data
+                        Protection Regulation (GDPR). Failure to comply with regulatory requirements can result in grave
+                        consequences — for example, reputational damage and an unsatisfactory user experience. To
+                        navigate regulatory challenges successfully, you need to look for these main criteria, as well
+                        as technology and support.</p>
+
+                    <h4 class="h5 mb-3">3. Evaluating Technology and Infrastructure Needs</h4>
+                    <p class="mb-4 pb-2 fs-lg">Determine whether your existing infrastructure is satisfactory or should
+                        be replaced. Technology plays a crucial role in fintech app development, so make sure you have
+                        all the required technology and equipment, including:</p>
+
+                    <ul class="mb-4 pb-2 fs-lg">
+                        <li>servers;</li>
+                        <li>physical machines;</li>
+                        <li>virtual machines;</li>
+                        <li>cloud;</li>
+                        <li>storage;</li>
+                        <li>network;</li>
+                        <li>print and auxiliary services;</li>
+                        <li>desktop and other end-user devices;</li>
+                        <li>security;</li>
+                        <li>data protection and recovery.</li>
+                    </ul>
+
+                    <h3 class="h4 mb-3">Choosing A Provider</h3>
+                    <p class="mb-4 pb-2 fs-lg">Whether that's a new CRM system, new finance software, or an online
+                        retail shop, choosing the right white label provider that aligns with how you operate can be
+                        difficult.</p>
+
+                    <h4 class="h5 mb-3">1. Factors To Pay Attention To</h4>
+                    <p class="mb-4 pb-2 fs-lg">Amidst a plethora of service providers in the market, what criteria
+                        should you consider while selecting a white label solution provider? The primary considerations
+                        to bear in mind are costs, communication management, delivery capabilities, current clients,
+                        partnerships, and case studies.</p>
+
+                    <h4 class="h5 mb-3">2. Comparing And Evaluating Different Providers</h4>
+                    <p class="mb-4 pb-2 fs-lg">After compiling a shortlist of potential solutions derived from your
+                        meticulous research, schedule a demo to evaluate their relevance to your business. Prepare a
+                        list of criteria and regulations. It will help you rank different providers and find the best
+                        fit for your enterprise.</p>
+
+                    <h4 class="h5 mb-3">3. SaaS Versus On-premises</h4>
+                    <p class="mb-4 pb-2 fs-lg">Choose the type of service, drawing upon your budget, desired regulatory
+                        compliance, maintenance, and upgrades. SaaS is a service delivered through the cloud and is
+                        supervised and administered by third-party vendors. In comparison, an on-premises application is
+                        typically installed in-house and maintained by an external service provider.</p>
+
+                    <h4 class="h5 mb-3">4. Negotiating The Terms Of The Partnership</h4>
+                    <p class="mb-4 pb-2 fs-lg">Contact the vendor and discuss the deliverables, price, as well as terms.
+                        A dedicated customer service department will be upfront and open about the deadlines and costs
+                        of additional users, customizations, integrations, and setup fees.</p>
+
+                    <h3 class="h4 mb-3">Customizing The Platform</h3>
+                    <p class="mb-4 pb-2 fs-lg">The next step in white label mobile banking app development is
+                        customization. At this stage of app development, you have the opportunity to unleash your
+                        creativity and craft a truly unique application.</p>
+
+                    <h4 class="h5 mb-3">1. Branding and Design</h4>
+                    <p class="mb-4 pb-2 fs-lg">The vendor will provide ready-made templates with all the functions you
+                        need. Your job will be to adjust the content, add your branding, create a unique design, and
+                        update the white label mobile app whenever required. </p>
+
+                    <h4 class="h5 mb-3">2. Adding New Features and Functionalities</h4>
+                    <p class="mb-4 pb-2 fs-lg">Add enhancements and features that align with your customers' needs. A
+                        few innovative features that can be quickly and easily incorporated into digital banking
+                        platforms include multi-currency accounts, SWIFT and SEPA instant payments, strong customer
+                        authentication, KYC/AML onboarding, account verification, and more.</p>
+
+                    <h4 class="h5 mb-3">3. Integrating With Existing Systems</h4>
+                    <p class="mb-4 pb-2 fs-lg">Do you own software or have a well-functioning app? Try complete
+                        integration with your existing systems for a frictionless customer experience and valuable
+                        insights.</p>
+
+                    <h3 class="h4 mb-3">Post-Launch Support</h3>
+
+                    <h4 class="h5 mb-3">1. Ongoing Maintenance and Upgrades</h4>
+                    <p class="mb-4 pb-2 fs-lg">If you choose the right provider, its expert team will cover all
+                        technical upgrades, hosting, security monitoring, and a maintenance dashboard. In this manner,
+                        the bugs are fixed quickly, and your website always remains functional and protected. </p>
+
+                    <h4 class="h5 mb-3">3. Providing Customer Support</h4>
+                    <p class="mb-4 pb-2 fs-lg">Customer support can be entrusted to professionals as well. The white
+                        label service will quickly respond to incidents and user requests, so everyone is satisfied.</p>
+
+                    <h4 class="h5 mb-3">3. Monitoring and Analyzing Usage Data</h4>
+                    <p class="mb-4 pb-2 fs-lg">With powerful analytical software, you can extract analytic value
+                        immediately through dashboards and data visualization. Moreover, it enables you to monitor
+                        recurring customer issues and facilitates the delivery of a personalized experience.</p>
+                </div>
+
+                <!-- What Does The Future Hold For White Label Banking Services? -->
+                <div id="anchor-5" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">What Does The Future Hold For White Label Banking Services?</h2>
+                    <p class="mb-4 pb-2 fs-lg">McKinsey experts anticipate that banking will undergo significant
+                        restructuring in the coming years. However, we should stay optimistic and acknowledge that the
+                        banks that effectively navigate this transformation will expand in size, profitability, and
+                        growth, resulting in a potential $20 trillion value-creation opportunity.</p>
+                    <p class="mb-4 pb-2 fs-lg">To beat the competition in the financial sector, you need to innovate and
+                        develop new solutions. And the white label service is your savior in shining armor. It creates a
+                        win-win system of banking where banks, enterprises, and fintechs thrive. It is undoubtedly the
+                        future of banking, and Crassula is your gateway to being part of that bright future.</p>
+                </div>
+
+                <!-- Digitize Your Business With Crassula -->
+                <div id="anchor-6" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Digitize Your Business With Crassula</h2>
+                    <p class="mb-4 pb-2 fs-lg">Do you lack the expertise and resources to launch a digital banking app?
+                        Revolutionise the banking industry with a unique white label solution built with Crassula. You
+                        will get all the required infrastructure and tools to customize your application, create
+                        personalized offers, and augment your revenue streams in a short time frame and within your
+                        budget.</p>
+                </div>
+
+                <!-- Conclusion -->
+                <div id="anchor-7" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="h3 mb-3">Conclusion</h2>
+                    <p class="mb-4 pb-2 fs-lg">Developing a mobile banking app is an ingenious idea, as the need for
+                        novel financial products and services is on the rise right now. If you support innovation, value
+                        customer convenience, and fancy turning a profit, you should definitely consider white label
+                        software development.</p>
+                    <p class="mb-4 pb-2 fs-lg">First and foremost, white label platforms drive financial inclusion by
+                        assisting companies in developing strong fintech ecosystems. Secondly, it lifts a burden off
+                        your shoulders by ensuring security, innovation, and the use of best-in-class technology, so
+                        that you can focus on your core competencies. Last but not least, outsourced white label app
+                        development is more wallet-friendly than hiring in-house resources. If you’d like to learn more
+                        about the white label solution can boost your business.</p>
+                    <p class="mb-4 pb-2 fs-lg">To cut to the chase, developing fintech applications is rewarding but, at
+                        the same time, an overwhelming process. To build your own white label mobile banking app, you
+                        need to understand the requirements, choose a good provider, customize the platform according to
+                        your business needs, and resolve the post-launch issues.</p>
+                    <p class="mb-4 pb-2 fs-lg">However, you always have another option — asking the experienced Crassula
+                        team for help. Contact us and share your ideas. We’ll gladly lend you a hand.</p>
+                </div>
+
+                <!-- Banner -->
+                <div class="mt-5 pt-lg-5 pt-4 mb-sm-5 mb-4 pb-3">
+                    <div class="card border-0 bg-dark text-light py-3 px-sm-5 px-4">
+                        <div class="card-body p-md-5 p-4 text-center">
+                            <h3 class="mb-4 pb-sm-2 text-light">Let&apos;s discuss your project and see how we can
+                                launch your <span class="text-primary">digital core banking product</span> together</h3>
+                            <a href="{% url 'boarding:request_demo' %}" class="btn btn-accent rounded-pill">
+                                Request demo
+                                <i class="bx bx-chevron-right ms-1 lead"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div id="anchor-8" class="mt-n5 pt-5 mb-sm-5 mb-4">
+                    <h2 class="mb-4">FAQ</h2>
+                    <div class="accordion" id="accordionDefault">
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What Is A White-label Mobile Banking App?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">A white label mobile banking app is an app supercharged with digital
+                                        banking services. In white-label banking, businesses leverage pre-built
+                                        technology and software supplied by the fintech solution provider and the
+                                        regulated infrastructure, such as banking licenses, compliance, and regulatory
+                                        authorization from banks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Why Use A White-label Mobile Banking App For Building A Neo-bank?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Because it allows you to offer banking services quickly and at lower
+                                        development costs. If you see the magnitude with which neo-banks are
+                                        revolutionising the banking industry and thinking of building one, a white label
+                                        mobile banking app is a great choice.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How Do I Start Using A White Label Banking App?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
+                                <div class="accordion-body">
+                                    <p class="mb-2">Crassula specialises in building neo-banks of different scopes and
+                                        propositions. With our White Label Software and Clear.Bank's banking
+                                        infrastructure, you can set up a successful fintech business.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

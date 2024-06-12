@@ -1,0 +1,213 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label FinTech Dashboard{% endblock %}
+{% block seo_description %}Manage your employees and access levels. Crassula allows you to create access
+    roles, customize permits, and control any functionality of your product.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "White Label FinTech Dashboard"
+      }]
+    }
+    </script>
+{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+            <div class="row gy-5 align-items-center py-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                        <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                        <h1 class="display-3 text-light">Dashboard</h1>
+                        <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Oversee, Manage and Control - Crassula is the
+                            ultimate tool for running your business. Manage users and access roles, fees, onboarding
+                            process, issued cards, approve and control transactions, set limits, and much more.</p>
+                        <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                            Request demo
+                            <i class="bx bx-chevron-right ms-1 lead"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layer parallax -->
+                <div class="col-lg-6">
+                    <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                        <div class="parallax-layer zindex-1" data-depth="-0.04">
+                            <img src="{% static 'images/features/dashboard/hero/01.png' %}" alt="Layer">
+                        </div>
+                        <div class="parallax-layer zindex-2" data-depth="-0.15">
+                            <img src="{% static 'images/features/dashboard/hero/02.png' %}" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content -->
+    <section class="container mt-lg-5 mt-md-4 mt-3 pt-5">
+        <div class="d-flex flex-column mt-xxl-4 mt-xl-3 pt-xxl-2">
+
+            <!-- Items grid -->
+            <div class="order-lg-1 order-2 row row-cols-lg-3 row-cols-1 gy-md-5 gy-4 gx-xl-5 mb-lg-5 pb-xxl-2">
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Flexible and Convenient Reporting</h3>
+                    <p class="mb-0 fs-xl">Get track of every penny. From markups to volumes, from currencies to charged
+                        fees, Crassula creates flexible and convenient reporting for your business.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">User Management &amp; Access Roles</h3>
+                    <p class="mb-0 fs-xl">Manage your employees and access levels. Crassula allows you to create access
+                        roles, customize permits, and control any functionality of your product.</p>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                    <h3 class="h2 mb-md-4 mb-3">Transactions Approval &amp; Control</h3>
+                    <p class="mb-0 fs-xl">Need to check transactions before sending? Crassula allows adding an extra
+                        layer of control over transaction flow by setting single or multi-level transaction
+                        pre-approvals.</p>
+                </div>
+            </div>
+
+            <!-- Illustration -->
+            <div class="order-lg-2 order-1 rounded bg-secondary mb-lg-0 mb-md-5 mb-4 pb-md-0 pb-2">
+                <img src="{% static 'images/features/dashboard/illustration.png' %}" alt="Illustration" class="d-md-block d-none">
+                <img src="{% static 'images/features/dashboard/illustration-m.png' %}" alt="Illustration" class="d-md-none d-block">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features list -->
+    <section class="container py-lg-5 py-4">
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/01.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Fees management</h2>
+                    <p class="mt-2 mb-0 fs-xl">Manage price lists and individual fees, set mark-ups and pricing plans
+                        for different periods. Crassula supports any fee model that runs your business.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Onboarding Management</h2>
+                    <p class="mt-2 mb-0 fs-xl">Get to know your clients by setting different onboarding scenarios,
+                        automatic KYC checks, client profiles, document storage and much more all in one place.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/02.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/03.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">CRM</h2>
+                    <p class="mt-2 mb-0 fs-xl">Manage your private and business customers, set connections between the
+                        entities, see related accounts, transactions, statuses and fees all in one place. Crassula also
+                        allows to create access roles, customize permits and support access to business accounts for
+                        multiple parties.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Case Management</h2>
+                    <p class="mt-2 mb-0 fs-xl">Get convenient tools for your compliance team. Crassula Case Management
+                        allows sending messages and adding notes, storing communication history in one place.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/04.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-md-6">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/05.png' %}" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <h2 class="h1 mb-md-4 mb-3">Dictionaries &amp; Country Groups</h2>
+                    <p class="mt-2 mb-0 fs-xl">Create any user types, user levels and subscription plans with
+                        configurable dictionaries. Use the wording that appeal to your target audience.</p>
+                    <p class="mt-2 mb-0 fs-xl">Country groups additionally allow to separate fees and other operations
+                        for a given country group instead of per-country settings management.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+            <div class="row gy-4 align-items-lg-center pt-xxl-2">
+                <div class="col-lg-5 col-md-6 order-md-1 order-2">
+                    <h2 class="h1 mb-md-4 mb-3">Marketing - UTM tags</h2>
+                    <p class="mt-2 mb-0 fs-xl">Connect Crassula and your marketing platform via UTM tags to have
+                        insights about your audience. Optimize your strategies to increase conversion and LTV of your
+                        customers.</p>
+                </div>
+                <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+                    <div class="rounded-3 bg-secondary">
+                        <img src="{% static 'images/features/dashboard/06.png' %}" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}

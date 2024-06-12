@@ -1,0 +1,145 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block seo_title %}White Label Merchant Management Software{% endblock %}
+{% block seo_description %}From cash-in terminals to international money transfers, from wallet payments
+    to PayPal. Crassula will get you convenient tools for accepting payments the way you want.{% endblock %}
+
+{% block structured_data %}
+    <!-- Structured Data -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Crassula",
+        "item": "https://crassula.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Merchant Management Software"
+      }]
+    }
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Hero section with layer parallax gfx -->
+      <section class="d-flex align-items-center position-relative overflow-hidden pt-5 pb-lg-5 bg-dark min-vh-100">
+        <div class="container pt-5">
+          <div class="row gy-5 align-items-center py-lg-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <div class="mx-lg-0 mx-auto" style="max-width: 526px;">
+                <span class="badge bg-faded-light text-light fw-normal mb-4 py-2 px-3">Key Features</span>
+                <h1 class="display-3 text-light">Merchant Payments</h1>
+                <p class="text-light opacity-70 mt-3 mb-0 fs-lg">Build your own PSP. Offer your merchants international card acquiring, with multi-currency payments, flexible fee settings, subscriptions, international card routing and multiple acquirers support.</p>
+                <a href="{% url 'boarding:request_demo' %}" class="btn btn-lg btn-outline-accent rounded-pill mt-5">
+                  Request demo
+                  <i class="bx bx-chevron-right ms-1 lead"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Layer parallax -->
+            <div class="col-lg-6">
+              <div class="parallax position-relative ms-auto me-lg-0 me-auto pb-lg-0 mb-lg-0 mb-5 pb-sm-5" style="max-width: 636px;">
+                <div class="parallax-layer zindex-1" data-depth="0.05">
+                  <img src="{% static 'images/features/merchant/hero/01.png' %}" alt="Layer">
+                </div>
+                <div class="parallax-layer zindex-2" data-depth="-0.1">
+                  <img src="{% static 'images/features/merchant/hero/02.png' %}" alt="Layer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Content -->
+      <section class="container py-lg-5 py-4">
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+          <div class="row gy-4 align-items-lg-center pt-xxl-2">
+            <div class="col-lg-5 col-md-6 order-md-1 order-2">
+              <h2 class="h1 mb-md-4 mb-3">Web Interface</h2>
+              <p class="mt-2 mb-0 fs-xl">Manage your merchant profiles, withdrawals, business types, MCC codes, access roles and much more in one place.</p>
+            </div>
+            <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+              <div class="rounded-3 bg-secondary">
+                <img src="{% static 'images/features/merchant/01.png' %}" alt="Illustration">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+          <div class="row gy-4 align-items-lg-center pt-xxl-2">
+            <div class="col-md-6">
+              <div class="rounded-3 bg-secondary">
+                <img src="{% static 'images/features/merchant/02.png' %}" alt="Illustration">
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+              <h2 class="h1 mb-md-4 mb-3">Card Acquiring</h2>
+              <p class="mt-2 mb-0 fs-xl">Offer your merchants international card acquiring, with multi-currency payments, flexible fees settings, subscriptions, international card routing and multiple acquirers support.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+          <div class="row gy-4 align-items-lg-center pt-xxl-2">
+            <div class="col-lg-5 col-md-6 order-md-1 order-2">
+              <h2 class="h1 mb-md-4 mb-3">Alternative Payments</h2>
+              <p class="mt-2 mb-0 fs-xl">From cash-in terminals to international money transfers, from wallet payments to PayPal. Crassula will get you convenient tools for accepting payments the way you want.</p>
+            </div>
+            <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+              <div class="rounded-3 bg-secondary">
+                <img src="{% static 'images/features/merchant/03.png' %}" alt="Illustration">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+          <div class="row gy-4 align-items-lg-center pt-xxl-2">
+            <div class="col-md-6">
+              <div class="rounded-3 bg-secondary">
+                <img src="{% static 'images/features/merchant/04.png' %}" alt="Illustration">
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+              <h2 class="h1 mb-md-4 mb-3">Payouts to Cards</h2>
+              <p class="mt-2 mb-0 fs-xl">Dealing with earnings distribution or rewards? With Crassula payouts to cards, it's easy to offer money transfers both ways.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="my-xxl-4 my-xl-3 my-lg-0 my-md-4 my-3 py-lg-5 py-4">
+          <div class="row gy-4 align-items-lg-center pt-xxl-2">
+            <div class="col-lg-5 col-md-6 order-md-1 order-2">
+              <h2 class="h1 mb-md-4 mb-3">Anti-Fraud</h2>
+              <p class="mt-2 mb-0 fs-xl">Security is always the top priority. With Crassula's convenient anti-fraud tools and filters, you can be confident about your payment flow.</p>
+            </div>
+            <div class="col-md-6 offset-lg-1 order-md-2 order-1">
+              <div class="rounded-3 bg-secondary">
+                <img src="{% static 'images/features/merchant/05.png' %}" alt="Illustration">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- CTA -->
+    {% include 'landings/includes/cta/digital_bank.html' %}
+
+{% endblock %}
